@@ -104,9 +104,9 @@ z-index:0;
 
 pointer-events:none;
 
-opacity:.08;
+opacity:.18;
 
-mix-blend-mode:screen;
+mix-blend-mode:overlay;
 
 image-rendering:auto;
 }
@@ -179,23 +179,22 @@ i<data.length;
 i+=4
 ){
 
-const white=
-Math.random()>0.97;
+const white =
+Math.random() > 0.82;
 
-const v=
-white
-?255
-:0;
+// 검정도 조금 보이게
+const v =
+white ? 255 : 0;
 
 data[i]=v;
 data[i+1]=v;
 data[i+2]=v;
 
-/* 완전 투명 검정 */
+// 투명도 올림
 data[i+3]=
 white
-?25
-:0;
+?60
+:18;
 }
 
 ctx.putImageData(
