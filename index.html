@@ -5,6 +5,8 @@
     <title>Vast Error 비공식 번역</title>
     <style>
         body{
+text-align:center;
+
 position:relative;
 
 margin:0;
@@ -230,15 +232,13 @@ margin:0 auto;
 }
 .top-nav{
 
-width:100%;
+width:950px;
 
-margin-bottom:20px;
+margin:0 auto 20px auto;
 
 height:28px;
 
 background:#000;
-
-border-bottom:1px solid #444;
 
 text-align:center;
 
@@ -257,11 +257,13 @@ font-weight:bold;
 
 .top-nav a{
 
-color:#fff;
+color:#ffffff !important;
 
 text-decoration:none;
 
 margin:0 4px;
+
+display:inline;
 
 }
 
@@ -286,6 +288,9 @@ image-rendering:pixelated;
 </style>
 </head>
 <body>
+
+<canvas id="noise"></canvas>
+
     <div class="top-nav">
 
 <a href="/">HOME</a>
@@ -336,8 +341,6 @@ class="nav-icon">
 
 </div>
 
-<canvas id="noise"></canvas>
-    <!-- 1. 바깥쪽 반투명 박스 시작 -->
   <div class="main-wrapper">
     <div class="content-box">
 
