@@ -43,18 +43,24 @@
     color: #ffffff;
     text-shadow: 0 0 15px #ffffff;
 }
-/* 하단 서브 메뉴 링크 디자인 */
-.footer-menu {
-    margin-top: 35px;
-    font-size: 14px;
-    color: #aaaaaa;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 650px;
-}
+    /* 하단 서브 메뉴 링크 디자인 */
+    .footer-menu {
+        font-size: 14px;
+        color: #aaaaaa;
+        
+        /* 💡 수정: 글자들이 기호와 함께 자연스럽게 정렬되도록 폭 확장 및 여백 조정 */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px; /* 글자 사이 간격을 넓혀 보기 편하게 설정 */
+        width: 100%;
+        max-width: 900px; /* 650px에서 900px로 늘려 한 줄에 더 많이 들어가게 수정 */
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+
         .footer-menu a {
             color: #ffffff;
             text-decoration: none;
