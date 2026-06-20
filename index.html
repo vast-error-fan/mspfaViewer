@@ -97,26 +97,20 @@
 position:fixed;
 inset:0;
 
-width:100%;
-height:100%;
+z-index:-1;
 
-z-index:0;
+opacity:.22;
+
+/* screen 삭제 */
+mix-blend-mode:normal;
+
+image-rendering:pixelated;
+
+filter:
+contrast(250%)
+brightness(120%);
 
 pointer-events:none;
-
-opacity:.18;
-
-mix-blend-mode:overlay;
-
-image-rendering:auto;
-}
-
-.main-wrapper{
-position:relative;
-z-index:1;
-
-background:
-rgba(20,20,20,.88);
 }
 </style>
 </head>
@@ -150,67 +144,68 @@ rgba(20,20,20,.88);
 
     </div>
     <!-- 바깥쪽 반투명 박스 끝 -->
+
 <script>
-const canvas =
-document.getElementById("noise");
+const canvas = document.getElementById("noise");
+const ctx = canvas.getContext("2d");
 
-const ctx =
-canvas.getContext("2d");
+function resize() {
 
-function renderNoise(){
+  // 일부러 작게 그림 → 확대하면 굵은 입자
+  canvas.width = Math.floor(window.innerWidth / 4);
+  canvas.height = Math.floor(window.innerHeight / 4);
 
-canvas.width=
-window.innerWidth;
+  canvas.style.width = "100vw";
+  canvas.style.height = "100vh";
 
-canvas.height=
-window.innerHeight;
-
-const img=
-ctx.createImageData(
-canvas.width,
-canvas.height
-);
-
-const data=img.data;
-
-for(
-let i=0;
-i<data.length;
-i+=4
-){
-
-const white =
-Math.random() > 0.82;
-
-// 검정도 조금 보이게
-const v =
-white ? 255 : 0;
-
-data[i]=v;
-data[i+1]=v;
-data[i+2]=v;
-
-// 투명도 올림
-data[i+3]=
-white
-?60
-:18;
+  ctx.imageSmoothingEnabled = false;
 }
 
-ctx.putImageData(
-img,
-0,
-0
-);
+resize();
 
+window.addEventListener("resize", resize);
+
+function drawNoise(){
+
+  const w = canvas.width;
+  const h = canvas.height;
+
+  const img = ctx.createImageData(w,h);
+  const data = img.data;
+
+  for(let y=0;y<h;y+=2){
+
+    for(let x=0;x<w;x+=2){
+
+      // 흰/회색 섞기
+      const v =
+        Math.random() > 0.65
+        ? 255
+        : Math.random()*80;
+
+      for(let dy=0;dy<2;dy++){
+        for(let dx=0;dx<2;dx++){
+
+          const i=((y+dy)*w+(x+dx))*4;
+
+          data[i]=v;
+          data[i+1]=v;
+          data[i+2]=v;
+          data[i+3]=255;
+        }
+      }
+    }
+  }
+
+  ctx.putImageData(img,0,0);
+
+  setTimeout(
+    ()=>requestAnimationFrame(drawNoise),
+    90
+  );
 }
 
-renderNoise();
-
-window.addEventListener(
-"resize",
-renderNoise
-);
+drawNoise();
 </script>
 </body>
 </html>
