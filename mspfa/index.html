@@ -4,68 +4,44 @@
     <meta charset="UTF-8">
     <title>Vast Error 비공식 번역</title>
     <style>
-    body {
-        background-color: #1a1a1a;
-        background-image: url("tv-noise-static.png"); /* 흑백 노이즈 정지 이미지 */
-        background-size: 150px 150px;
-        background-repeat: repeat;
-        color: #ffffff;
-        font-family: "Courier New", Courier, monospace;
-        margin: 0;
-        padding: 40px 0;
-        
-        /* 수정: 브라우저 기본 블록 정렬을 사용해 순서 꼬임 원천 차단 */
-        display: block;
-        text-align: center;
-    }
-
-    /* 대문 포스터 이미지 스타일 설정 */
-    .poster-img {
-        max-width: 650px;
-        width: 100%;
-        height: auto;
-        border: 2px solid #444444;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        cursor: pointer;
-        
-        /* 추가: 이미지를 가운데로 보내고 아래 배치들과 간격 주기 */
-        display: block;
-        margin: 0 auto 25px auto;
-    }
-
-    /* 만화 시작하기 텍스트 링크 스타일 */
-    .start-link {
-        display: inline-block;
-        font-size: 24px;
-        font-weight: bold;
-        color: #00ff00; /* 홈스턱 감성의 녹색 조광 효과 */
-        text-decoration: none;
-        text-shadow: 0 0 10px rgba(0,255,0,0.5);
-        
-        /* 추가: 위치 고정 */
-        margin: 0 auto 35px auto;
-        width: 100%;
-    }
-    .start-link:hover {
-        color: #ffffff;
-        text-shadow: 0 0 15px #ffffff;
-    }
-
-    /* 하단 서브 메뉴 링크 디자인 */
-   .footer-menu {
-    font-size: 14px;
-    color: #aaaaaa;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 16px;
-    width: 100%;
-    max-width: 900px; /* 💡 650에서 900으로 늘려 글자가 옆으로 쭉 펴지게 만듭니다 */
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-    }
-
+        /* 원작 홈페이지 특유의 어두운 회색 배경과 정렬 설정 */
+        body { 
+            background-color: #222222; 
+            color: #ffffff;
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 40px 0;
+        }
+        /* 대문 포스터 이미지 스타일 설정 */
+        .poster-img {
+            max-width: 650px;
+            width: 100%;
+            height: auto;
+            border: 2px solid #444444;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            cursor: pointer;
+        }
+        /* 만화 시작하기 텍스트 링크 스타일 */
+        .start-link {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff00; /* 홈스턱 감성의 녹색 조광 효과 */
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(0,255,0,0.5);
+        }
+        .start-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 15px #ffffff;
+        }
+        /* 하단 서브 메뉴 링크 디자인 */
+        .footer-menu {
+            margin-top: 35px;
+            font-size: 14px;
+            color: #aaaaaa;
+        }
         .footer-menu a {
             color: #ffffff;
             text-decoration: none;
@@ -75,7 +51,6 @@
             text-decoration: underline;
         }
     </style>
-    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -90,7 +65,7 @@
     <a href="./mspfa/" class="start-link">> 만화 읽기 시작하기</a>
 
     <!-- 3. 원작 하단 메뉴 재현 (링크는 원작 공식 사이트 등으로 연결 가능) -->
-    <div class="footer-menu" style="white-space: nowrap; max-width: 100%; justify-content: center;">
+    <div class="footer-menu">
         [ <a href="https://vasterror.com" target="_blank">원작 홈페이지</a> ] | 
         [ <a href="https://fandom.com" target="_blank">위키</a> ] | 
         [ <a href="./mspfa/">모험 지도</a> ] | 
