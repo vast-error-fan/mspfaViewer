@@ -62,88 +62,6 @@ justify-content:center;
 
 }
 
-    .poster-img{
-
-width:820px;
-
-display:block;
-
-margin:0;
-
-border:none;
-
-}
-
-    .start-link{
-
-display:block;
-
-width:100%;
-
-margin-top:18px;
-
-text-align:left;
-
-color:#000;
-
-font-size:24px;
-
-text-decoration:none;
-
-}
-    .start-link:hover {
-        color: #ffffff;
-        text-shadow: 0 0 15px #ffffff;
-    }
-
-    .footer-menu{
-
-padding:24px;
-
-text-align:center;
-
-line-height:2;
-
-background:#eeeeee;
-
-}
-
-.footer-menu a{
-
-color:#000;
-
-text-decoration:none;
-
-}
-
-.footer-menu a:hover{
-
-text-decoration:underline;
-
-}
-
-    /* 💡 원작 스타일: 하단 버튼들을 감싸는 실선 회색 박스 */
-    .gray-box{
-
-width:90%;
-
-margin:24px auto;
-
-padding:10px 0;
-
-border:1px dashed #999;
-
-background:transparent;
-
-text-align:center;
-
-}
-
-.gray-box:hover{
-
-background:#e5e5e5;
-
-}
     /* 💡 메인 콘텐츠와 충돌 없이 배경에만 깔리는 실시간 랜덤 노이즈 레이어 */
 #noise{
 
@@ -162,7 +80,7 @@ mix-blend-mode:normal;
 }
 .content-box{
 
-width:1000px;
+width:850px;
 
 background:#eeeeee;
 
@@ -186,45 +104,40 @@ font-size:16px;
 
 }
 
-
-.poster-img{
-
-width:100%;
-
-display:block;
-
-margin:0;
-
-border:none;
-
-}
-
-
-
 .footer-menu{
 
-padding:
-
-24px;
+padding:24px;
 
 background:#eeeeee;
 
-color:black;
+color:#000;
 
 text-align:center;
 
-line-height:2;
+line-height:2.1;
+
+font-family:
+"Lucida Console",
+"Courier New",
+monospace;
+
+font-size:20px;
+
+font-weight:bold;
+
+letter-spacing:1px;
 
 }
-
-
 
 .footer-menu a{
 
-color:black;
+color:#000;
+
+font-weight:bold;
+
+text-decoration:none;
 
 }
-
 
 .gray-box{
 
@@ -260,11 +173,25 @@ color:#000;
 text-decoration:underline;
 
 }
+.poster-img{
+
+max-width:650px;
+
+width:100%;
+
+height:auto;
+
+display:block;
+
+margin:0 auto;
+
+}
 </style>
 </head>
 <body>
 <canvas id="noise"></canvas>
     <!-- 1. 바깥쪽 반투명 박스 시작 -->
+  <div class="main-wrapper">
     <div class="content-box">
 
 <img
@@ -320,7 +247,7 @@ alt="Vast Error">
 ]
 </div>
 
-</div> <!-- footer-menu 종료 -->
+</div> 
 
 <div class="gray-box">
 
@@ -349,7 +276,8 @@ class="start-link">
 </a>
 
 </div>
-    <!-- 바깥쪽 반투명 박스 끝 -->
+
+</div>
 
 <script>
 
