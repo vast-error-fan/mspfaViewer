@@ -5,6 +5,7 @@
     <title>Vast Error 비공식 번역</title>
     <style>
         body{
+position:relative;
 
 margin:0;
 
@@ -38,9 +39,11 @@ padding:40px 0;
 
     /* 💡 원작 스타일: 전체를 감싸는 커다란 반투명 검은색 박스 */
     .main-wrapper{
+position:relative;
 
-background:
-rgba(0,0,0,.45);
+z-index:1;
+
+background:rgba(0,0,0,.45);
 
 width:1180px;
 
@@ -62,13 +65,11 @@ position:fixed;
 
 inset:0;
 
-z-index:-1;
+z-index:0;
 
 opacity:.45;
 
-filter:none;
-
-mix-blend-mode:normal;
+pointer-events:none;
 
 }
 .content-box{
@@ -259,68 +260,66 @@ class="start-link">
 
 <script>
 
-const canvas=
-document.getElementById(
-"noise"
-);
+const canvas =
+document.getElementById("noise");
 
-const ctx=
-canvas.getContext(
-"2d"
-);
-
-function resize(){
-
-canvas.width=
-window.innerWidth;
-
-canvas.height=
-window.innerHeight;
+const ctx =
+canvas.getContext("2d");
 
 function drawNoise(){
 
-const img =
-ctx.createImageData(
-canvas.width,
-canvas.height
-);
-
-const data = img.data;
-
-for(let x=0;x<canvas.width;x++){
-
-    const column =
-    Math.floor(
-        Math.random()*255
+    const img =
+    ctx.createImageData(
+        canvas.width,
+        canvas.height
     );
 
-    for(let y=0;y<canvas.height;y++){
+    const data = img.data;
 
-        const i =
-        (y*canvas.width+x)*4;
+    for(let x=0;x<canvas.width;x++){
 
-        const v =
-        column +
-        (Math.random()*60-30);
+        const column =
+        Math.floor(
+            Math.random()*255
+        );
 
-        data[i]   = v;
-        data[i+1] = v;
-        data[i+2] = v;
-        data[i+3] = 255;
+        for(let y=0;y<canvas.height;y++){
+
+            const i =
+            (y*canvas.width+x)*4;
+
+            const v =
+            column +
+            (Math.random()*60-30);
+
+            data[i]   = v;
+            data[i+1] = v;
+            data[i+2] = v;
+            data[i+3] = 255;
+        }
     }
+
+    ctx.putImageData(
+        img,
+        0,
+        0
+    );
 }
 
-ctx.putImageData(
-img,
-0,
-0
-);
+function resize(){
 
+    canvas.width =
+    window.innerWidth;
+
+    canvas.height =
+    window.innerHeight;
+
+    drawNoise();
 }
 
 window.addEventListener(
-"resize",
-resize
+    "resize",
+    resize
 );
 
 resize();
