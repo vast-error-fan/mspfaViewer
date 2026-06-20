@@ -67,7 +67,7 @@ inset:0;
 
 z-index:-1;
 
-opacity:.35;
+opacity:.18;
 
 filter:none;
 
@@ -298,39 +298,37 @@ window.innerWidth;
 canvas.height=
 window.innerHeight;
 
-drawNoise();
-
-}
-
 function drawNoise(){
 
-const img=
+const img =
 ctx.createImageData(
 canvas.width,
 canvas.height
 );
 
-const data=
-img.data;
+const data = img.data;
 
-for(
-let i=0;
-i<data.length;
-i+=4
-){
+for(let x=0;x<canvas.width;x++){
 
-const v=
-Math.random()>0.5
-?
-255
-:
-0;
+    const column =
+    Math.floor(
+        Math.random()*255
+    );
 
-data[i]=v;
-data[i+1]=v;
-data[i+2]=v;
-data[i+3]=255;
+    for(let y=0;y<canvas.height;y++){
 
+        const i =
+        (y*canvas.width+x)*4;
+
+        const v =
+        column +
+        (Math.random()*60-30);
+
+        data[i]   = v;
+        data[i+1] = v;
+        data[i+2] = v;
+        data[i+3] = 255;
+    }
 }
 
 ctx.putImageData(
