@@ -50,45 +50,46 @@ rgba(
 0,
 0,
 0,
-0.50
+0.24
 );
+
+width:1120px;
 
 padding:
 
-20px;
-
-width:760px;
+30px;
 
 box-sizing:border-box;
 
 display:flex;
 
-flex-direction:column;
-
-align-items:center;
+justify-content:center;
 
 }
 
-    .poster-img {
-        max-width: 650px;
-        width: 100%;
-        height: auto;
-        border: 2px solid #444444;
-        display: block;
-        margin: 0 auto 25px auto;
-    }
+    .poster-img{
+
+width:820px;
+
+display:block;
+
+margin:0;
+
+border:none;
+
+}
 
     .start-link{
 
 display:block;
 
-width:650px;
-
-text-align:center;
+width:100%;
 
 margin-top:18px;
 
-color:white;
+text-align:left;
+
+color:#000;
 
 font-size:24px;
 
@@ -102,13 +103,17 @@ text-decoration:none;
 
     .footer-menu{
 
-width:650px;
+width:820px;
 
 background:#eeeeee;
 
-padding:12px;
+padding:
 
-margin:15px 0;
+0
+18px
+18px;
+
+margin:0;
 
 box-sizing:border-box;
 
@@ -133,19 +138,28 @@ text-decoration:underline;
     /* 💡 원작 스타일: 하단 버튼들을 감싸는 실선 회색 박스 */
     .gray-box{
 
-width:650px;
+width:100%;
 
-background:#eeeeee;
+background:
+
+transparent;
+
+padding:
+
+12px
+0;
+
+margin:0;
+
+border:none;
+
+border-top:
+
+1px solid #bbb;
+
+text-align:left;
 
 color:#000;
-
-padding:14px;
-
-margin:8px 0;
-
-box-sizing:border-box;
-
-text-align:center;
 
 cursor:pointer;
 
@@ -165,11 +179,15 @@ inset:0;
 
 z-index:-1;
 
-opacity:.05;
+opacity:.22;
+
+mix-blend-mode:normal;
 
 filter:none;
 
-mix-blend-mode:normal;
+image-rendering:pixelated;
+
+pointer-events:none;
 
 }
 </style>
@@ -177,32 +195,98 @@ mix-blend-mode:normal;
 <body>
 <canvas id="noise"></canvas>
     <!-- 1. 바깥쪽 반투명 박스 시작 -->
-    <div class="main-wrapper">
-    
-        <!-- 포스터 이미지 -->
-        <img src="https://cdn.deconreconstruction.com/vasterror/panels/00001.gif" class="poster-img" alt="Vast Error">
+    <div class="content-box">
 
-        <!-- 3줄 하단 메뉴 목록 -->
-        <div class="footer-menu">
-            <div style="display: flex; gap: 8px; justify-content: center; width: 100%;">
-                [ <a href="#">위키</a> ] | [ <a href="#">모험 지도</a> ] | [ <a href="#">크레딧</a> ]
-            </div>
-            <div style="display: flex; gap: 8px; justify-content: center; width: 100%;">
-                [ <a href="#">패트리온</a> ] | [ <a href="#">스토어</a> ] | [ <a href="#">밴드캠프</a> ]
-            </div>
-            <div style="display: flex; gap: 8px; justify-content: center; width: 100%;">
-                [ <a href="#">디스코드</a> ] | [ <a href="#">텀블러</a> ] | [ <a href="#">트위터</a> ]
-            </div>
-        </div>
+<img
+src="https://cdn.deconreconstruction.com/vasterror/panels/00001.gif"
+class="poster-img"
+alt="Vast Error">
 
-        <!-- 2. 회색 박스 형태의 메뉴들 (예시) -->
-        <div class="gray-box">전문</div>
-        <div class="gray-box">콘텐츠 경고</div>
+<div class="footer-menu">
 
-        <!-- > 시작하다 링크 -->
-        <a href="#" class="start-link">&gt; 시작하다.</a>
+<div>
 
-    </div>
+[
+<a href="#">위키</a>
+]
+
+|
+
+[
+<a href="#">모험 지도</a>
+]
+
+|
+
+[
+<a href="#">크레딧</a>
+]
+
+</div>
+
+<div>
+
+[
+<a href="#">패트리온</a>
+]
+
+|
+
+[
+<a href="#">스토어</a>
+]
+
+|
+
+[
+<a href="#">밴드캠프</a>
+]
+
+</div>
+
+<div>
+
+[
+<a href="#">디스코드</a>
+]
+
+|
+
+[
+<a href="#">텀블러</a>
+]
+
+|
+
+[
+<a href="#">트위터</a>
+]
+
+</div>
+
+<div class="gray-box">
+
+전문
+
+</div>
+
+<div class="gray-box">
+
+콘텐츠 경고
+
+</div>
+
+<a
+href="#"
+class="start-link">
+
+&gt; 시작하다.
+
+</a>
+
+</div>
+
+</div>
     <!-- 바깥쪽 반투명 박스 끝 -->
 
 <script>
