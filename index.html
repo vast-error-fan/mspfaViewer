@@ -98,21 +98,13 @@ text-decoration:none;
 
     .footer-menu{
 
-width:820px;
-
-background:#eeeeee;
-
-padding:
-
-0
-18px
-18px;
-
-margin:0;
-
-box-sizing:border-box;
+padding:24px;
 
 text-align:center;
+
+line-height:2;
+
+background:#eeeeee;
 
 }
 
@@ -133,30 +125,17 @@ text-decoration:underline;
     /* 💡 원작 스타일: 하단 버튼들을 감싸는 실선 회색 박스 */
     .gray-box{
 
-width:100%;
+width:90%;
 
-background:
+margin:24px auto;
 
-transparent;
+padding:10px 0;
 
-padding:
+border:1px dashed #999;
 
-12px
-0;
+background:transparent;
 
-margin:0;
-
-border:none;
-
-border-top:
-
-1px solid #bbb;
-
-text-align:left;
-
-color:#000;
-
-cursor:pointer;
+text-align:center;
 
 }
 
@@ -183,7 +162,7 @@ mix-blend-mode:normal;
 }
 .content-box{
 
-width:900px;
+width:1000px;
 
 background:#eeeeee;
 
@@ -197,6 +176,15 @@ box-sizing:border-box;
 
 }
 
+.spoiler-button{
+
+font-family:
+"Courier New",
+monospace;
+
+font-size:16px;
+
+}
 
 
 .poster-img{
@@ -238,48 +226,38 @@ color:black;
 }
 
 
-
 .gray-box{
 
-margin:
+width:100%;
 
-24px;
+margin:24px 0;
 
-padding:
+padding:0;
 
-10px;
+border:1px dashed #999;
 
-border:
-
-1px solid #999;
-
-background:
-
-white;
-
-color:black;
+background:transparent;
 
 text-align:center;
 
 }
 
-
-
 .start-link{
 
 display:block;
 
-padding:
+margin:
 
-24px;
+30px
+30px;
 
-color:black;
-
-font-size:26px;
+font-size:24px;
 
 text-align:left;
 
-text-decoration:none;
+color:#000;
+
+text-decoration:underline;
 
 }
 </style>
@@ -342,15 +320,23 @@ alt="Vast Error">
 ]
 </div>
 
+</div> <!-- footer-menu 종료 -->
+
 <div class="gray-box">
 
-전문
+<input
+type="button"
+value="PREAMBLE"
+class="spoiler-button">
 
 </div>
 
 <div class="gray-box">
 
-콘텐츠 경고
+<input
+type="button"
+value="CONTENT WARNING"
+class="spoiler-button">
 
 </div>
 
@@ -361,8 +347,6 @@ class="start-link">
 &gt; 시작하다.
 
 </a>
-
-</div>
 
 </div>
     <!-- 바깥쪽 반투명 박스 끝 -->
