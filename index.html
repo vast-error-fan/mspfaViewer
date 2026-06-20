@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <title>Vast Error 비공식 번역</title>
     <style>
-        /* 원작 홈페이지 특유의 어두운 회색 배경과 정렬 설정 */
-        body { 
-            background-color: #222222; 
-            color: #ffffff;
-            font-family: "Courier New", Courier, monospace;
-            text-align: center;
-            margin: 0;
-            padding: 40px 0;
-        }
-        /* 대문 포스터 이미지 스타일 설정 */
-        .poster-img {
-            max-width: 650px;
-            width: 100%;
-            height: auto;
-            border: 2px solid #444444;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            cursor: pointer;
-        }
-        /* 만화 시작하기 텍스트 링크 스타일 */
-        .start-link {
-            display: inline-block;
-            margin-top: 25px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #00ff00; /* 홈스턱 감성의 녹색 조광 효과 */
-            text-decoration: none;
-            text-shadow: 0 0 10px rgba(0,255,0,0.5);
-        }
-        .start-link:hover {
-            color: #ffffff;
-            text-shadow: 0 0 15px #ffffff;
-        }
-        /* 하단 서브 메뉴 링크 디자인 */
-        .footer-menu {
-            margin-top: 35px;
-            font-size: 14px;
-            color: #aaaaaa;
-        }
-        .footer-menu a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-        .footer-menu a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    body {
+        background-color: #1a1a1a;
+        /* 💡 확장자를 대문자 .PNG로 정확하게 맞춰 배경이 무조건 뜨게 만듭니다 */
+        background-image: url("tv-noise-static.PNG"); 
+        background-size: 150px 150px;
+        background-repeat: repeat;
+        color: #ffffff;
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 40px 0;
+        display: block;
+        text-align: center;
+    }
+
+    /* 대문 포스터 이미지 스타일 설정 */
+    .poster-img {
+        max-width: 650px;
+        width: 100%;
+        height: auto;
+        border: 2px solid #444444;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        cursor: pointer;
+        display: block;
+        margin: 0 auto 25px auto;
+    }
+
+    /* 만화 시작하기 텍스트 링크 스타일 */
+    .start-link {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #00ff00; /* 홈스턱 감성의 녹색 조광 효과 */
+        text-decoration: none;
+        text-shadow: 0 0 10px rgba(0,255,0,0.5);
+        margin: 0 auto 35px auto;
+        width: 100%;
+    }
+    .start-link:hover {
+        color: #ffffff;
+        text-shadow: 0 0 15px #ffffff;
+    }
+
+    /* 💡 3줄 정렬 구조를 안전하게 유지해 주는 전체 상자 레이아웃 */
+    .footer-menu {
+        font-size: 14px;
+        color: #aaaaaa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin: 35px auto 0 auto;
+    }
+    .footer-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+    .footer-menu a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
 
