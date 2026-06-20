@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <title>Vast Error 비공식 번역</title>
     <style>
-        /* 원작 홈페이지 특유의 어두운 회색 배경과 정렬 설정 */
-        body { 
-            background-color: #222222; 
-            color: #ffffff;
-            font-family: "Courier New", Courier, monospace;
-            text-align: center;
-            margin: 0;
-            padding: 40px 0;
-        }
+         body {
+        background-color: #222222;
+        background-image: url("tv-noise-static.png"); /* 💡 흑백 노이즈 정지 이미지 연결 */
+        background-size: 150px 150px;                 /* 💡 자글자글한 입자 크기 */
+        background-repeat: repeat;                    /* 💡 화면 전체 반복 */
+        color: #ffffff;
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 40px 0;
+        
+        /* 💡 대문을 화면 정중앙으로 정렬하는 치트키 3줄 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
         /* 대문 포스터 이미지 스타일 설정 */
         .poster-img {
             max-width: 650px;
