@@ -97,11 +97,15 @@
 position:fixed;
 inset:0;
 
-z-index:-1;
+width:100%;
+height:100%;
 
-opacity:.22;
+z-index:0;
 
-/* screen 삭제 */
+pointer-events:none;
+
+opacity:.35;
+
 mix-blend-mode:normal;
 
 image-rendering:pixelated;
@@ -146,68 +150,79 @@ pointer-events:none;
     <!-- 바깥쪽 반투명 박스 끝 -->
 
 <script>
-const canvas = document.getElementById("noise");
-const ctx = canvas.getContext("2d");
+const canvas =
+document.getElementById("noise");
 
-function resize() {
+const ctx =
+canvas.getContext("2d");
 
-  // 일부러 작게 그림 → 확대하면 굵은 입자
-  canvas.width = Math.floor(window.innerWidth / 1);
-  canvas.height = Math.floor(window.innerHeight / 1);
+function renderNoise(){
 
-  canvas.style.width = "100vw";
-  canvas.style.height = "100vh";
+canvas.width =
+window.innerWidth;
 
-  ctx.imageSmoothingEnabled = false;
+canvas.height =
+window.innerHeight;
+
+/* 검정 배경 */
+ctx.fillStyle="#000";
+ctx.fillRect(
+0,
+0,
+canvas.width,
+canvas.height
+);
+
+/* 랜덤 흑백 그레인 */
+for(
+let i=0;
+i<25000;
+i++
+){
+
+const x =
+Math.random()
+*canvas.width;
+
+const y =
+Math.random()
+*canvas.height;
+
+/* 입자 크기 */
+const r =
+Math.random()*1.4;
+
+/* 흑백 비슷하게 */
+const white =
+Math.random()>0.5;
+
+ctx.beginPath();
+
+ctx.arc(
+x,
+y,
+r,
+0,
+Math.PI*2
+);
+
+ctx.fillStyle =
+white
+? "rgba(255,255,255,.14)"
+: "rgba(0,0,0,.14)";
+
+ctx.fill();
+
 }
 
-resize();
+}
 
-window.addEventListener("resize", resize);
+renderNoise();
 
-function drawNoise(){
-
-  const w = canvas.width;
-  const h = canvas.height;
-
-  const img = ctx.createImageData(w,h);
-  const data = img.data;
-
-  for(let y=0;y<h;y+=2){
-
-    for(let x=0;x<w;x+=2){
-
-      const v =
-        Math.random() > 0.80
-        ? 255
-        : 0;
-
-      for(let dy=0;dy<2;dy++){
-        for(let dx=0;dx<2;dx++){
-
-          const i=((y+dy)*w+(x+dx))*4;
-
-          data[i]=v;
-          data[i+1]=v;
-          data[i+2]=v;
-          data[i+3]=255;
-        }
-      }
-    }
-  }
-
-  ctx.putImageData(img,0,0);
-
-  renderNoise();
-
-/* 창 크기 바뀔 때만 다시 그림 */
 window.addEventListener(
 "resize",
 renderNoise
 );
-}
-
-drawNoise();
 </script>
 </body>
 </html>
