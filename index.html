@@ -177,11 +177,10 @@ function drawNoise(){
 
     for(let x=0;x<w;x+=2){
 
-      // 흰/회색 섞기
       const v =
-        Math.random() > 0.65
+        Math.random() > 0.80
         ? 255
-        : Math.random()*80;
+        : 0;
 
       for(let dy=0;dy<2;dy++){
         for(let dx=0;dx<2;dx++){
@@ -199,10 +198,13 @@ function drawNoise(){
 
   ctx.putImageData(img,0,0);
 
-  setTimeout(
-    ()=>requestAnimationFrame(drawNoise),
-    90
-  );
+  renderNoise();
+
+/* 창 크기 바뀔 때만 다시 그림 */
+window.addEventListener(
+"resize",
+renderNoise
+);
 }
 
 drawNoise();
