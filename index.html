@@ -43,7 +43,7 @@ position:relative;
 
 z-index:1;
 
-background:rgba(0,0,0,.45);
+background:rgba(0,0,0,.35);
 
 width:1180px;
 
@@ -67,7 +67,7 @@ inset:0;
 
 z-index:0;
 
-opacity:.45;
+opacity:.20;
 
 pointer-events:none;
 
@@ -276,27 +276,17 @@ function drawNoise(){
 
     const data = img.data;
 
-    for(let x=0;x<canvas.width;x++){
+    for(let i=0;i<data.length;i+=4){
 
-        const column =
-        Math.floor(
-            Math.random()*255
-        );
+        const v =
+        Math.random() > 0.5
+        ? 255
+        : 0;
 
-        for(let y=0;y<canvas.height;y++){
-
-            const i =
-            (y*canvas.width+x)*4;
-
-            const v =
-            column +
-            (Math.random()*60-30);
-
-            data[i]   = v;
-            data[i+1] = v;
-            data[i+2] = v;
-            data[i+3] = 255;
-        }
+        data[i]   = v;
+        data[i+1] = v;
+        data[i+2] = v;
+        data[i+3] = 255;
     }
 
     ctx.putImageData(
