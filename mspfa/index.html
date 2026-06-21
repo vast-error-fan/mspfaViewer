@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Vast Error 비공식 번역</title>
+    <style>
+        /* 원작 홈페이지 특유의 어두운 회색 배경과 정렬 설정 */
+        body { 
+            background-color: #222222; 
+            color: #ffffff;
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 40px 0;
+        }
+        /* 대문 포스터 이미지 스타일 설정 */
+        .poster-img {
+            max-width: 650px;
+            width: 100%;
+            height: auto;
+            border: 2px solid #444444;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            cursor: pointer;
+        }
+        /* 만화 시작하기 텍스트 링크 스타일 */
+        .start-link {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff00; /* 홈스턱 감성의 녹색 조광 효과 */
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(0,255,0,0.5);
+        }
+        .start-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 15px #ffffff;
+        }
+        /* 하단 서브 메뉴 링크 디자인 */
+        .footer-menu {
+            margin-top: 35px;
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+        .footer-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer-menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 포스터 이미지를 누르면 바로 만화 본문(mspfa)으로 이동합니다 -->
+    <a href="./mspfa/">
+        <!-- 여기에 원작 대문 이미지 주소를 넣거나, 내 폴더에 이미지를 넣어 경로를 지정합니다 -->
+        <img src="https://cdn.deconreconstruction.com/vasterror/panels/00001.gif" class="poster-img" alt="Vast Error">
+    </a>
+
+    <br>
+    <!-- 2. 만화 읽기 시작 버튼 -->
+    <a href="./mspfa/" class="start-link">> 만화 읽기 시작하기</a>
+
+    <!-- 3. 원작 하단 메뉴 재현 (링크는 원작 공식 사이트 등으로 연결 가능) -->
+    <div class="footer-menu" style="display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; margin: 35px auto 0 auto; font-size: 14px; color: #aaaaaa;">
+    <!-- 1번째 줄 -->
+    <div style="display: flex; gap: 8px; justify-content: center; width: 100%;">
+        [ <a href="#">위키</a> ] | [ <a href="#">모험 지도</a> ] | [ <a href="#">크레딧</a> ]
+    </div>
+    <!-- 2번째 줄 -->
+    <div style="display: flex; gap: 8px; justify-content: center; width: 100%;">
+        [ <a href="#">패트리온</a> ] | [ <a href="#">스토어</a> ] | [ <a href="#">밴드캠프</a> ]
+    </div>
+    <!-- 3번째 줄 -->
+    <div style="display: flex; gap: 8px; justify-content: center; width: 100%;">
+        [ <a href="#">디스코드</a> ] | [ <a href="#">텀블러</a> ] | [ <a href="#">트위터</a> ]
+    </div>
+</div>
+
+</body>
+</html>
