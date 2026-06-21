@@ -10,7 +10,7 @@ body{
 
 margin:0;
 
-background:#c6c6c6;
+background:#535353;
 
 font-family:
 "Courier New",
@@ -19,20 +19,18 @@ monospace;
 
 }
 
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
 .page{
-
-width:100%;
-
-max-width:650px;
-
-margin:0 auto;
-
-background:#efefef;
-
-box-sizing:border-box;
-
-min-height:calc(100vh - 33px);
-
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
 }
 
 .page-title{
@@ -40,9 +38,9 @@ min-height:calc(100vh - 33px);
 font-size:clamp(22px, 4vw, 29px);
 
 font-family:
-"Malgun Gothic",
-Georgia,
-serif;
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
 
 font-weight:600;
 
@@ -58,7 +56,9 @@ line-height:1.5;
 
 .panel{
 
-width:100%;
+width:650px;
+
+margin:0 auto;
 
 height:auto;
 
@@ -67,19 +67,13 @@ display:block;
 }
 
 .story{
-
-padding:20px 35px;
-
-text-align:center;
-
-font-size:clamp(12px, 2vw, 14px);
-
-line-height:1.45;
-
-font-weight:bold;
-
-margin-top:0;
-
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
 }
 
 .next-link{
@@ -109,7 +103,7 @@ text-underline-offset:2px;
 
 .footer-links{
 
-padding:0 25px 12px;
+padding:0 25px 0;
 
 font-size:10px;
 
@@ -159,7 +153,7 @@ font-size:11px;
 
 font-weight:bold;
 
-border-bottom:1px solid #000;
+border-bottom:1px solid #535353;
 
 }
 
@@ -302,6 +296,8 @@ class="nav-icon">
 
 </div>
 
+<div class="wrapper">
+
 <div class="page">
 
 <h1 class="page-title">이름을 입력한다.</h1>
@@ -309,7 +305,7 @@ class="nav-icon">
 <img
 src="../assets/panels/act1/00003.gif"
 class="panel"
-alt="0002">
+alt="0003">
 
 <div class="story">
 
@@ -323,26 +319,19 @@ alt="0002">
 
 </div>
 
-<a
-href="0004.html"class="next-link">
+    <a href="0004.html" class="next-link">
+        &gt; 다시 시도한다.
+    </a>
 
-&gt; 다시 시도한다.
+    <div class="footer-links">
 
-</a>
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="0002.html">뒤로 가기</a>
+        </div>
 
-<div class="footer-links">
-
-<div>
-
-<a href="0002.html">처음부터 다시 시작</a>
-
-|
-
-<a href="0002.html">뒤로 가기</a>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 

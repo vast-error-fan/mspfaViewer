@@ -10,7 +10,7 @@ body{
 
 margin:0;
 
-background:#c6c6c6;
+background:#535353;
 
 font-family:
 "Courier New",
@@ -19,20 +19,18 @@ monospace;
 
 }
 
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
 .page{
-
-width:100%;
-
-max-width:650px;
-
-margin:0 auto;
-
-background:#efefef;
-
-box-sizing:border-box;
-
-min-height:calc(100vh - 33px);
-
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
 }
 
 .page-title{
@@ -40,9 +38,9 @@ min-height:calc(100vh - 33px);
 font-size:clamp(22px, 4vw, 29px);
 
 font-family:
-"Malgun Gothic",
-Georgia,
-serif;
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
 
 font-weight:600;
 
@@ -58,7 +56,9 @@ line-height:1.5;
 
 .panel{
 
-width:100%;
+width:650px;
+
+margin:0 auto;
 
 height:auto;
 
@@ -67,19 +67,13 @@ display:block;
 }
 
 .story{
-
-padding:20px 35px;
-
-text-align:center;
-
-font-size:clamp(12px, 2vw, 14px);
-
-line-height:1.45;
-
-font-weight:bold;
-
-margin-top:0;
-
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
 }
 
 .next-link{
@@ -109,7 +103,7 @@ text-underline-offset:2px;
 
 .footer-links{
 
-padding:0 25px 12px;
+padding:0 25px 0;
 
 font-size:10px;
 
@@ -159,7 +153,7 @@ font-size:11px;
 
 font-weight:bold;
 
-border-bottom:1px solid #000;
+border-bottom:1px solid #535353;
 
 }
 
@@ -302,6 +296,8 @@ class="nav-icon">
 
 </div>
 
+<div class="wrapper">
+
 <div class="page">
 
 <h1 class="page-title">시작.</h1>
@@ -314,7 +310,7 @@ alt="0002">
 <div class="story">
 
 <p>
-이 어린 트롤은 자신의 휴식처 안에 서 있다. 마침 오늘은 어두운 계절 3번째 점멸기의 22번째 이중 근지점일이자, 이 트롤의 유충 각성일이다. 흔히 꿈틀이 날이라 불리는 날이기도 하다. 같은 둥지의 다른 개체들 사이에서도 유난히 악명 높은 밤인데, 주된 이유는 솔직히 말해서 존재할 필요가 전혀 없는 날이기 때문이다.
+이 어린 트롤은 자신의 휴식처 안에 서 있다. 마침 오늘은 어두운 계절 3번째 점멸기의 22번째 이중 근지점일이자, 이 트롤의 유충 각성일이다. 흔히 꿈틀날이라 불리는 날이기도 하다. 같은 둥지의 다른 개체들 사이에서도 유난히 악명 높은 밤인데, 주된 이유는 솔직히 말해서 존재할 필요가 전혀 없는 날이기 때문이다.
 </p>
 
 <p>
@@ -327,26 +323,19 @@ alt="0002">
 
 </div>
 
-<a
-href="0003.html"class="next-link">
+    <a href="0003.html" class="next-link">
+        &gt; 이름을 입력한다.
+    </a>
 
-&gt; 이름을 입력한다.
+    <div class="footer-links">
 
-</a>
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="../index.html">뒤로 가기</a>
+        </div>
 
-<div class="footer-links">
-
-<div>
-
-<a href="0002.html">처음부터 다시 시작</a>
-
-|
-
-<a href="../index.html">뒤로 가기</a>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 

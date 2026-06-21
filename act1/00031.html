@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00031</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:15px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.wa{
+    color:#004696;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="#">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="#">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">아크젯<span class="colon">:</span> 트롤에게 대답하자.</h1>
+
+    <img src="../assets/panels/act1/00031_1.gif"
+class="panel"
+alt="00031_1">
+
+<div style="height: 20px;"></div>
+
+<img src="../assets/panels/act1/00031_2.gif"
+class="panel"
+alt="00031_2">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+<p class="wa">-- windlessArtificer [WA]가 animatedHumorist [AH]를 트롤링하기 시작했다 --
+</p>
+
+<p class="wa" style="margin-top:12px; margin-bottom:12px;">WA: 야-</p>
+
+<p class="narration" style="margin-top:12px; margin-bottom:12px;">
+-- <span class="ah">animatedHumorist [AH]</span>는 여기 없어.
+진짜 없어.
+가 버렸다고.
+이름 옆의 빨간 점 뭐시기에도 귀찮게 하지 말라고 적혀 있네.
+알고 있지?
+당연히 알겠지.
+그런데도 넌 메시지를 보냈어.
+대체 뭐가 문제냐? --
+</p>
+
+<p class="wa">WA: 야-</p>
+<p class="wa">WA: 거기 있는 거 다 알아-</p>
+<p class="wa">WA: 넌 진짜 어디도 안 가잖아-</p>
+<p class="wa">WA: 전혀-</p>
+<p class="wa">WA: 한 번도-</p>
+<p class="wa">WA: 쉿-</p>
+<p class="wa">WA: 쉬이이이이이이이이이이이이이이이이이잇-</p>
+<p class="wa">WA: 이러다 너 부르다 숨 넘어가겠다-</p>
+<p class="wa">WA: 쉬-</p>
+<p class="wa">WA: 잇-</p>
+<p class="wa">WA: 거 봐-</p>
+<p class="wa">WA: 좀 나와 봐-</p>
+<p class="wa">WA: 진짜 중요한 질문이 있단 말이야-</p>
+<p class="wa">WA: 나한테 이러기냐-</p>
+
+<p class="ah">
+AH: XDXD 너한테 그럴 수 있을 뿐만 아니라, 거의 항상 그러고 있다고 확신하는데. XDXD
+</p>
+
+<p class="wa">WA: 오 다행이다- 거기 있었네-</p>
+<p class="wa">WA: 너 평소 말투만큼 우울해질 뻔했잖아-</p>
+<p class="wa">WA: 멍-</p>
+
+<p class="ah">
+AH: XDXD 내 텍스트가 여기서도 알아서 설명해 줄 거라고 생각하는데. 이번 상황을 위해 터무니없이 질질 끌고 거친 목소리를 하나 상상해 봐. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 그 목소리가 바로 나다. XDXD
+</p>
+
+<p class="wa">WA: 알았어-</p>
+
+<p class="ah">
+AH: XDXD 이제 내 말 위에 그 목소리를 덧씌워서 상상해 봐. 그리고 그게 끝나면, 같은 쉰 목소리인데 훨씬 덜 정돈되어 있고, 내 스트레스 중추가 단 한 번의 묵직한 고동만으로도 네 쪽을 향해 폭발할 지경이라는 것도 상상해 봐. 그러면 다음 문장이 네 텅 빈 캔버스 같은 정신을 가로지르며 상식 한 아름을 네 면상에 철썩 들이칠 거다. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 흠흠. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 좀 내버려 둬. 난 곧 죽을 예정이고, 마지막 기억이 네 짧고 단답형에 가까운 폐 찌꺼기 같은 말들이 되는 건 사양이거든. XDXD
+</p>
+
+<p class="wa">WA: 그래도 말이야-</p>
+<p class="wa">WA: 내 중요한 질문은 어쩌고-?</p>
+<p class="wa">WA: 아니 진짜로- 꽤 중요한 거란 말이야-</p>
+
+<p class="ah">
+AH: XDXD 그래 봤자 여전히 짧고 단답형인 미니멀리즘 폐 찌꺼기 범주를 벗어나지 못하는데. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 거기에 가래 조금이랑 거친 기침 정도만 추가된 수준이려나? XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 누가 알겠냐, 너한테는 언제나 탐구할 무한한 가능성이 있으니까! XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 다시 말해 그 가능성은 손에 꼽을 정도로 적고, 넌 놀라울 만큼 단조로운 녀석이라는 뜻이다. XDXD
+</p>
+
+<p class="ah" style="margin-bottom:12px;">
+AH: XDXD 그렇게 대단하고 중요한 얘기를 꺼내기 전에, 캐릭터성이라는 것부터 좀 배워 오도록 해라. XDXD
+</p>
+
+<p class="wa">WA: 그래 그래 드라마 분출기 씨- 좋은 말씀이고 다 맞는데-</p>
+<p class="wa" style="margin-bottom:12px;">
+WA: 근데 아크젯-</p>
+<p class="wa">WA: 잘 들어-</p>
+
+<p class="ah">AH: XDXD 뭔데. XDXD</p>
+
+<p class="wa">WA: 잘 들어-</p>
+
+<p class="ah">AH: XDXD 뭔데. XDXD</p>
+
+<p class="wa">WA: 잘 들어-</p>
+
+<p class="ah" style="margin-bottom:12px;">
+AH: XDXD 뭐냐고. XDXD
+</p>
+
+<p class="wa">WA: 나랑 UK가 게임 인원이 하나 부족하거든-</p>
+<p class="wa">WA: 같이 하자-</p>
+
+<p class="ah">
+AH: XDXD 그건 질문이 아니라 진술문이었는데. XDXD
+</p>
+
+<p class="ah" style="margin-bottom:12px;">
+AH: XDXD 그리고 무슨 게임? XDXD
+</p>
+
+<p class="wa">WA: Anthropormunicipality-</p>
+<p class="wa">WA: 내가 무슨 다른 게임 얘기라도 하겠냐-</p>
+
+<p class="ah">AH: XDXD 그 다각형 덩어리 같은- XDXD</p>
+
+<p class="ah">AH: XDXD 으으. XDXD</p>
+
+<p class="ah">AH: XDXD 좋아, 잘 들어라. XDXD</p>
+
+<p class="ah">
+AH: XDXD 난 너희 게임에 참가할 생각이 없고, 네가 네 시간을 낭비하든 말든 관심도 없다. 왜냐하면 나는 내 시간과 내 걱정을, 비극적으로 끝장나기 직전인 내 삶에 쏟고 있기 때문이다. XDXD
+</p>
+
+<p class="ah" style="margin-bottom:12px;">
+AH: XDXD 참고로 말이지. 내가 평소처럼 "안녕 꺼져" 정도로 끝내지 않고 이렇게 길게 답해 준 유일한 이유는, 정말 말 그대로 유일한 이유는, 이 일을 목격해 줄 사람이 필요했기 때문이다. XDXD
+</p>
+
+<p class="wa" style="margin-bottom:12px;">
+WA: 야 설마 진심이냐-?
+</p>
+
+<p class="ah">
+AH: XDXD 아주 진지하다고 말하고 싶지만, 그러기엔 내가 너무 정확하게 맞아떨어져 버리거든. XDXD
+</p>
+
+<p class="wa">WA: 난 그냥 네 평소 모습인 줄 알았지- 과장도 적당히 없는-</p>
+<p class="wa">WA: 늘 하던 고통과 비탄 타령 말이야- 알잖아-</p>
+<p class="wa">WA: 근데 진짜로 진심인 거라면- 무슨 일인지 말해 줘야지-</p>
+<p class="wa">WA: 난 어둠 속에서 살긴 해도- 거기에 내버려지는 건 안 좋아한다고-</p>
+<p class="wa" style="margin-bottom:12px;">WA: 멍-</p>
+
+<p class="ah">
+AH: XDXD 나도 모르겠다. 불길하기 짝이 없는 죽음의 망토를 두른 형체 하나가 내 창문에 퇴적물 덩어리를 던졌거든. 나는 그걸 나노눈깜짝할 사이 동안 봤고, 그 뒤로는 사라져 버렸다. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 나는 네가 가진 특유의 눈치 없음으로 방해하기 전까지는 전문가답게 책상 밑에 숨어 있으려고 노력하고 있었다. XDXD
+</p>
+
+<p class="ah" style="margin-bottom:12px;">
+AH: XDXD 이제 내 흩뿌려진 생명 색소의 일부는 네 손에 묻게 될 거다. 그리고 그때 네 손에 접착제가 묻어 있다면, 맹세코 그건 저절로 산성으로 변할 거야. XDXD
+</p>
+
+<p class="wa">WA: 뭐- 곧 다시 연락이 없으면 죽은 걸로 알겠다-</p>
+<p class="wa">WA: 그리고 시체가 아직 거기 있으면 내가 가서 수습해 줄게-</p>
+<p class="wa">WA: 뭔가 멋진 걸 만들어 보지 뭐-</p>
+<p class="wa">WA: 물론 장담은 못 하지만-</p>
+<p class="wa" style="margin-bottom:12px;">
+WA: 널 쫓는 놈이 네 시체로 뭘 하려는 거라면- 그건 나도 어쩔 수 없고-
+</p>
+
+<p class="ah">
+AH: XDXD 완벽하군. 지금까지 네가 내게 한 말 중 가장 완벽한 말이다. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 하지만 부탁 하나만 들어줘. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 그게 PO가 아니라는 건 확실히 알고 있으니까, 만약 내가 이름도 없이 사라지게 된다면 그녀에게 마침내 훼손 요정이 오랫동안 바라던 소원을 이뤄 줬다고 전해 줘라. XDXD
+</p>
+
+<p class="ah">
+AH: XDXD 아무튼 난 이제 정말 간다. XDXD
+</p>
+
+<p class="ah" style="margin-bottom:12px;">
+AH: XDXD 잘 있어. XDXD
+</p>
+
+<p class="wa">WA: 그래-</p>
+<p class="wa">WA: 근데 하나만 더-</p>
+<p class="wa">WA: 진짜 금방 끝나-</p>
+<p class="wa" style="margin-bottom:12px;">WA: 접착제 있냐-?</p>
+
+<p class="ah">
+AH: XDXD 없어. 그리고 네가 그걸 뒤집어쓰고 뒹구는 버릇만 좀 고치면 좀 남겨 둘 수도 있겠지. XDXD
+</p>
+
+<p class="narration" style="margin:12px 0;">
+-- <span class="ah">animatedHumorist [AH]</span>가
+<span class="wa">windlessArtificer [WA]</span> 트롤링을 포기했다 --
+</p>
+
+<p class="wa">
+WA: 젠장-
+</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00032.html" class="next-link">
+        &gt; 아크젯: 혹시 모르니 창문을 다시 확인한다.
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00030.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

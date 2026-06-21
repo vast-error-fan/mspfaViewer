@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>0004</title>
-<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<title>00010</title>
+/*<link rel="shortcut icon" href="../assets/ve_favicon.ico">*/
 <style>
 
 body{
@@ -38,9 +38,9 @@ monospace;
 font-size:clamp(22px, 4vw, 29px);
 
 font-family:
-"Courier New",
-    "Noto Sans KR",
-    sans-serif;
+"Malgun Gothic",
+Georgia,
+serif;
 
 font-weight:600;
 
@@ -234,13 +234,13 @@ white-space:nowrap;
 
 <span class="nav-group">
 
-<a class="nav-purple" href="../index.html">홈</a>
+/*<a class="nav-purple" href="../index.html">홈</a>*/
 
 </span>
 
-<img
+/*<img
 src="../assets/nav-etchelizer.png"
-class="nav-icon">
+class="nav-icon">*/
 
 <span class="nav-group">
 
@@ -256,9 +256,9 @@ class="nav-icon">
 
 </span>
 
-<img
+/*<img
 src="../assets/nav-etchelizer.png"
-class="nav-icon">
+class="nav-icon">*/
 
 <span class="nav-group">
 
@@ -274,9 +274,9 @@ class="nav-icon">
 
 </span>
 
-<img
+/*<img
 src="../assets/nav-etchelizer.png"
-class="nav-icon">
+class="nav-icon">*/
 
 <span class="nav-group">
 
@@ -300,28 +300,16 @@ class="nav-icon">
 
 <div class="page">
 
-<h1 class="page-title">다시 시도한다.</h1>
+    <h1 class="page-title">본문 제목</h1>
 
-<img
-src="../assets/panels/act1/00004.gif"
-class="panel"
-alt="0004">
+    <img src=" /* ../assets/panels/act1/0000N.gif */"
+    class="panel"
+    alt="00010">
 
-<div class="story">
+    <div class="story"></div>
 
-<p>
-세상에, 그가 완전히 옳았다. 아니, 옳았다는 말로는 부족하다.
-당신은 어떻게 해냈는지는 몰라도, 이전 시도보다도 훨씬 더 끔찍한 결과를 만들어 냈다. 솔직히 말해, 그런 일이 가능하다는 사실 자체가 놀라울 지경이다.
-</p>
-
-<p>
-좋다. 더 이상의 망신이 벌어지기 전에, 이제는 그의 진짜 이름을 밝혀내는 일로 넘어가도록 하자.
-</p>
-
-</div>
-
-    <a href="0005.html" class="next-link">
-        &gt; ======>
+    <a href="00011.html" class="next-link">
+        &gt; 다음 제목 입력;
     </a>
 
     <div class="footer-links">
@@ -329,7 +317,7 @@ alt="0004">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="0003.html">뒤로 가기</a>
+            <a href="0009.html">뒤로 가기</a>
         </div>
 
     </div>
