@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00010</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.next-link{
+
+display:block;
+
+margin:15px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.log-title{
+    display:block;
+    margin:20px auto 25px;
+    image-rendering:pixelated;
+}
+
+.log-divider{
+    width:86%;
+    margin:0 auto 12px;
+    border:none;
+    border-top:1px solid #a8a8a8;
+}
+
+.latest-pages{
+    width:90%;
+
+    margin-left:45px;
+
+    margin-right:auto;
+
+    border-collapse:collapse;
+
+    font-family:
+        Verdana,
+        Arial,
+        sans-serif;
+    
+       font-family:
+        Verdana,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    text-align:left;
+
+    line-height:1.1;
+    
+}
+
+.latest-pages td{
+    padding:0;
+    vertical-align:top;
+    text-align:left;
+    padding-bottom:4px;
+}
+
+.latest-pages td:first-child{
+    width:78px;
+    white-space:nowrap;
+    color:#000;
+}
+
+.latest-pages a{
+    color:#0000ff;
+    text-decoration:underline;
+}
+
+.latest-pages a:visited{
+    color:#0000ff;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="#">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="#">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <img
+    src="../assets/latestpages.png"
+    class="log-title"
+    alt="Latest Pages">
+
+    <hr class="log-divider">
+
+    <div class="story">
+
+<div class="log-content">
+
+<table class="latest-pages">
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00106.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00105.html">"그리고 얼마 지나지 않아..."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00104.html">"알비온: 타즈에게 대답하자."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00103.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00102.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00101.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00100.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00099.html">"알비온: 스코르페를 실행한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00098.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00097.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00096.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00095.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00094.html">"알비온: 명상한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00105.html">"알비온: 아스트랄 프로젝터를 사용한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00092.html">"알비온: 아스트랄 프로젝터를 꺼낸다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00091.html">"알비온: 스피로그래프 모더스를 연다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00090.html">"알비온: 타즈의 메시지를 받는다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00089.html">"알비온: 점액 웅덩이를 감상한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00088.html">"알비온: 탁자 위의 두루마리를 읽는다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00087.html">"알비온: 무드 링을 확인한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00086.html">"이름을 입력하자."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00085.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00084.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00083.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00082.html">"아크젯: 그림을 살펴본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00080.html">"[S] 아크젯: 추스른다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00079.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00078.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00077.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00076.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00075.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00074.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00073.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00072.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00071.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00070.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00069.html">"타즈: 끼에에에엑의 정체를 확인한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00068.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00067.html">"타즈: 우승 전리품들을 감상한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00066.html">"타즈: 스맥다운을 전개한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00065.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00064.html">"타즈: 바를 살펴본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00063.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00062.html">"타즈: 아래층으로 내려간다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00061.html">"타즈: 상태를 "질림"으로 변경한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00060.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/23 -</td>
+    <td><a href="00059.html">"타즈: 트롤에게 대답하자."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00058.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00057.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00056.html">"타즈: 피해 상황을 확인한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00055.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00054.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00053.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00052.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00051.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00050.html">"타즈: 광폭의 직조자를 사용한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00049.html">"타즈: 무기 진열장을 살펴본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00048.html">"타즈: 헐크 호건 포스터를 우러러본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00047.html">"타즈: THE ROCK을 쓰다듬는다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00046.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00045.html">"이름을 입력하자."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00044.html">"걱정하지 마라. 보다시피..."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00043.html">"푸른 녀석이 된다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00042.html">"아크젯: 침울해한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00041.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00040.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00039.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00038.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00037.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00036.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00035.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00034.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00033.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00032.html">"아크젯: 혹시 모르니 창문을 다시 확인한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00031.html">"아크젯: 트롤에게 대답하자."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00030.html">"아크젯: 컴퓨터를 살펴본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00029.html">"아크젯: 숨는 도중 방해받자."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00028.html">"아크젯: 일어나서 책상 밑에 숨어."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00027.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00026.html">"아크젯: 비명지르자."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00025.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00024.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00023.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00022.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00021.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00020.html">"아크젯: '팅' 소리를 조사한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00019.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00018.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00017.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00016.html">"아크젯: 선반 위의 책을 살펴본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00015.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00014.html">"======>"</a></td>
+</tr>
+
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00013.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00012.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00011.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="00010.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0009.html">"아크젯: 다트판에 붙어 있는 사진을 향해 과장되게 몸을 홱 돌린 뒤 노려본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0008.html">"아크젯: 코드 레드 캔을 쌓아 올린 뒤 스컬타이탄처럼 밀고 지나간다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0007.html">"아크젯: 포스터를 살펴본다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0006.html">"아크젯: 바닥에 널브러진 이 쓰레기들을 전부 치운다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0005.html">"======>"</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0004.html">"다시 시도한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0003.html">"이름을 입력한다."</a></td>
+</tr>
+
+<tr>
+    <td>2026/06/21 -</td>
+    <td><a href="0002.html">"시작."</a></td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
