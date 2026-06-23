@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00059</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:15px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.uk{
+    color:#510049;
+}
+
+.po{
+    color:#39017f;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="#">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="#">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">타즈<span class="colon">:</span> 트롤에게 대답하자.</h1>
+
+    <img src="../assets/panels/act1/00059.gif"
+class="panel"
+alt="00059">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+<span class="uk">-- unclaspedKahuna [UK]</span>가 <span class="po">perniciousOverkill [PO]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="uk">UK: &gt;([어이이이이 광대 녀석 뭐 하냐]</p>
+
+<p class="uk">UK: &gt;([정신 단단히 붙들어 매고 덜렁이는 것들부터 집어넣는 게 좋을 거다 이 자식아]</p>
+
+<p class="uk">UK: &gt;([왜냐면 내가 네 머릿속에 존나 큰 불을 질러 버릴 점화 장치를 손에 넣었거든]</p>
+
+<p class="uk">UK: &gt;([준비됐으면 슬슬 폭주할 준비나 하라고]</p>
+
+<p class="po">PO: ~정말로 +ㅔ가 원할 때마다 +ㅏ한테 메시지를 보내도 된다고 생각하는 거냐?~</p>
+
+<p class="po">PO: ~내+ㅏ 정확히 이런 짓을 못 하게 하려고 이 상태로 설정해 뒀다는 건 분명해 보이는데.~</p>
+
+<p class="po">PO: ~그런데도 넌 결국 보냈지.~</p>
+
+<p class="po">PO: ~내+ㅏ 마침 여기 있어서 이걸 본 걸 다행으로 알아라.~</p>
+
+<p class="po">PO: ~난 방금 중요+한 일을 처리하러 가려던 참이었고, 한동안은 네게 답장할 수도 없었을 거다.~</p>
+
+<p class="po">PO: ~그랬으면 넌 혼자서 뭘 하고 있었을 셈이지?~</p>
+
+<p class="uk">UK: &gt;([좋아 다 끝났냐]</p>
+
+<p class="po">PO: ~뭐라고.~</p>
+
+<p class="po">PO: ~아니, 안 끝났다.~</p>
+
+<p class="po">PO: ~내+ㅏ 안 끝났다는 게 뻔히 보이는데 왜 좀 기다릴 생각을 안 하는 건데.~</p>
+
+<p class="po">PO: ~난 방해받을 생각도 없었고 기대한 적도 없었다.~</p>
+
+<p class="po">PO: ~그러니 넌 그 결과를 감당하게 될 거다.~</p>
+
+<p class="uk">UK: &gt;([그래 다 끝난 거네 그럼 난 계속 떠들란다 지금은 내 차례니까]</p>
+
+<p class="po">PO: ~세상에.~</p>
+
+<p class="po">PO: ~씨발.~</p>
+
+<p class="po">PO: ~알겠다 그래.~</p>
+
+<p class="uk">UK: &gt;([아무튼 내가 드디어 평생의 업적을 완성했어]</p>
+
+<p class="uk">UK: &gt;([몇 스윕 동안 해독하고 분석하고 이상하게 생긴 돌멩이들을 뒤져 가며 찾아다닌 끝에]</p>
+
+<p class="uk">UK: &gt;([이게 진짜 존나 큰 건수였다는 확신을 얻었단 말이지]</p>
+
+<p class="uk">UK: &gt;([아 그리고 돌들한텐 악감정 없다 작은 친구한테도 내가 그렇다고 전해 줘]</p>
+
+<p class="po">PO: ~그래서???~</p>
+
+<p class="uk">UK: &gt;([ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ]</p>
+
+<p class="uk">UK: &gt;([야 아직도 내가 보여 주는 큰 그림을 못 보고 있구만]</p>
+
+<p class="uk">UK: &gt;([내가 지금 사진을 마구 던지고 비비고 문지르고 내 명성까지 처발라 가며 설명하고 있는데]</p>
+
+<p class="uk">UK: &gt;([넌 거기서 무표정하게 서 있기만 하잖냐]</p>
+
+<p class="uk">UK: &gt;([좀 일하게 해 줘라 이 광대년아]</p>
+
+<p class="po">PO: ~내+ㅏ 보고 싶은 그림은 +ㅔ가 대체 무슨 개소리를 하고 있는지 설명해 주는 그 그림인데?~</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00060.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00058.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

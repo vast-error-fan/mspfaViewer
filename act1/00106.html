@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00106</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:15px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.dq{
+    color:#407d00;
+}
+
+.po{
+    color:#39017f;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="#">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="#">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act1/00106.gif"
+class="panel"
+alt="00106">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="po">PO: ~씨발, 이+ㅔ 대체 왜 중요한 +ㅓ+ㅑ???~</p>
+
+<p class="po">PO: ~오늘 하루 종일 누구 하+ㅏ 제대로 된 설명을 한 적이 없고, 슬슬 미치겠다.~</p>
+
+<p class="po">PO: ~+ㅐ+ㅏ 뭘 하라는 건지는 하+ㅏ도 모르겠다. 다만 어쨌든 참여해야 한다는 것만 알겠군.~</p>
+
+<p class="po">PO: ~+ㅐ 쪽에서 뭐라도 굴러+ㅏ+ㅔ 하려면 좀 더 명확한 설명이 절실하다.~</p>
+
+<p class="po">PO: ~그 정도만 해 줄 수 있고, 내+ㅏ 듣+ㅣ에 빌어먹+ㅔ도 합리적인 설명이라면...~</p>
+
+<p class="po">PO: ~생각은 해 보겠다.~</p>
+
+<p class="po">PO: ~하지만 이유는 알고 싶다.~</p>
+
+<p class="dq">DQ: *정말로*</p>
+
+<p class="dq">DQ: *분명히*해야*할*건*단*하나뿐이야*.</p>
+
+<p class="dq">DQ: *오늘*밤*</p>
+
+<p class="dq">DQ: *우리가*알고*있는*세상은*끝나게*될*거야*.</p>
+
+<p class="dq">DQ: *그리고*융합을*마친*뒤에*</p>
+
+<p class="dq">DQ: *내가*너를*구할*거야*.</p>
+
+<p class="dq">DQ: *우리*친구들도*.</p>
+
+<p class="dq">DQ: *그리고*우리*종족에게*남아*있는*얼마*안*되는*사람들도*.</p>
+
+<p class="dq">DQ: *새롭게*얻게*될*본질로*말이야*.</p>
+
+<p class="dq">DQ: *사실*이제는*작별*인사를*하고*있어야*할지도*몰라*.</p>
+
+<p class="dq">DQ: *왜냐하면*머지않아*</p>
+
+<p class="dq">DQ: *나는*더*이상*지금의*내가*아니게*될*테니까*.</p>
+
+<p class="po">PO: ~그래.~</p>
+
+<p class="dq">DQ: *그래*?*</p>
+
+<p class="po">PO: ~그래.~</p>
+
+<p class="po">PO: ~설명은 해 줬잖+ㅏ. 솔직히 +ㅐ+ㅏ 원한 것도 결국 그+ㅓ였고.~</p>
+
+<p class="po">PO: ~아직도 무슨 소린지는 하나도 모르겠지만.~</p>
+
+<p class="po">PO: ~믿기지도 않고.~</p>
+
+<p class="po">PO: ~하지만 이건 지금까지 들은 것들 중에서는 그+ㅏ마 설명이라고 부를 만한 거다.~</p>
+
+<p class="dq">DQ: *네가*보여*주는*무심한*태도가*걱정되기*시작했어*.</p>
+
+<p class="dq">DQ: *이*일이*진지하게*받아들여졌으면*좋겠어*.</p>
+
+<p class="dq">DQ: *정말*말*그대로*생사가*걸린*문제거든*.</p>
+
+<p class="dq">DQ: *행성*전체의*규모로*말이야*.</p>
+
+<p class="dq">DQ: *그리고*이번만큼은*네*도움과*협조가*필요해*.</p>
+
+<p class="dq">DQ: *네*반응이*이렇게까지*</p>
+
+<p class="dq">DQ: *미적지근해서는*안*됐어*.</p>
+
+<p class="po">PO: ~내+ㅏ 그런 소리를 듣고 대체 어떤 반응을 보이길 +ㅣ대한 +ㅓ+ㅑ?~</p>
+
+<p class="po">PO: ~갑자+ㅣ 뜬금없이 세상이 곧 무너질 거고, 넌 어떻게든 사라질 +ㅓ라고 말해 놓고는.~</p>
+
+<p class="po">PO: ~그러면서도 내+ㅏ 순순히 따라와 주길 +ㅣ대한다는 건 엄청난 요구다.~</p>
+
+<p class="po">PO: ~+ㅔ다+ㅏ 내+ㅏ 그걸 씨발 이해조차 못 하고 있는데.~</p>
+
+<p class="po">PO: ~너도 알잖아. 내+ㅏ 그런 운명론적인 +ㅐ소리는 믿지 않는다는 +ㅓ.~</p>
+
+<p class="po">PO: ~사실은 +ㅓ한테 완전히 폭발하지 않으려고 있는 힘껏 참고 있었는데, +ㅔ가 하는 말은 진짜 말도 안 돼.~</p>
+
+<p class="po">PO: ~뭔가 진짜로 벌어지고 있다면 내+ㅏ 널 버리고 갈 리는 없겠지.~</p>
+
+<p class="po">PO: ~하지만 넌 대체 어떤 도움을 원하는 +ㅓ+ㅑ?~</p>
+
+<p class="po">PO: ~넌 +ㅓ의 +ㅏ한테 도움을 필요로 하지도 않잖아. 적어도 이렇+ㅔ 중요한 일에서는.~</p>
+
+<p class="po">PO: ~넌 언제+ㅏ 모든 일을 완벽하+ㅔ 해+ㅐ고 있고.~</p>
+
+<p class="po">PO: ~+ㅓ는 너무 완벽해.~</p>
+
+<p class="po">PO: ~어떤 의미에서는 그+ㅔ 특별할 정도로 무서울 지경이다.~</p>
+
+<p class="po">PO: ~하지만 +ㅔ가 하려는 말에는 전혀 동의할 수 없다.~</p>
+
+<p class="po">PO: ~그리고 그냥 드러누워서 받아들일 생각도 없다.~</p>
+
+<p class="po">PO: ~대체 내+ㅏ 뭘 하길 바라는 +ㅓ+ㅑ?~</p>
+
+<p class="dq">DQ: *나는*네가*나를*믿어*주길*바라*.</p>
+
+<p class="dq">DQ: *그리고*내가*하려는*말을*들어*주길*바라*.</p>
+
+<p class="dq">DQ: *하지만*더*이상*시간이*없어*.</p>
+
+<p class="dq">DQ: *그들은*우리를*기다려*주지*않을*거야*.</p>
+
+<p class="dq">DQ: *그러니*이제*널*떠나야*해*.</p>
+
+<p class="dq">DQ: *하지만*약속할게*.</p>
+
+<p class="dq">DQ: *생각보다*훨씬*빨리*다시*만나게*될*거야*.</p>
+
+<p class="dq">DQ: *비록*그게*진정한*의미의*내가*아니더라도*.</p>
+
+<p class="dq">DQ: *알라비다*.</p>
+
+<p class="dq">DQ: *&lt;&gt;*</p>
+
+<p class="narration">
+-- <span class="dq">demiurgeQuantified [DQ]</span>가 <span class="po">perniciousOverkill [PO]</span> 트롤링을 그만두었다 --
+</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00107.html" class="next-link">
+        &gt; ======>
+
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="000105.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
