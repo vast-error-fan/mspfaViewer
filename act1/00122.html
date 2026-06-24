@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00073</title>
+<title>00122</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -227,6 +227,56 @@ white-space:nowrap;
 
 }
 
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.uk{
+    color:#510049;
+}
+
 </style>
 
 </head>
@@ -306,27 +356,61 @@ class="nav-icon">
 
     <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act1/00073.gif"
+    <img src="../assets/panels/act1/00122.gif"
 class="panel"
-alt="00073">
+alt="00122">
 
 <div class="story">
 
-<p>
-당신의 루서스는 두 사람의 관계를 완전히 거꾸로 이해하고 있다.
-</p>
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
 
 <p>
-그녀는 스스로를 당신의 하이브의 반(半)수생 여왕이라고 생각한다.
-당신의 여왕이자, 내친김에 행성 전체의 여왕이라고도 생각한다.
-모든 것은 그녀의 소유물이다.
-심지어 당신이 다음번 의무적인 희생 제물이 필요해질 때를 대비해
-요새에 따로 보관해 두었던 다음 경기 상대까지도.
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="gd">GD: 그래, 알아///</p>
+
+<p class="gd">GD: 네 도박질 과거/\ㅏ는 지겹도록 잘 알거든///</p>
+
+<p class="gd">GD: 지난 두 /\ㅡ윕 동안 내 골칫거리 대\/ㅜ분이 그거랑 엮여 있었는데 모를 /\ㅜ가 있겠냐///</p>
+
+<p class="gd">GD: 네가 매일같이 늘어놓는 잡/\ㅗ리의 세부 사항까지 전\/ㅜ 기억하는 건 아니지만, 그때 네가 억지로 /\ㅣ켰던 일들을 잊을 만큼 멍청하진 않아///</p>
+
+<p class="gd">GD: 요즘은 그나마 조금 나아지긴 했지///</p>
+
+<p class="gd">GD: 하지만 솔직히 말해서?///</p>
+
+<p class="gd">GD: 난 아직도 지옥 속에 살고 있는 기분이다///</p>
+
+<p class="gd">GD: 아무튼///</p>
+
+<p class="gd">GD: 그 역/\ㅏ /\ㅜ업은 필요 없어///</p>
+
+<p class="gd">GD: 네가 애초에 말하려던 중요한 정\/ㅗ나 좀 꺼내 줬으면 좋겠는데///</p>
+
+<p class="uk">UK: >([끊지 마 이건 중요한 인대 부분이라고]</p>
+
+</div>
+
 </p>
 
 </div>
 
-    <a href="00074.html" class="next-link">
+</div>
+
+</div>
+
+    <a href="00123.html" class="next-link">
         &gt; ======>
     </a>
 
@@ -335,12 +419,36 @@ alt="00073">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00072.html">뒤로 가기</a>
+            <a href="00121.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
 
 </body>
 </html>

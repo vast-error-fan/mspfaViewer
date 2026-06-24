@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00073</title>
+<title>00125</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -227,6 +227,56 @@ white-space:nowrap;
 
 }
 
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.uk{
+    color:#510049;
+}
+
 </style>
 
 </head>
@@ -306,27 +356,75 @@ class="nav-icon">
 
     <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act1/00073.gif"
+    <img src="../assets/panels/act1/00125.gif"
 class="panel"
-alt="00073">
+alt="00125">
 
 <div class="story">
 
-<p>
-당신의 루서스는 두 사람의 관계를 완전히 거꾸로 이해하고 있다.
-</p>
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
 
 <p>
-그녀는 스스로를 당신의 하이브의 반(半)수생 여왕이라고 생각한다.
-당신의 여왕이자, 내친김에 행성 전체의 여왕이라고도 생각한다.
-모든 것은 그녀의 소유물이다.
-심지어 당신이 다음번 의무적인 희생 제물이 필요해질 때를 대비해
-요새에 따로 보관해 두었던 다음 경기 상대까지도.
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="gd">GD: 상황에 대한 독점 정\/ㅗ라는 걸 죄다 쥐고 있는 게 너 하나뿐이고, 뭘 해야 하는지도 너만 알고 있다면///</p>
+
+<p class="gd">GD: 대체 왜 내가 여기에 끼어들어야 하는 건데?///</p>
+
+<p class="gd">GD: 넌 무슨 일을 하든 꼭 날 끌고 들어가야만 적성이 풀리냐?///</p>
+
+<p class="gd">GD: 이번에는 또 뭘 /\ㅣ키려고 이러는 건데///</p>
+
+<p class="uk">UK: >([내가 하려는 건 네 불쌍한 목숨을 또 한 번 이 순환에서 건져내는 거야]</p>
+
+<p class="uk">UK: >([너뿐만 아니라 여기 있는 불쌍하고 한심한 떨거지들 전부 말이지]</p>
+
+<p class="uk">UK: >([우린 이 탈출구를 타고 이 엉망진창에서 빠져나갈 거거든]</p>
+
+<p class="uk">UK: >([그리고 넌 날 그 한가운데까지 밀어 넣어 줄 핵심 인물이야]</p>
+
+<p class="uk">UK: >([사실 머지않아 넌 나랑 똑같아질 거고]</p>
+
+<p class="uk">UK: >([너희 전부가 그렇게 될 거야]</p>
+
+<p class="uk">UK: >([하지만 지금 당장은 내가 사람들을 올바른 방향으로 밀어 줘야 하거든]</p>
+
+<p class="uk">UK: >([뭐 그건 네가 걱정할 일은 아니고]</p>
+
+<p class="uk">UK: >([이미 수천 개의 톱니바퀴가 돌아가기 시작했고, 관련된 놈들 대부분도 이미 더미 속에 밀어 넣어 놨어]</p>
+
+<p class="uk">UK: >([지금은 말이지, 우리가 함께하게 될 꿈의 삶에 들어가기 전에]</p>
+
+<p class="uk">UK: >([네가 꿈꾸던 삶부터 먼저 준비해 주고 있는 거야]</p>
+
+<p class="uk">UK: >([그러니까 빨리 와라, D]</p>
+
+<p class="gd">GD: 거의 다 왔어///</p>
+
+<p class="gd">GD: 별 /\ㅣ답잖은 거면 진짜 죽는다.///</p>
+
+</div>
+
 </p>
 
 </div>
 
-    <a href="00074.html" class="next-link">
+</div>
+
+</div>
+
+    <a href="00126.html" class="next-link">
         &gt; ======>
     </a>
 
@@ -335,12 +433,36 @@ alt="00073">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00072.html">뒤로 가기</a>
+            <a href="00124.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
 
 </body>
 </html>

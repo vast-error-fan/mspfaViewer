@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00124</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:15px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.uk{
+    color:#510049;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act1/00124.gif"
+class="panel"
+alt="00124">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="gd">GD: 그래, 이제야 좀 기억이 나네///</p>
+
+<p class="gd">GD: 처음 들었을 때도 지금만큼이나 말도 안 되는 /\ㅗ리였던 것 같은데///</p>
+
+<p class="gd">GD: 그래서 이게 우리가 죽는다는 거랑 정확히 무슨 상관이 있다는 건데?///</p>
+
+<p class="uk">UK: >([지금 말하려고 하잖냐]</p>
+
+<p class="gd">GD: 그럼 좀 더 빨리 말하면 안 되냐?///</p>
+
+<p class="gd">GD: 그렇게 급하고 중요한 일이라고 떠들어 놓고는 정작 네놈은 느긋하게 /\ㅣ간 끌면서 내 /\ㅣ간까지 낭비하고 있잖아///</p>
+
+<p class="uk">UK: >([넌 아직 여기 오지도 않았으면서 뭘 그렇게 난리냐 이 개입술아]</p>
+
+<p class="gd">GD: 내가 간다고 가정하는 이유가 뭐지?///</p>
+
+<p class="uk">UK: >([왜냐면 넌 결국 항상 나한테 들이대니까]</p>
+
+<p class="uk">UK: >([그렇게 이것저것 요구는 많으면서도 평소랑 다르게 행동하는 법은 거의 없지]</p>
+
+<p class="gd">GD: 역겨운 새끼///</p>
+
+<p class="gd">GD: 그리고 넌 아직도 무슨 일이 벌어지는 건지 제대로 설명 안 했어///</p>
+
+<p class="gd">GD: 그 얘기로 돌아가///</p>
+
+<p class="gd">GD: 등신아///</p>
+
+<p class="uk">UK: >([일단 난 우리가 정확히 그런 식으로 죽는다고는 한 적 없거든]</p>
+
+<p class="uk">UK: >([그냥 네가 내 말 안 들으면 죽는다고 한 거지]</p>
+
+<p class="uk">UK: >([세상 나머지 전부랑 같이 말이야]</p>
+
+<p class="uk">UK: >([완전 다른 얘기지]</p>
+
+<p class="uk">UK: >([아무튼 내가 해독한 메시지는 생각보다 단순했어]</p>
+
+<p class="uk">UK: >([적어도 핵심만 따지면 말이지]</p>
+
+<p class="uk">UK: >([물론 마지막으로 그 녀석이 TV 화면 너머로 찾아왔을 땐]</p>
+
+<p class="uk">UK: >([실존주의 공포광들이 환장할 만한 오싹한 개소리를 한 무더기 쏟아내긴 했어]</p>
+
+<p class="uk">UK: >([아마 그게 날 상대로 계획한 이 행성 규모 순회 개그쇼의 마지막 농담에 더 가까웠던 것 같고]</p>
+
+<p class="uk">UK: >([근데 요점은 간단해]</p>
+
+<p class="uk">UK: >([이 세계는 곧 뒤집혀서 구덩이 속으로 말려 들어갈 거야]</p>
+
+<p class="uk">UK: >([그리고 그 구덩이들은 우리 삶을 핥아먹고 또 핥아먹어서]</p>
+
+<p class="uk">UK: >([결국 우주 먼지랑 후회 말고는 아무것도 안 남게 만들 거고]</p>
+
+<p class="uk">UK: >([하지만]</p>
+
+<p class="uk">UK: >([괜찮은 이야기라면 다 그렇듯이]</p>
+
+<p class="uk">UK: >([상황이 개판으로 흘러가기 시작하면 빠져나갈 구멍 하나쯤은 준비되어 있거든]</p>
+
+<p class="uk">UK: >([우리가 결말 쪽으로 기어가고 있는 지금도 마찬가지고]</p>
+
+<p class="uk">UK: >([방법 자체는 전혀 현실적이지 않아]</p>
+
+<p class="uk">UK: >([근데 생각해 보면 우리 마지막 막도 딱히 현실적이진 않잖냐]</p>
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00125.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00123.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

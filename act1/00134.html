@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00134</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:15px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.boobdrone{
+    color:#510049;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act1/00134.gif"
+class="panel"
+alt="00134">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="gd">디스마스: 씨발 진짜///</p>
+
+<p class="gd">디스마스: 꼭 그렇게 급/\ㅗ를 후려쳐야만 했냐?///</p>
+
+<p class="gd">디스마스: 애초에 저 말도 안 되는 게 어떻게 이렇게 /\ㅔ게 후려치면/\ㅓ도 공중에 제대로 떠 있는 건데?///</p>
+
+<p class="gd">디스마스: 진짜 꼴도 보기 싫어///</p>
+
+<p class="gd">디스마스: 그것도 지금 내가 보고 있는 게 고작 렌즈 하나뿐이라는 게 더 열받고///</p>
+
+<p class="gd">디스마스: 저 싸구려 원격 조종 장난감 뒤에 숨어서 그런 치/\ㅏ한 짓을 해 놓고 아주 뿌듯하/\ㅣ겠지?///</p>
+
+<p class="gd">디스마스: 물론 놀랍지도 않아! 치/\ㅏ한 /\ㅜ작 말고 네가 잘하는 게 뭐가 있는데?///</p>
+
+<p class="gd">디스마스: 남 상처 쑤셔/\ㅓ 덧나게 만드는 거?</p>
+
+<p class="boobdrone">BOOBDRONE: >([우애앵 우애앵]</p>
+
+<p class="boobdrone">BOOBDRONE: >([지금 딱 네 소리다]</p>
+
+<p class="boobdrone">BOOBDRONE: >([그 기형적인 아가리 좀 다물면 내가 그럽비 주스라도 먹여서 네 끝없는 투덜거림을 좀 진정시켜 줄 방법을 찾아볼 텐데 말이야]</p>
+
+<p class="boobdrone">BOOBDRONE: >([마침 가슴 혹탱이에서 바로 뿜어내는 기막힌 장치도 있거든]</p>
+
+<p class="boobdrone">BOOBDRONE: >([빨아먹기 딱 좋게 말이야]</p>
+
+<p class="gd">디스마스: 그러고 싶어도 못 다물거든///</p>
+
+<p class="gd">디스마스: 방금 네가 상황을 더 엿같게 만들어 놨으니까///</p>
+
+<p class="gd">디스마스: 그리고 네가 뭘 들이밀든 간에 얌전히 들어가 있진 않을 거다///</p>
+
+<p class="gd">디스마스: 생각해 보니까 그게 딱 네가 내 인생에 해 온 짓들이랑 똑같네///</p>
+
+<p class="boobdrone">BOOBDRONE: >([난 네 생각보다 훨씬 많은 걸 해 줬거든 친구야]</p>
+
+<p class="boobdrone">BOOBDRONE: >([내가 내려 주는 정신의 선물들에 좀 더 감사하는 법을 배워 봐]</p>
+
+<p class="boobdrone">BOOBDRONE: >([그럼 남들은 모르는 지혜도 얻게 될 테니까]</p>
+
+<p class="boobdrone">BOOBDRONE: >([근데 지금 꼭 보여줘야 할 것 세 개 중에 둘은 꺼내보지도 않았는데 벌써 눈물부터 흘리고 있네]</p>
+
+<p class="boobdrone">BOOBDRONE: >([그건 네가 신경 쓰고 있다는 뜻이지]</p>
+
+<p class="boobdrone">BOOBDRONE: >([잠깐 널 오해했던 것 같기도 하고]</p>
+
+<p class="boobdrone">BOOBDRONE: >([이제야 말이 통하는 것 같은데]</p>
+
+<p class="boobdrone">BOOBDRONE: >([그러니까 이제 진짜 중요한 부분으로 넘어가도 되냐]</p>
+
+<p class="gd">디스마스: 대체 뭐가 그렇게 중요하다는 건데?///</p>
+
+<p class="gd">디스마스: 그래, 어디 한번 씨부려 봐///</p>
+
+<p class="gd">디스마스: 내가 왜 여기까지 기어 나와야 했는지 납득할 만한 이유를 하나라도 들어 보자고///</p>
+
+<p class="gd">디스마스: 지금까지 네가 \/ㅗ여 준 거라곤 기껏해야 조금쯤 쓸모 있을지도 모르는 정\/ㅗ 몇 조각이랑 면상 한 대 맞은 것뿐이거든///</p>
+
+<p class="gd">디스마스: 근데 그게 뭔지 난 아직 감도 안 잡히거든///</p>
+
+<p class="gd">디스마스: 아니, 하나는 알겠다///</p>
+
+<p class="gd">디스마스: 네가 개자식이라는 건 아주 똑똑히 알겠어///</p>
+
+<p class="gd">디스마스: 그리고 넌 아직도 우리가 대체 뭘 해야 하는지 설명도 안 하고 있잖아!///</p>
+
+<p class="gd">디스마스: 뭐냐? 극적인 공개라도 기다리는 거냐? 이 개/\ㅐ끼야?///</p>
+
+<p class="boobdrone">BOOBDRONE: >([당연하지 이건 그런 게 필요하거든]</p>
+
+<p class="gd">디스마스: 그 기계 손가락으로 드럼 롤 흉내 내는 짓 좀 그만해라///</p>
+
+<p class="boobdrone">BOOBDRONE: >([싫은데]</p>
+
+<p class="boobdrone">BOOBDRONE: >([조금만 더 분위기 올려 보자고]</p>
+
+<p class="boobdrone">BOOBDRONE: >([그으으으으으으으으으으리고]</p>
+
+<p class="boobdrone">BOOBDRONE: >([드디어 나왔습니다]</p>
+
+<p class="boobdrone">BOOBDRONE: >([자랑스럽게 발표하건대 우리는 이제]</p>
+
+<p class="boobdrone">BOOBDRONE: >([모두가 가 보려 했지만 아무도 돌아와 이야기를 전하지 못했던 곳으로 떠날 거다]</p>
+
+<p class="boobdrone">BOOBDRONE: >([행성 밖으로]</p>
+
+<p class="boobdrone">BOOBDRONE: >([저 너머보다도 더 먼 곳으로]</p>
+
+<p class="gd">디스마스: 그리고 그 쓸데없이 거창한 탈출이 끝나면 우린 정확히 어디로 가게 되는데?///</p>
+
+<p class="gd">디스마스: 저 밖에는 아무것도 없어///</p>
+
+<p class="gd">디스마스: 그건 다들 알고 있는 /\ㅏ실이고///</p>
+
+<p class="gd">디스마스: '저 너머'로 향한 탐/\ㅏ대들은 전\/ㅜ 실패했어///</p>
+
+<p class="gd">디스마스: 떠다니는 /\ㅣ체들만 잔뜩 남겼을 뿐이라고///</p>
+
+<p class="gd">디스마스: 야...///</p>
+
+<p class="gd">디스마스: 만약 이게 갑자기 찾아온 실존적 공포 때문에 벌이는 유난이라면///</p>
+
+<p class="gd">디스마스: 나도 이 /\ㅔ상이 엿같다는 건 알거든///</p>
+
+<p class="gd">디스마스: 그렇다고 네가 말하는 것처럼 아무 예고도 없이 다 불타 없어질 거라는 뜻은 아니겠지///</p>
+
+<p class="gd">디스마스: 우린 이 행성을 포기할 수 없어///</p>
+
+<p class="gd">디스마스: 우리한텐 이것밖에 없단 말이야///</p>
+
+<p class="gd">디스마스: 게다가 난 아직도 이 빌어먹을 /\ㅡ컬타이탄들을 지상에서 영구적으로 치워 \/ㅓ릴 방법을 찾는 중이고///</p>
+
+<p class="gd">디스마스: 놈들만 없어지면 이곳은 훨씬 살 만한 곳이 될 거라고 장담한다///</p>
+
+<p class="boobdrone">BOOBDRONE: >([내가 말하는 건 달 건너편 어디의 허접한 거주 가능 행성으로 우주여행 가자는 게 아니야]</p>
+
+<p class="boobdrone">BOOBDRONE: >([이건 선택받은 녀석들만을 위한 작은 도피처지]</p>
+
+<p class="boobdrone">BOOBDRONE: >([우리 이름 열둘이 적힌 작은 주머니가 하나 있거든]</p>
+
+<p class="boobdrone">BOOBDRONE: >([다 같이 모여서 거기 들어가기만 하면 돼]</p>
+
+<p class="boobdrone">BOOBDRONE: >([그러니까 일단 내 말대로 따라오고 자잘한 건 좀 그만 물어봐]</p>
+
+<p class="gd">디스마스: 넌 아직도—///</p>
+
+<p class="boobdrone">BOOBDRONE: >([쉿]</p>
+
+<p class="boobdrone">BOOBDRONE: >([이제 말은 그만이다 꼬맹이]</p>
+
+<p class="boobdrone">BOOBDRONE: >([입 다물고 눈이나 똑바로 뜨고 있어]</p>
+
+<p class="boobdrone">BOOBDRONE: >([지금부터 물리 정보 제2탄 들어간다]</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00135.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00133.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

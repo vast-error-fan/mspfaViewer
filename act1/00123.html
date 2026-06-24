@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00123</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:15px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.uk{
+    color:#510049;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act1/00123.gif"
+class="panel"
+alt="00123">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="uk">UK: >([그 녀석은 내가 한 아홉 사이클쯤 됐을 때 처음 나타났어]</p>
+
+<p class="uk">UK: >([꿈속이었지]</p>
+
+<p class="uk">UK: >([따뜻한 물미끄럼틀 위를 철퍽거리며 굴러다니는 거대한 혹덩이보다도 더 크고 더 흐물흐물한 꼴이었어]</p>
+
+<p class="uk">UK: >([인사하자마자 자긴 내 존재가 점점 마음에 들기 시작했다고 하더라]</p>
+
+<p class="uk">UK: >([근데 솔직히 그때의 난 그 말보다도 지금 대체 무슨 상황인지가 더 궁금했어]</p>
+
+<p class="uk">UK: >([주변은 텅 빈 공허뿐이었거든]</p>
+
+<p class="uk">UK: >([대체 뭘 밟고 서 있는 건지도 모르겠고]</p>
+
+<p class="uk">UK: >([어떻게 놈 목소리가 들리는 건지도 모르겠고]</p>
+
+<p class="uk">UK: >([왜 내 지느러미는 충격 받아 터질 것 같지 않은 건지도 모르겠고]</p>
+
+<p class="uk">UK: >([뭐 그런 게 어린 시절의 내 미스터리였지]</p>
+
+<p class="uk">UK: >([근데 무슨 거창한 서막 같은 건 없었어]</p>
+
+<p class="uk">UK: >([놈은 대뜸 내 인생을 영원히 바꿔 놓을 선택지가 하나 있다고 하더라]</p>
+
+<p class="uk">UK: >([그리고 그걸 받아들이면 앞으로도 비슷한 기회가 계속 주어질 거라고 했어]</p>
+
+<p class="uk">UK: >([내가 그 제안을 받아들이는 순간 운명이라는 거대한 연쇄반응 속으로 끌려 들어가게 될 거라나 뭐라나]</p>
+
+<p class="uk">UK: >([진정한 길로 이어질 거라고도 했고]</p>
+
+<p class="uk">UK: >([내가 해야 할 일은 이미 존재한다는 걸 알고 있던 지역의 메시지를 해독하는 거였어]</p>
+
+<p class="uk">UK: >([그러니까 그 문양들 말이야]</p>
+
+<p class="uk">UK: >([그리고 거기서 얻은 말을 앞으로 만나게 될 사람들에게 전하는 거였고]</p>
+
+<p class="uk">UK: >([그 대가로]</p>
+
+<p class="uk">UK: >([난 그림자와 보랏빛으로 가득한 땅으로 향하는 편도 티켓을 받게 된다고 했어]</p>
+
+<p class="uk">UK: >([놈이 직접 공들여 만든 장소였지]</p>
+
+<p class="uk">UK: >([내가 늘 꿈꾸던 사람이 되어 살아갈 수 있는 곳이라고 하더라고]</p>
+
+<p class="uk">UK: >([그리고 씨발 친구야, 당연히 난 받아들였지]</p>
+
+<p class="uk">UK: >([물론 생각은 해 봤어]</p>
+
+<p class="uk">UK: >([이 모든 게 내게 무슨 의미인지 말이야]</p>
+
+<p class="uk">UK: >([왜냐면 나중에 여러 번 일을 겪고 나서 깨달았거든]</p>
+
+<p class="uk">UK: >([뼈다귀 인간 상대로는 사기를 못 친다는 걸]</p>
+
+<p class="uk">UK: >([내가 중간에 무슨 짓을 했든 놈은 자기 몫을 다 지켰어]</p>
+
+<p class="uk">UK: >([심지어 내가 결국 해낼 거라는 것도 이미 알고 있었던 것 같고]</p>
+
+<p class="uk">UK: >([그리고 말이지, 그 '결국'이라는 게 바로 지금이야, 껍질 친구]</p>
+
+<p class="uk">UK: >([난 이미 선불로 받아 버렸거든]</p>
+
+<p class="uk">UK: >([사실은 말이야]</p>
+
+<p class="uk">UK: >([그 눈알 없는 해골 자식은 이상적인 자기 자신이 된다는 게 뭔지에 대해 조금도 과장하지 않았어]</p>
+
+<p class="uk">UK: >([그 동네는 솔직히 쓰레기장이었지만]</p>
+
+<p class="uk">UK: >([거기서 난 52패의 기술을 익혔거든]</p>
+
+<p class="uk">UK: >([결국 어떤 미친 막대기 같은 인간 밑으로 들어가게 됐는데]</p>
+
+<p class="uk">UK: >([그 양반이 얼간이들을 낚아채는 법을 하나하나 가르쳐 줬어]</p>
+
+<p class="uk">UK: >([우린 거리의 걸어 다니는 악몽 같은 존재였고]</p>
+
+<p class="uk">UK: >([패거리까지 꾸린 뒤엔 동네를 눈이 멀 정도로 여러 번 털어먹고 다녔지]</p>
+
+<p class="uk">UK: >([어떤 놈들은 그 사람을 '재앙의 사기꾼'이라고 불렀어]</p>
+
+<p class="uk">UK: >([난 그 사람을 그냥 잭이라고 불렀고]</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00124.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00122.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

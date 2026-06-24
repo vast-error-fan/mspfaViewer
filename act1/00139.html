@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00073</title>
+<title>00139</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -227,6 +227,56 @@ white-space:nowrap;
 
 }
 
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.boobdrone{
+    color:#510049;
+}
+
 </style>
 
 </head>
@@ -306,28 +356,76 @@ class="nav-icon">
 
     <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act1/00073.gif"
+    <img src="../assets/panels/act1/00139.gif"
 class="panel"
-alt="00073">
+alt="00139">
 
 <div class="story">
 
-<p>
-당신의 루서스는 두 사람의 관계를 완전히 거꾸로 이해하고 있다.
-</p>
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
 
 <p>
-그녀는 스스로를 당신의 하이브의 반(半)수생 여왕이라고 생각한다.
-당신의 여왕이자, 내친김에 행성 전체의 여왕이라고도 생각한다.
-모든 것은 그녀의 소유물이다.
-심지어 당신이 다음번 의무적인 희생 제물이 필요해질 때를 대비해
-요새에 따로 보관해 두었던 다음 경기 상대까지도.
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="dismas">디스마스: 저게 뭐야///</p>
+
+<p class="boobdrone">BOOBDRONE: >([예언이 실현되는 순간이지]</p>
+
+<p class="boobdrone">BOOBDRONE: >([내가 아까부터 떠들어 댄 그 얘기 말이야]</p>
+
+<p class="dismas">디스마스: 난///</p>
+
+<p class="dismas">디스마스: 난 아직도 뭔 /\ㅗ린지 모르겠거든///</p>
+
+<p class="boobdrone">BOOBDRONE: >([뭐 그럼 마지막으로 생각해 볼 시간은 있겠다]</p>
+
+<p class="boobdrone">BOOBDRONE: >([네가 그럴 수만 있다면 말이지]</p>
+
+<p class="boobdrone">BOOBDRONE: >([마지막 공연 준비하느라 좀 바쁠 수도 있겠지만]</p>
+
+<p class="boobdrone">BOOBDRONE: >([널 위해 그 짐승 녀석을 풀어 준 건 안 싸우라고 그런 게 아니거든]</p>
+
+<p class="boobdrone">BOOBDRONE: >([마지막으로 한 번 더 갈기갈기 찢기는 장면을 찍어야 하잖냐]</p>
+
+<p class="dismas">디스마스: 설마///</p>
+
+<p class="dismas">디스마스: 너 설마 진짜 그 짓을 한 건 아니겠지?///</p>
+
+<p class="dismas">디스마스: 만약 방금 내가 생각한 그대로라면///</p>
+
+<p class="dismas">디스마스: 네 입에서 나오는 말은 이제 하나도 안 믿을 거거든///</p>
+
+<p class="dismas">디스마스: 그게 /\ㅔ상이 멸망한다는 /\ㅗ리라도///</p>
+
+<p class="boobdrone">BOOBDRONE: >([흥 네가 우선순위라는 걸 모르는 걸 나더러 어쩌라고]</p>
+
+<p class="boobdrone">BOOBDRONE: >([오, 마침 얘기하니까 나타나네]</p>
+
+<p class="boobdrone">BOOBDRONE: >([네 늙은 영감님 오신다]</p>
+
+</div>
+
 </p>
 
 </div>
 
-    <a href="00074.html" class="next-link">
-        &gt; ======>
+</div>
+
+</div>
+
+    <a href="00140.html" class="next-link">
+        &gt; 디스마스: 다시 올려다보자.
     </a>
 
     <div class="footer-links">
@@ -335,12 +433,36 @@ alt="00073">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00072.html">뒤로 가기</a>
+            <a href="00138.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
 
 </body>
 </html>

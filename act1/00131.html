@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00073</title>
+<title>00131</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -227,6 +227,56 @@ white-space:nowrap;
 
 }
 
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.boobdrone{
+    color:#510049;
+}
+
 </style>
 
 </head>
@@ -306,27 +356,61 @@ class="nav-icon">
 
     <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act1/00073.gif"
+    <img src="../assets/panels/act1/00131.gif"
 class="panel"
-alt="00073">
+alt="00131">
 
 <div class="story">
 
-<p>
-당신의 루서스는 두 사람의 관계를 완전히 거꾸로 이해하고 있다.
-</p>
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
 
 <p>
-그녀는 스스로를 당신의 하이브의 반(半)수생 여왕이라고 생각한다.
-당신의 여왕이자, 내친김에 행성 전체의 여왕이라고도 생각한다.
-모든 것은 그녀의 소유물이다.
-심지어 당신이 다음번 의무적인 희생 제물이 필요해질 때를 대비해
-요새에 따로 보관해 두었던 다음 경기 상대까지도.
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="boobdrone">BOOBDRONE: >([야 너무 정색하잖냐]</p>
+
+<p class="boobdrone">BOOBDRONE: >([이건 전통이라고]</p>
+
+<p class="boobdrone">BOOBDRONE: >([전통을 그렇게 없던 일로 치면 안 되지]</p>
+
+<p class="boobdrone">BOOBDRONE: >([전통도 나름의 전통이 있는 법이거든]</p>
+
+<p class="boobdrone">BOOBDRONE: >([이럴 때를 대비한 수작질은 준비도 안 해 놨단 말이야]</p>
+
+<p class="boobdrone">BOOBDRONE: >([난 그냥 손가락 좀 걸고 싶은 건데]</p>
+
+<p class="boobdrone">BOOBDRONE: >([새끼손가락 걸고 약속]</p>
+
+<p class="boobdrone">BOOBDRONE: >([우리 사람들 다시 불러 모으는 기념으로]</p>
+
+<p class="boobdrone">BOOBDRONE: >([좋았어 한 번 외쳐 주고]</p>
+
+<p class="boobdrone">BOOBDRONE: >([손가락 내놔]</p>
+
+<p class="boobdrone">BOOBDRONE: >([그리고 화해하자]</p>
+
+</div>
+
 </p>
 
 </div>
 
-    <a href="00074.html" class="next-link">
+</div>
+
+</div>
+
+    <a href="00132.html" class="next-link">
         &gt; ======>
     </a>
 
@@ -335,12 +419,36 @@ alt="00073">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00072.html">뒤로 가기</a>
+            <a href="00130.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
 
 </body>
 </html>

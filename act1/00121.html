@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00073</title>
+<title>00121</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -227,6 +227,56 @@ white-space:nowrap;
 
 }
 
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gd{
+    color:#c44000;
+}
+
+.uk{
+    color:#510049;
+}
+
 </style>
 
 </head>
@@ -306,27 +356,63 @@ class="nav-icon">
 
     <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act1/00073.gif"
+    <img src="../assets/panels/act1/00121.gif"
 class="panel"
-alt="00073">
+alt="00121">
 
 <div class="story">
 
-<p>
-당신의 루서스는 두 사람의 관계를 완전히 거꾸로 이해하고 있다.
-</p>
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
 
 <p>
-그녀는 스스로를 당신의 하이브의 반(半)수생 여왕이라고 생각한다.
-당신의 여왕이자, 내친김에 행성 전체의 여왕이라고도 생각한다.
-모든 것은 그녀의 소유물이다.
-심지어 당신이 다음번 의무적인 희생 제물이 필요해질 때를 대비해
-요새에 따로 보관해 두었던 다음 경기 상대까지도.
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="uk">UK: >([내가 그 녀석을 처음 만난 건 한 9사이클쯤 하고 조금 더 됐을 때였어]</p>
+
+<p class="uk">UK: >([그땐 여기저기 떠돌아다니던 꼬맹이 장사꾼이었지 물길에서 뭐든 건져 올려 한몫 잡고 해안가 이쪽에서 제일 멍청한 놈들 상대로 잽싸게 돈 뜯어내는 게 일이었거든]</p>
+
+<p class="uk">UK: >([넌 날 가상 포커꾼으로 알게 됐지만]</p>
+
+<p class="uk">UK: >([상어도 처음엔 어디선가 수영 배우기 시작해야 하잖냐]</p>
+
+<p class="uk">UK: >([그리고 내가 바닥이나 뒤지며 살던 시절에 돈 될 만한 거라곤 우리 섬 아래 박혀 있던 낡은 암석 그림 전시장들뿐이었어]</p>
+
+<p class="uk">UK: >([한가득 뛰어다니는 양서류 괴짜들 말이야 전에는 본 적도 없는 놈들이었지]</p>
+
+<p class="uk">UK: >([이상하게 꼬인 무늬랑 꽃 같은 것도 잔뜩 있었는데 난 그런 데 관심 없었어]</p>
+
+<p class="uk">UK: >([의미도 없고]</p>
+
+<p class="uk">UK: >([이유도 없고]</p>
+
+<p class="uk">UK: >([그냥 칩이랑 돈뿐이었지]</p>
+
+<p class="uk">UK: >([그러다 내가 무심코 올라선 이 작은 무대 위에서 처음으로 목적이라는 게 내 면상을 후려갈겼어]</p>
+
+<p class="uk">UK: >([그게 바로 내가 인대째로 뼈다귀 구역에 처박힌 아침이었지]</p>
+
+</div>
+
 </p>
 
 </div>
 
-    <a href="00074.html" class="next-link">
+</div>
+
+</div>
+
+    <a href="00122.html" class="next-link">
         &gt; ======>
     </a>
 
@@ -335,12 +421,36 @@ alt="00073">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00072.html">뒤로 가기</a>
+            <a href="00120.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
 
 </body>
 </html>
