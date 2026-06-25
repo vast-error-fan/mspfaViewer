@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00162</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight:bold;
+    line-height:1.35;
+    font-size:14px;
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.gs{
+    color:#a00078;
+}
+
+.uk{
+    color:#510049;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">머릿<span class="colon">:</span> 다른 트롤에게 대답하자.</h1>
+
+    <img src="../assets/panels/act1/00162.gif"
+class="panel"
+alt="00162">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+-- <span class="gs">grandioseSaturation [GS]</span>가 <span class="uk">unclaspedKahuna [UK]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="gs">GS: "이봐."</p>
+
+<p class="gs">GS: 그래서. 네 말대로라면, 이제 곧 모든 게 뒤집힐 거라고 했었지?</p>
+
+<p class="uk">UK: >([뭐?]</p>
+
+<p class="gs">GS: 조금 전에 네가 떠들던 얘기 말이다. 우리가 움직여야 한다느니, 행성이 곧 박살 난다느니 하던 이야기.</p>
+
+<p class="uk">UK: >([#ㅏ#ㅏ#ㅏ 그 얘기]</p>
+
+<p class="uk">UK: >([목에 금삽 처박고 웅얼거리는 소리랑 잘난 척이 면상까지 줄줄 흘러내려서 뭔 말인지 하나도 못 알아들었거든]</p>
+
+<p class="gs">GS: 이 철없는 유충 같으니.</p>
+
+<p class="gs">GS: 대체 어쩌다 이렇게 된 거지? 전에는 제법 품위 있는 녀석이었잖아.</p>
+
+<p class="uk">UK: >([대구]</p>
+
+<p class="uk">UK: >([우리 진짜 이걸로 가는 거냐]</p>
+
+<p class="gs">GS: 아무래도 그런 모양이군. 덕분에 할 말이 더 생겼다.</p>
+
+<p class="gs">GS: 첫째. 넌 바다 말장난을 할 자격이 없어. 특히 내 앞에서는 더더욱.</p>
+
+<p class="gs">GS: 둘째. 앞으로 생선 말장난은 하지 마. 절대로.</p>
+
+<p class="uk">UK: >([ㅇㅋㅇㅋ 미안#ㅐ 형씨]</p>
+
+<p class="uk">UK: >([네 패에 맞춰 한 수 던져 준 건데 좋아#ㅐ줄 줄 알았지]</p>
+
+<p class="uk">UK: >([온 세상 왕실 일은 죄다 떠맡고 사는 양반 아니셨냐]</p>
+
+<p class="uk">UK: >([아님 최소한 벽난로 앞에서 비싼 바다소 그림이나 보며 하루 종일 고민이나 하는 양반이든가]</p>
+
+<p class="gs">GS: 맞아. 그리고 그 넓은 계급 체계에서 우리 자리를 잇는 사람도 이제 둘뿐이지.</p>
+
+<p class="gs">GS: 그러니 너도 이제 정신 좀 차려라. 네게 주어진 역할을 제대로 받아들이고, 최소한의 품위 정도는 지켜. 혈통까지 진흙탕에 처박으며 사는 건 그만두고.</p>
+</p>
+
+<p class="gs">GS: 지금의 네 처지를 생각하면, 적어도 네 계급의 일원으로서 조금이나마 도움이 될 거다.</p>
+
+<p class="gs">GS: 그리고 바다 관련 말장난은 바다 계급 특유의 버릇 가운데서도 가장 초보적이고, 가장 맥빠진 수준에 불과해.</p>
+
+<p class="gs">GS: 유치하고 쓸모도 없지. 그런 걸 진심으로 즐기는 녀석들은 그 말장난과 똑같은 취급을 받아도 싸다.</p>
+
+<p class="gs">GS: 애초에 그런 게 널리 퍼진 관습처럼 자리 잡은 것도, 결국은 시답잖은 농담 하나가 과하게 부풀려진 결과일 뿐이라고 난 생각한다.</p>
+
+<p class="gs">GS: 그러니 앞으로도 난 그 정도 가치밖에 없는 것으로 취급할 생각이다.</p>
+
+<p class="uk">UK: >([나 이거 꼭 대답#ㅐ야 되냐]</p>
+
+<p class="uk">UK: >([방금 뭔 개소릴 지껄인 건지 #ㅏ나도 못 알아들었는데]</p>
+
+<p class="gs">GS: 그래. "대답해야" 한다. 대화라는 건 원래 그런 거니까.</p>
+
+<p class="uk">UK: >([ㅇㅋ 근데 이것만 좀 생각#ㅐ봐]</p>
+
+<p class="uk">UK: >([난 싫은데]</p>
+
+<p class="gs">GS: 싫다고?</p>
+
+<p class="gs">GS: 또다시 유치하고 성의 없는 변명이군.</p>
+
+<p class="gs">GS: 넌 정말 중요한 일이라면 언제나 피하려고만 하는 것 같아.</p>
+
+<p class="gs">GS: 이건 우리 둘이 진지하게 이야기해야 할 문제다. 하지만 지금은 이쯤에서 넘어가도록 하지.</p>
+
+<p class="gs">GS: 애초에 난 다른 이야기를 차분하게 꺼내려고 온 거였다.</p>
+
+<p class="gs">GS: 그런데 정작 넌 내 질문에는 제대로 답하지도 않고, 치졸한 빈정거림부터 늘어놓으며 일을 키웠지.</p>
+
+<p class="uk">UK: >([그래 그래 질문이 뭔데]</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00163.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00161.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

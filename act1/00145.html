@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00145</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.video-panel{
+    width:650px;
+    margin:0 auto;
+}
+
+.video-panel iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    display:block;
+}
+
+.quirk-info{
+    padding:0 25px 0;
+    
+    margin:0 0 10px;
+
+    text-align:left;
+
+    font-size:12px;
+
+    font-family:
+        Verdana,
+        Arial,
+        sans-serif;
+
+    color:#363636;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+<img src="../assets/panels/act1/00145.gif"
+class="panel"
+alt="00145">
+
+<div class="story">
+
+<p>이 새로운 머릿이야말로 네가 앞으로도 계속 지켜 나갈 머릿이다. 그리고 제대로 된 인격이라면 으레 그렇듯, 너에게도 꽤 다양한 관심사가 있다.</p>
+
+<p>네 시간의 상당수는, 앞서 말한 그 낯선 자와의 거래에서 네 몫을 이행하는 데 쓰였다. 그 와중에도 틈틈이 놈을 따돌려 보려 애썼지만 말이다.</p>
+
+<p>물론 그 시도는 하나같이 눈부실 정도로 처참하게 실패했다. 그래도 보고 있자면 제법 웃기긴 했다.</p>
+
+<p>그 뒤로는 오래전에 폐허가 된 신전 안에서 발견한 상형문자를 직접 해독하는 데 전념하게 되었다. 그 신전에는 분명 실존하지 않을 것 같은, 정체불명의 양서류 생명체가 새겨져 있었다.</p>
+
+<p>그리고 바로 오늘 밤, 마침내 그 작업을 끝마쳤다.</p>
+
+<p>그 외에는, 세상 끝 외딴 열대섬에서 지내다 보니 심심해 죽을 지경인 경우가 많다. 알다시피 야자수랑 코코넛밖에 없는 그런 섬 말이다. 안타깝게도 걔네는 좋은 말동무가 되어 주질 못한다. 그래서 직접 재미를 만들기로 했다. 너는 스릴 하나만 바라보고, 언제든 잘못 건드리면 목숨을 잃을 수도 있을 만큼 엄청난 수의 함정을 하이브 곳곳에 설치해 두었다.</p>
+
+<p>네 기준에서는, 위험한 재미라도 있는 편이 아무런 재미도 없는 것보다는 훨씬 낫다.</p>
+
+<p>또 하나의 취미는 고대 문화 유물을 수집하는 것이다. 그중에서도 대부분은 르네상스 시대의 물건들이다. 특히 그 시대의 구식 미디어 매체와 난해한 오락거리에 깊은 흥미를 갖고 있다.</p>
+
+<p>그 수집품은 정성 들여 모은 텔레비전과 비디오테이프에 자랑스럽게 전시되어 있다. 그리고 그 모든 텔레비전에서는 언제나, 하나도 빠짐없이, 뭔가가 동시에 재생되고 있다.</p>
+
+<p>부업 삼아, 발굴한 기술을 개조하는 실력도 제법 늘었다. 그렇게 손본 물건들 가운데 상당수는 모니터와 드론으로 탈바꿈했고, 지금은 친구들을 감시하는 데 쓰고 있다.</p>
+
+<p>친구들이 거하게 사고를 치는 순간을 기다렸다가 그 장면을 녹화하는 게 너의 낙이다. 그렇게 모은 영상을 엮어 그들의 불행으로 초현실적인 코미디 매시업을 만드는 것이다. 그리고 그걸 인터넷 여기저기에 올려 두긴 하지만, 정작 볼 수 있는 사람은 너뿐이다. 다른 사람이 영상 링크를 눌렀다간 성가신 리다이렉트와 악질 바이러스 세례만 실컷 받을 뿐이다.</p>
+
+<p>이 모든 취미를 통틀어, 네가 가장 자랑스럽게 여기는 건 무엇보다도 거기에 쏟아붓는 집념이다.</p>
+
+<p>하지만 그조차도 에로틱한 반문화 예술 작품에 대한 애정을 드러내는 데 들이는 노력에는 비교조차 되지 않는다. 특히 헨타이 예술 운동은 전성기 시절 엄청난 반향을 일으켰다.</p>
+
+<p>사실 처음부터 이게 진심 어린 취미였던 건 아니다. 이건 어디까지나 어떤 녀석의 취향에 맞서기 위한 대응책이었다. 놈의 신념이 얼마나 형편없는지를 보여 주기 위해 시작한 일이었던 것이다.</p>
+
+<p>그리고 가끔은, 정말로 상대에게 한 방 먹이려면 한 걸음 더 나아가야 할 때도 있다. 수도 없는 조사와 독서, 영상 감상은 물론이고, 아예 그것과 관련된 '고독의 던전'까지 만들 정도였으니 말이다. 전부 이 가면을 조금이라도 더 그럴듯하게 만들기 위해서였다.</p>
+
+<p>이쯤 되니, 너조차도 아직 이걸 비꼬려고 계속하는 건지, 아니면 진심이 되어 버린 건지 알 수가 없다.</p>
+
+<p>하지만 네가 진심인지 아닌지는 남들이 알 필요도 없고, 너 역시 굳이 알 필요는 없다.</p>
+
+<p>전부 쇼의 일부일 뿐이다.</p>
+
+<p>너의 트롤태그는 <span style="color:#510049;">unclaspedKahuna</span>이며, 당신은 <span style="color:#510049;">([아무도 못 알아들을 정도로 지직거리는 말투로 말한다])</span></p>
+
+<p>이제 무엇을 할까?</p>
+
+</div>
+
+<div class="quirk-info">
+    ※ 머릿의 타자기벽:
+    >([대사]), 받침 없는 ㅎ → #
+    </div>
+
+    <a href="00146.html" class="next-link">
+        &gt; 머릿: 지난날의 머릿을 추억해 본다.
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00144.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

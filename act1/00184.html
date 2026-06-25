@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00184</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#fff;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+position:relative;
+
+}
+
+.wrapper{
+
+    position:relative;
+
+    z-index:1;
+
+    width:940px;
+
+    max-width:950px;
+
+    margin:0 auto;
+
+    padding:7px 0;
+
+    box-sizing:content-box;
+
+
+    background:rgba(0,0,0,.50);
+
+}
+@media only screen and (max-width:1000px){
+
+    .wrapper{
+
+        width:auto;
+
+        padding:0;
+
+    }
+
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#000000;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#000000;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto 15px auto;
+
+height:24px;
+
+line-height:24px;
+
+background:#000;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+}
+
+.top-nav-inner{
+
+width:950px;
+
+margin:0 auto;
+
+}
+
+.top-nav a{
+
+color:#fff !important;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 8px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.video-panel{
+    width:650px;
+    margin:0 auto;
+}
+
+#noise{
+
+position:fixed;
+
+inset:0;
+
+z-index:0;
+
+pointer-events:none;
+
+}
+
+.video-panel iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    display:block;
+}
+
+</style>
+
+</head>
+<body>
+
+<canvas id="noise"></canvas>
+
+<div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">아.</h1>
+
+<img src="../assets/panels/act1/00184.gif"
+class="panel"
+alt="00184">
+
+<div class="story">
+<p>여기 있군.</p>
+</div>
+
+    <a href="00185.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00184.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const canvas=document.getElementById("noise");
+const ctx=canvas.getContext("2d");
+
+function drawNoise(){
+
+const img=ctx.createImageData(canvas.width,canvas.height);
+const data=img.data;
+
+for(let i=0;i<data.length;i+=4){
+
+const v=Math.random()>0.5?255:0;
+
+data[i]=v;
+data[i+1]=v;
+data[i+2]=v;
+data[i+3]=255;
+
+}
+
+ctx.putImageData(img,0,0);
+
+}
+
+function resize(){
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+drawNoise();
+
+}
+
+window.addEventListener("resize",resize);
+
+resize();
+
+</script>
+
+</body>
+</html>

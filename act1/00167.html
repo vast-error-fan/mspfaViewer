@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00167</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight:bold;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 30px;
+
+padding-left:20px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding:0 25px 0;
+
+font-size:10px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+}
+
+.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.video-panel{
+    width:650px;
+    margin:0 auto;
+}
+
+.video-panel iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    display:block;
+}
+
+.gray-box{
+    width:65%;
+    margin:20px auto 5px;
+    padding:12px 15px;
+    border:1px dashed #999;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.newspaper{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color:#000;
+    line-height:1.5;
+}
+
+.newspaper h3{
+    margin:0 0 8px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.newspaper h4{
+    margin:10px 0 5px;
+    font-size:16px;
+}
+
+.newspaper p{
+    margin:5px 0;
+    font-size:14px;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">파란 녀석<span class="colon">:</span> 신문을 살펴본다.</h1>
+
+<img src="../assets/panels/act1/00167_1.gif"
+class="panel"
+alt="00167_1">
+
+<div style="height: 20px;"></div>
+
+<img src="../assets/panels/act1/00167_2.gif"
+class="panel"
+alt="00167_2">
+
+<div class="gray-box">
+
+<div class="newspaper">
+
+<h3>PROSPIT DAILY</h3>
+
+<hr>
+
+<h4>달 연합, 긴장이 고조되다</h4>
+
+<hr>
+
+<h4>숨결·분노·피·생명·희망 영웅 각성 예측</h4>
+
+<hr>
+
+<h4>기사, 프로스핏 신문사 인수 검토</h4>
+
+</div>
+
+</div>
+
+<div class="story">
+
+<p>너는 황금빛 달 프로스핏에서 매일 밤 이어 온 오랜 전통, 신문을 가져오는 일을 막 마쳤다. 아직 신문을 전해 주러 가야 하긴 하지만, 그 전에 잠깐 훑어보는 것도 나쁘지 않겠다는 생각이 든다. 이제 이곳은 거의 제2의 집이나 다름없는 곳이다. 이 정도는 벌받을 일은 아닐 것이다. 지역 소식 정도는 늘 챙겨 봐야 하지 않겠는가.</p>
+
+<p>이 달에는 너를 포함해 여섯 명의 동료가 함께 잠들어 있다. 이곳 주민들은 셀 수 없이 긴 세월 동안 그들을 영웅으로 떠받들어 왔다. 그리고 모두 머지않아 깨어날 예정이다.</p>
+
+<p>손에 든 신문을 펼쳐 보니, 늘 그렇듯 친구들이 언제쯤 깨어날지에 대한 예상 시각이 실려 있다. 거기에 제법 잘 나온 네 사진과, 대부분의 시간을 너에게 연신 감사를 표하며 보내는 친절한 인쇄소 직원의 사진도 함께 실려 있다. 대체 뭘 그렇게까지 고마워하는 건지는 잘 모르겠다. 그냥 네가 여기 있다는 것 자체인 걸까? 어쨌든, 네가 하는 일이 무엇이든 그는 진심으로 고마워하는 것처럼 보인다.</p>
+
+<p>하지만 조금 마음에 걸리는 기사가 하나 있다.</p>
+
+</div>
+
+    <a href="00168.html" class="next-link">
+        &gt; 파란 녀석: 걱정거리를 곱씹어 본다.
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00166.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
