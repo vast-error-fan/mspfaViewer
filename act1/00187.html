@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00181</title>
+<title>00187</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -253,6 +253,53 @@ white-space:nowrap;
 
 }
 
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.wa{
+    color:#004696;
+}
+
 .video-panel{
     width:650px;
     margin:0 auto;
@@ -356,17 +403,90 @@ class="nav-icon">
 
 <div class="page">
 
-    <h1 class="page-title">그리고 우린, 할 이야기가 많다. 공간의 영웅.</h1>
+    <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act1/00181.gif"
+<img src="../assets/panels/act1/00187.gif"
 class="panel"
-alt="00181">
+alt="00187">
 
 <div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p>그래서 너는 두려웠기에 내 제안을 받아들인 것이군.</p>
+
+<p>의심에 스스로를 옭아매고 말았다. 잘못된 선택을 할까 봐 두려운 나머지, 결국은 스스로 아무것도 결정하지 못한 채 운명의 물살에 몸을 맡기고 떠내려가기만 했지.</p>
+
+<p>혹시 네가 잘못을 저지르고 있다고 느끼나?</p>
+
+<p>지금 이 순간, 나와 함께 있는 것 자체가 잘못되었다고 말이다.</p>
+
+<p class="wa">파란 녀석: 난 항상 뭔가를 망쳐 버릴까 봐 겁이 나-</p>
+
+<p class="wa">파란 녀석: 그러니까- 이건 엄청 중요한 일이잖아-?</p>
+
+<p class="wa">파란 녀석: 이게 다 무슨 의미인지도 모르는데- 잘해낼 자신이 있을 리가 없잖아-</p>
+
+<p>하지만 달리 무슨 선택이 있지?</p>
+
+<p>예전의 삶으로 돌아가고 싶은가?</p>
+
+<p>남은 평생 찢어진 몸을 다시 꿰매며, 다음에 마주할 시신만큼은 부디 소중한 사람이 아니기를 헛되이 바라면서 살아가고 싶은가?</p>
+
+<p>너 자신을 돌아보거라.</p>
+
+<p>내가 지금 너를 위해 엮어 가는 이 이야기는, 한 문장 한 문장 이어질수록 한 가지 사실을 더욱 분명히 드러내고 있다. 너는 스스로를 돌보지 않는 사람들을 누구보다도 깊이 아낀다는 것을.</p>
+
+<p>네가 살아가는 세상에서 죽음은 너무도 익숙한 벗이다. 그리고 온전한 정신을 지닌 이들은 좀처럼 찾아보기 어렵지.</p>
+
+<p>게다가 우리 사이의 이 거래가 없었다면, 존재의 순환 자체가 완전한 소멸이라는 힘에 의해 끊어지고 말았을 것이다.</p>
+
+<p>너는 스스로 생각하는 것보다 훨씬 더 이 일을 감당할 준비가 되어 있다. 어쩌면 내가 생각하는 것보다도 말이다. 다른 선택지가 없기 때문만은 아닐 테지만.</p>
+
+<p>너는 여러 의미에서 이미 막다른 곳에 다다라 있다. 그리고 나 역시, 여러 의미에서 내 끝이 가까워지고 있지.</p>
+
+<p>적어도 이것만은 명심해 두거라. 살아가다 보면, 아무것도 모르는 편이 오히려 축복인 순간도 있는 법이다.</p>
+
+<p>너무 많은 진실은 마음에 고통을 안겨 주고, 행동하려는 의지마저 서서히 마비시킨다.</p>
+
+<p>많이 알수록, 행동하기는 더욱 어려워지는 법이지.</p>
+
+<p>하지만 지금은 너무나 많은 것이 걸려 있다. 망설일 여유는 없다.</p>
+
+<p>그러니 내가 한 말만 기억해 두거라. 나머지는 때가 되었을 때, 필요한 만큼만 자연스럽게 드러날 것이다.</p>
+
+<p class="wa">파란 녀석: 솔직히 말하면- 그 말은 조금 무서운데-</p>
+
+<p class="wa">파란 녀석: 그래도-</p>
+
+<p class="wa">파란 녀석: 이제 와서는 다른 선택도 없는 것 같아-</p>
+
+<p class="wa">파란 녀석: 약속했으니까-</p>
+
 </div>
 
-    <a href="00182.html" class="next-link">
-        &gt; 당분간은 계속 파란 녀석으로 있자.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00188.html" class="next-link">
+        &gt; ======>
     </a>
 
     <div class="footer-links">
@@ -374,7 +494,7 @@ alt="00181">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00180.html">뒤로 가기</a>
+            <a href="00186.html">뒤로 가기</a>
         </div>
 
     </div>
@@ -383,6 +503,28 @@ alt="00181">
 
 
 <script>
+
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
 
 const canvas=document.getElementById("noise");
 const ctx=canvas.getContext("2d");

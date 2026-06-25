@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00181</title>
+<title>00188</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -253,6 +253,53 @@ white-space:nowrap;
 
 }
 
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.wa{
+    color:#004696;
+}
+
 .video-panel{
     width:650px;
     margin:0 auto;
@@ -356,17 +403,54 @@ class="nav-icon">
 
 <div class="page">
 
-    <h1 class="page-title">그리고 우린, 할 이야기가 많다. 공간의 영웅.</h1>
+    <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act1/00181.gif"
+<img src="../assets/panels/act1/00188.gif"
 class="panel"
-alt="00181">
+alt="00188">
 
 <div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p>그리고 네가 끝까지 약속을 지켜 준 덕분에, 그때의 내 선택이 옳았다는 확신도 더욱 깊어졌지.</p>
+
+<p>이제부터 내가 네게 부탁할 일은 단지 나를 위한 것이 아니다. 너 자신을 위한 일이기도 하고, 앞으로 함께 게임을 하게 될 이들을 위한 일이기도 하다.</p>
+
+<p>그 사실을 이해하는 것은, 네 여정에도 분명 도움이 될 것이다.</p>
+
+<p>너는 외로운 길을 걷게 된다. 이 이야기처럼 말이다. 그 길은 갈라지고, 끝없이 공간이라는 미지의 영역으로 흩어져 나가는 것처럼 보일 것이다. 하지만 결코 목적 없이 이어지는 길은 아니다.</p>
+
+<p>오히려, 그 길 자체가 목적의 화신이라 할 수 있지.</p>
+
+<p>그럼, 우리가 이 자리에서 만난 이유를 보여 주도록 하지...</p>
+
+<p>이것이 바로, 녹색 태양이다.</p>
+
 </div>
 
-    <a href="00182.html" class="next-link">
-        &gt; 당분간은 계속 파란 녀석으로 있자.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00189.html" class="next-link">
+        &gt; ======>
     </a>
 
     <div class="footer-links">
@@ -374,7 +458,7 @@ alt="00181">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00180.html">뒤로 가기</a>
+            <a href="00187.html">뒤로 가기</a>
         </div>
 
     </div>
@@ -383,6 +467,28 @@ alt="00181">
 
 
 <script>
+
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
 
 const canvas=document.getElementById("noise");
 const ctx=canvas.getContext("2d");

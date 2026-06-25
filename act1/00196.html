@@ -2,28 +2,59 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00010</title>
-/*<link rel="shortcut icon" href="../assets/ve_favicon.ico">*/
+<title>00196</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
 body{
 
 margin:0;
 
-background:#535353;
+background:#fff;
 
 font-family:
 "Courier New",
 Courier,
 monospace;
 
+min-height:100vh;
+
+overflow-x:hidden;
+
+position:relative;
+
 }
 
 .wrapper{
-    width:950px;
-    margin:0px auto;
-    background:#c6c6c6;
-    min-height:600px;
+
+    position:relative;
+
+    z-index:1;
+
+    width:940px;
+
+    max-width:950px;
+
+    margin:0 auto;
+
+    padding:7px 0;
+
+    box-sizing:content-box;
+
+
+    background:rgba(0,0,0,.50);
+
+}
+@media only screen and (max-width:1000px){
+
+    .wrapper{
+
+        width:auto;
+
+        padding:0;
+
+    }
+
 }
 
 .page{
@@ -38,9 +69,9 @@ monospace;
 font-size:clamp(22px, 4vw, 29px);
 
 font-family:
-"Malgun Gothic",
-Georgia,
-serif;
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
 
 font-weight:600;
 
@@ -52,6 +83,10 @@ padding:10px 0 10px 0;
 
 line-height:1.5;
 
+}
+
+.colon {
+    margin-right: -8px;
 }
 
 .panel{
@@ -81,9 +116,9 @@ display:block;
 
 display:block;
 
-margin:15px 0 30px;
+margin:0px 0 20px;
 
-padding-left:20px;
+padding-left:30px;
 
 font-size:24px;
 
@@ -104,7 +139,7 @@ text-underline-offset:2px;
 
 .footer-links{
 
-padding:0 25px 0;
+padding-left:30px;
 
 font-size:10px;
 
@@ -112,6 +147,10 @@ font-family:
 Verdana,
 Arial,
 sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
 
 }
 
@@ -121,11 +160,11 @@ color:#0000aa;
 
 text-decoration:underline;
 
+text-underline-offset:2px;
+
 }
 
 .top-nav{
-
-color:#000000;
 
 position:relative;
 
@@ -133,15 +172,13 @@ z-index:2;
 
 width:100%;
 
-margin:0 auto;
+margin:0 auto 15px auto;
 
-min-height:32px;
+height:24px;
 
 line-height:24px;
 
-padding-top:0px;
-
-background:#535353;
+background:#000;
 
 text-align:center;
 
@@ -154,27 +191,19 @@ font-size:11px;
 
 font-weight:bold;
 
-border-bottom:1px solid #535353;
-
 }
 
 .top-nav-inner{
 
-max-width:950px;
-
-width:100%;
+width:950px;
 
 margin:0 auto;
-
-position:relative;
-
-top:-2px;
 
 }
 
 .top-nav a{
 
-color:#ffffff;
+color:#fff !important;
 
 text-decoration:none;
 
@@ -208,7 +237,7 @@ width:15px;
 
 height:15px;
 
-margin:0 4px;
+margin:0 8px;
 
 vertical-align:middle;
 
@@ -224,32 +253,58 @@ white-space:nowrap;
 
 }
 
+.video-panel{
+    width:650px;
+    margin:0 auto;
+}
+
+#noise{
+
+position:fixed;
+
+inset:0;
+
+z-index:0;
+
+pointer-events:none;
+
+}
+
+.video-panel iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    display:block;
+}
+
 </style>
 
 </head>
 <body>
 
-     <div class="top-nav">
+<canvas id="noise"></canvas>
+
+<div class="top-nav">
 
 <div class="top-nav-inner">
 
 <span class="nav-group">
 
-/*<a class="nav-purple" href="../index.html">홈</a>*/
+<a class="nav-purple" href="../index.html">홈</a>
 
 </span>
 
-/*<img
+<img
 src="../assets/nav-etchelizer.png"
-class="nav-icon">*/
+class="nav-icon">
 
 <span class="nav-group">
 
-<a class="nav-green" href="#">지도</a>
+<a class="nav-green" href="../map.html">지도</a>
 
 <span class="nav-sep">|</span>
 
-<a class="nav-green" href="#">로그</a>
+<a class="nav-green" href="../log.html">로그</a>
 
 <span class="nav-sep">|</span>
 
@@ -257,9 +312,9 @@ class="nav-icon">*/
 
 </span>
 
-/*<img
+<img
 src="../assets/nav-etchelizer.png"
-class="nav-icon">*/
+class="nav-icon">
 
 <span class="nav-group">
 
@@ -275,9 +330,9 @@ class="nav-icon">*/
 
 </span>
 
-/*<img
+<img
 src="../assets/nav-etchelizer.png"
-class="nav-icon">*/
+class="nav-icon">
 
 <span class="nav-group">
 
@@ -301,16 +356,18 @@ class="nav-icon">*/
 
 <div class="page">
 
-    <h1 class="page-title">본문 제목</h1>
+    <h1 class="page-title">======></h1>
 
-    <img src=" /* ../assets/panels/act1/0000N.gif */"
-    class="panel"
-    alt="00010">
+<img src="../assets/panels/act1/00196.gif"
+class="panel"
+alt="00196">
 
-    <div class="story"></div>
+<div class="story">
 
-    <a href="00011.html" class="next-link">
-        &gt; 다음 제목 입력;
+</div>
+
+    <a href="00197.html" class="next-link">
+        &gt; 이 모든 이야기를 마치고 나니, 한 가지 생각이 떠올랐군.
     </a>
 
     <div class="footer-links">
@@ -318,12 +375,53 @@ class="nav-icon">*/
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="0009.html">뒤로 가기</a>
+            <a href="00195.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+
+<script>
+
+const canvas=document.getElementById("noise");
+const ctx=canvas.getContext("2d");
+
+function drawNoise(){
+
+const img=ctx.createImageData(canvas.width,canvas.height);
+const data=img.data;
+
+for(let i=0;i<data.length;i+=4){
+
+const v=Math.random()>0.5?255:0;
+
+data[i]=v;
+data[i+1]=v;
+data[i+2]=v;
+data[i+3]=255;
+
+}
+
+ctx.putImageData(img,0,0);
+
+}
+
+function resize(){
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+drawNoise();
+
+}
+
+window.addEventListener("resize",resize);
+
+resize();
+
+</script>
 
 </body>
 </html>
