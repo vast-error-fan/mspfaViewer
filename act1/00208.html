@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00208</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.wa{
+    color:#004696;
+}
+
+.pd{
+    color:#00A596;
+    font-family:
+"Comic Sans MS",
+"Comic Sans",
+"cursive";
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act1/00208.gif"
+class="panel"
+alt="00208">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+
+<p class="wa">WA: 그래도- 궁금하긴 하잖아- 그렇지-?</p>
+
+<p class="wa">WA: 적어도- 흥미롭긴 하잖아-</p>
+
+<p class="wa">WA: 이건 평소에 하는 그런 게임 진행 방식이 아니잖아-</p>
+
+<p class="wa">WA: 처음이지-</p>
+
+<p class="pd">PD: 뭐</p>
+
+<p class="pd">PD: 그건 그래!</p>
+
+<p class="wa">WA: 놀리려고 맞장구치는 거야- 아니면 진심이야-?</p>
+
+<p class="pd">PD: 반반? (|;)</p>
+
+<p class="pd">PD: 당연하잖아!!!</p>
+
+<p class="wa">WA: 그 정도면 됐어-</p>
+
+<p class="pd">PD: 진짜 아직까지 아무도 "싫어! 그거 완전 별론데!" 하고 나선 사람이 없다는 게 안 믿겨.</p>
+
+<p class="pd">PD: 아니면 있었다고 해도 자기 의견을 제대로 밀어붙이진 않았던가.</p>
+
+<p class="pd">PD: 내가 보기엔 그냥 다들 얼떨결에 흘러가고 있는 것 같단 말이지!!!</p>
+
+<p class="pd">PD: 와 진짜 오늘은 별일이 다 생기는 밤이네.</p>
+
+<p class="pd">PD: 난 이제 오늘 밤에만 자꾸 일이 생기는 거 지겨워.</p>
+
+<p class="pd">PD: 이제 새로운 '별일 생기는 밤' 하나 만들자!</p>
+
+<p class="pd">PD: 지금 여기서 내가 공식 제안한다!</p>
+
+<p class="pd">PD: 어차피 다들 아무 신경도 안 쓰는 것 같으니까 만장일치로 통과된 걸로 치자!</p>
+
+<p class="wa">WA: 난 찬성이야-</p>
+
+<p class="wa">WA: 별일은 다른 밤에 좀 생겨도 좋을 것 같아-</p>
+
+<p class="wa">WA: 가끔은 패턴도 바뀌어야지-</p>
+
+<p class="wa">WA: 안타깝지만- 우주가 이 하루만 유독 좋아하는 버릇은 못 바꿀 것 같네-</p>
+
+<p class="wa">WA: 난 맨날- 아무 일도 안 생기다가-</p>
+
+<p class="wa">WA: 갑자기- 오늘 밤에만 백 가지 일이 한꺼번에 터지더라-</p>
+
+<p class="wa">WA: 필멸자인 우리로서는 이유를 알 길도 없고-</p>
+
+<p class="wa">WA: 다른 밤에도 가끔 그러긴 하는데- 대부분은 오늘이고-</p>
+
+<p class="wa">WA: 그래도- 몇 스윕 전에는 좋은 일도 하나 있었지-</p>
+
+<p class="wa">WA: 멍-</p>
+
+<p class="wa">WA: :)</p>
+
+<p class="pd">PD: 설마 내가 생각하는 그 얘기 맞아???</p>
+
+<p class="pd">PD: 오늘 밤에 일어난 일이 워낙 많아서 혹시나 싶어서 완전 확실히 확인하는 거야.</p>
+
+<p class="wa">WA: 맞아- 바로 그 얘기-</p>
+
+<p class="wa">WA: 좋은 쪽 말이야- 나쁜 쪽 말고-</p>
+
+<p class="pd">PD: 아~ 그러니까 네가 내 다리를 쏜 그 사건?</p>
+
+<p class="pd">PD: 덕분에 평생 절뚝거리게 된 그 사건 말이지??</p>
+
+<p class="wa">WA: 응- 그건- 나쁜 쪽이네-</p>
+
+<p class="wa">WA: 내가 꺼내고 싶지 않았던 부분-</p>
+
+<p class="wa">WA: 제발 그런 식으로 말 안 하면 안 될까-</p>
+
+<p class="pd">PD: 하지만 우리 역사에서 중요한 사건인걸!!</p>
+
+<p class="pd">PD: 하룻밤 만에 진정한 붉은 로맨스를 찾는 사람이 얼마나 있겠어?</p>
+
+<p class="pd">PD: 전에도 말했고 또 말할게.</p>
+
+<p class="pd">PD: 그 총알은 마법이었다!!!</p>
+
+<p class="wa">WA: 아니- 총알은 그냥 총알이었어-</p>
+
+<p class="wa">WA: 믿어- 내가 확인도 해 봤어-</p>
+
+<p class="wa">WA: 총알 이후에 일어난 일들이 마법이었던 거지-</p>
+
+<p class="pd">PD: 와 우리 진짜 사람들이 연애의 문제점이라고 하는 걸 전부 몸소 보여 주고 있는 것 같지 않아?</p>
+
+<p class="pd">PD: 그거 알아??</p>
+
+<p class="wa">WA: 아- 너무 잘 알지-</p>
+
+<p class="wa">WA: 그 사실 때문에 속이 다 뒤집혀-</p>
+
+<p class="wa">WA: 우린 어떻게 2스윕 동안이나 이렇게 정신없는 초고속 연애를 계속 우겨 왔을까-</p>
+
+<p class="wa">WA: 나도 맨날 의문이야-</p>
+
+<p class="pd">PD: 와 나도!!! 진짜 똑같아!!!</p>
+
+<p class="pd">PD: 근데 보통 그런 생각이 들면</p>
+
+<p class="pd">PD: 너한테 하트 하나 보내고</p>
+
+<p class="pd">PD: 바로 기분이 좋아져.</p>
+
+<p class="pd">PD: &lt;3</p>
+
+<p class="pd">PD: 짠! 그럼 다 해결됐고 사랑한다고도 말할 수 있지!!!!</p>
+
+<p class="wa">WA: 고마워-</p>
+
+<p class="pd">PD: 너도 사랑한다고 해 줘! 그리고 기념일 축하해, 이 구더기족제비야!!!</p>
+
+<p class="pd">PD: 적어도 그것만은 해 줘야 나도 이 게임 걱정을 좀 평화롭게 할 수 있단 말이야.</p>
+
+<p class="pd">PD: 이미 이렇게까지 닭살 모드로 들어왔으니까 끝까지 가야지.</p>
+
+<p class="pd">PD: 자, 늑대 소년! 멋지게 마무리해 봐!</p>
+
+<p class="wa">WA: 알았어-</p>
+
+<p class="wa">WA: 사랑해-</p>
+
+<p class="wa">WA: 기념일 축하해-</p>
+
+<p class="wa">WA: 그리고- 너랑 함께라서 정말 다행이야-</p>
+
+<p class="pd">PD: 나도 똑같아!!</p>
+
+<p class="pd">PD: 자 그럼 난 이제 이게 도대체 뭔 개소린지 좀 더 알아보러 가 볼게.</p>
+
+<p class="pd">PD: ...그러다 또 까먹고 그냥 막연히 낙관적인 불안감만 안고 있겠지만.</p>
+
+<p class="pd">PD: 아무래도 'TV 세트 집착광 사장님'의 거창한 계획이 나 같은 애 하나 때문에 흔들릴 것 같진 않거든. (|:p</p>
+
+<p class="pd">PD: 아 맞다, 하나만 약속해 줘.</p>
+
+<p class="wa">WA: 응-?</p>
+
+<p class="pd">PD: 알포칼립스 소식 있으면 꼭 알려줘, 알겠지?</p>
+
+<p class="pd">PD: 아직 이 근처까지 광대 손길을 뻗치진 못했지만, 이제 와선 그 음흉한 수작을 절대 얕볼 수가 없어. (|:///</p>
+
+<p class="wa">WA: 솔직히- 그 녀석이 우리들까지-</p>
+
+<p class="wa">WA: 끔찍한- 아코디언 들고 추는- 폴카 살인 서커스에 끌어들이려 했다면-</p>
+
+<p class="wa">WA: 진작 알았을 거야-</p>
+
+<p class="pd">PD: 그래도 난 아직도 그게 세력을 키우고 있다는 게 안 믿겨.</p>
+
+<p class="pd">PD: 한때는 나도 긴 머리 사이비 미치광이 녀석의 최대 팬이자 열렬한 지지자였는데 말이야.</p>
+
+<p class="pd">PD: 나중에는 민병대에 이세계 악마들까지 끌고 다니며 미쳐 날뛰게 될 줄 누가 알았겠어.</p>
+
+<p class="pd">PD: 전부 자기 사디즘이랑 거대한 자존심을 만족시키려고 말이야.</p>
+
+<p class="pd">PD: 이런 걸 보면 진짜 세상이 곧 끝날 것 같지 않아?</p>
+
+<p class="wa">WA: 곧 알게 되겠지-</p>
+
+<p class="pd">PD: 그러게.</p>
+
+<p class="pd">PD: (|:)</p>
+
+<p class="wa">WA: 그런 불길한 얘기 다 해 놓고 그렇게 웃지 마-</p>
+
+<p class="wa">WA: 무서워-</p>
+
+<p class="pd">PD: 푸흐흐흐</p>
+
+<p class="pd">PD: 잘 가, 라이반 &lt;3</p>
+
+
+</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00209.html" class="next-link">
+        &gt; 라이반: 책상 위의 그림을 살펴본다.
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00207.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
