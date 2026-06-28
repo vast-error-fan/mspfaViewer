@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00223</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.dq{
+    color:#398100;
+}
+
+.guardian{
+    color:#818181;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act1/00223.gif"
+class="panel"
+alt="00223">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="dq">알비온: *그건*답이*아니었어*.</p>
+
+<p class="dq">알비온: *당신이*내게*준*거라고는*</p>
+
+<p class="dq">알비온: *책임을*회피하려고*좋은*말만*늘어놓은*</p>
+
+<p class="dq">알비온: *공허한*위로*뿐이었어*.</p>
+
+<p class="dq">알비온: *평생*이어*온*당신의*기만이*불러온*결과에서*</p>
+
+<p class="dq">알비온: *스스로를*떼어*놓기*위해서*.</p>
+
+<p class="dq">알비온: *난*내가*왜*여기에*있는지*알고*싶어*.</p>
+
+<p class="dq">알비온: *난*내가*왜*존재하는지*알고*싶어*.</p>
+
+<p class="dq">알비온: *내*진정한*목적이*무엇인지*말해*줘*.</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******지난번*만남에서*우리가*한*말은*모두*진실이었다*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******너의*사명은*이*멸망할*행성을*구하는*것이*아니라,*떠나는*것이라고*말해*주었지*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******그리고*그*일은*신성한*개입으로*이루어질*것이며,*반드시*그렇게*될*것이라고도*말해*주었단다*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******우리가*너의*존재에*새겨진*순간부터*준비해*온*일이기도*하지*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******사랑하는*앨비언,*너도*알다시피*별의*아이로서*이*자리를*맡았던*이는*네가*처음이*아니란다*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******하지만*너는*진정*마지막*별의*아이가*될*운명이란다*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******이제*우리의*말을*잘*들으렴*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******너*이전에*한*사람이*더*있었단다*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******가장*깊고*이타적인*소원을*이루어*주기로*되어*있던*이에게*거절당하고*배신당했음에도,*운명의*흐름을*자신의*편으로*이끌어*낸*눈부신*영혼이었지*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******우리는*지금*너와*이어져*있는*것과*똑같은*방식으로,*그*아이와도*이어져*있었단다*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******그리고*우리는*반드시*지켜야*할*약속을*하였지*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******그래서*너에게*이*세상에*대한*거짓*이야기를*들려줄*수밖에*없었단다.*아무리*우리*마음이*아팠다*해도*****-</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******하지만*그것은*오직*너*자신과*네가*소중히*여기는*이들을*끝까지*지켜*내기*위한*것이었단다*****-</p>
+
+<p class="dq">알비온: ...*그럼*당신들이*말한*그*약속이란*대체*뭐지*?</p>
+
+<p class="guardian">GUARDIANSPIRIT: ******지금*이*순간만큼은,*너를*이곳에*붙잡아*두는*것이란다*****-</p>
+
+
+</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00224.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00223.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

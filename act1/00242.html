@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00242</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.wa{
+    color:#004696;
+}
+
+.uk{
+    color:#510049;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act1/00242.gif"
+class="panel"
+alt="00242">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration">
+-- <span class="wa">windlessArtificer [WA]</span>가 <span class="uk">unclaspedKahuna [UK]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="wa">WA: 안녕-</p>
+
+<p class="wa">WA: 일어나서 움직이고 있어- 이제 거의 때가 다 된 것 같네-?</p>
+
+<p class="wa">WA: 좋은 소식부터 말하자면-</p>
+
+<p class="wa">WA: 깨어나기 직전에 화이트 노이즈를 만났어-</p>
+
+<p class="wa">WA: 우리 둘 다 예상했던 대로-</p>
+
+<p class="wa">WA: 그가 게임에 관한 꽤 중요한 걸 하나 건네줬어-</p>
+
+<p class="wa">WA: 지금 당장 어떻게 할 수 있는 건 아니지만-</p>
+
+<p class="wa">WA: 받아 오긴 했어-</p>
+
+<p class="wa">WA: 아마 나중에 시간이 생기면- 그 얘기를 해야 할 것 같아-</p>
+
+<p class="uk">UK: >([화이트 노이즈가 대체 누군지부터 얘기 좀 #ㅐ보실?]</p>
+
+<p class="wa">WA: 뭐-</p>
+
+<p class="wa">WA: 알잖아-</p>
+
+<p class="wa">WA: 그 "개한테 뼈다귀나 하나 던져 줘라" 녀석-</p>
+
+<p class="uk">UK: >([씨발 그래 누군지 말#ㅏ는 건 진작 알았거든]</p>
+
+<p class="uk">UK: >([그냥 좀 점잖게 말#ㅐ보란 뜻이었지]</p>
+
+<p class="uk">UK: >([역시 기대를 저버리지 않는구만]</p>
+
+<p class="wa">WA: 좋네-</p>
+
+<p class="wa">WA: 이제 나쁜 소식은-</p>
+
+<p class="wa">WA: 아무리 뒤져 봐도-</p>
+
+<p class="wa">WA: 풀 한 방울도 못 찾았어-</p>
+
+<p class="wa">WA: 이제 내 여정은- 포기해야 할 것 같아-</p>
+
+<p class="wa">WA: 시간도 없고-</p>
+
+<p class="uk">UK: >([삼가 고인의 명복을 빈다]</p>
+
+<p class="uk">UK: >([근데 나도 이쪽에서 믿기 힘들 정도로 미친 짓 #ㅏ나 #ㅐ냈거든]</p>
+
+<p class="uk">UK: >([구멍 안쪽 깊숙한 데까지 들어왔어]</p>
+
+<p class="uk">UK: >([여기저기 좀 긁#ㅣ고 다치긴 했는데 그냥 털고 일어나면 그만인 수준이야]</p>
+
+<p class="uk">UK: >([가벼운 상처쯤이야 별거 아니지]</p>
+
+<p class="uk">UK: >([진짜 큰일은 진작에 내가 넘어온 선 너머에나 있거든]</p>
+
+<p class="uk">UK: >([이젠 그냥 여기 앉아서 결말이 나오기만 기다리는 중이야]</p>
+
+<p class="wa">WA: 이제 얼마나 남은 것 같아-?</p>
+
+<p class="uk">UK: >([지금까지 저게 보여준 규칙성대로라면 대충 4분도 안 남았어]</p>
+
+<p class="uk">UK: >([저 꽃봉오리에서 대체 뭐가 튀어나올 것 같냐]</p>
+
+<p class="uk">UK: >([난 뭐가 됐든 제일 먼저 날 엉덩방아 찧게 만들 것 같은데]</p>
+
+<p class="uk">UK: >([그다음 눈부신 종말을 멍하니 올려다보면서]</p>
+
+<p class="uk">UK: >([우와]</p>
+
+<p class="wa">WA: 전혀 모르겠어-</p>
+
+<p class="wa">WA: 예언이라는 게- 실제 모습으로는 어떻게 생긴 거지-?</p>
+
+<p class="wa">WA: 그러니까- 우리가 아는 건- 여기서 게임이 시작된다는 것뿐이잖아-</p>
+
+<p class="wa">WA: 그게 무슨 뜻인지는 모르겠지만-</p>
+
+<p class="wa">WA: 그냥 우리가 퍼뜨려야 하는 파일 하나 같은 걸지도 모르고-</p>
+
+<p class="uk">UK: >([개인적으론 뭔가 존나 큰 폭발이 일어나길 바라고 있는데 우리 운빨이 늘 그렇듯]</p>
+
+<p class="uk">UK: >([결국엔 더럽게 썩은 새끼 #ㅏ나 튀어나와서는 우릴 낚았다고나 씨부리겠지]</p>
+
+<p class="uk">UK: >([그럼 색종이 팡팡 터지고 관객들은 녹음된 웃음소리나 깔면서 배를 잡고 웃겠지 내가 축축한 파멸 속으로 걸어 들어가 자살하는 동안]</p>
+
+<p class="wa">WA: 그걸로 죽지는 않을 것 같은데-</p>
+
+<p class="wa">WA: 적어도 바로 죽진 않을 거야- 특히 너라면 더-</p>
+
+<p class="wa">WA: 엄청 크게 다치긴 하겠지만-</p>
+
+<p class="uk">UK: >([그거야말로 혈관 속 우울을 제대로 끌어올리는 방법 같네]</p>
+
+<p class="uk">UK: >([다행히 난 그런 타입은 아니라서]</p>
+
+<p class="wa">WA: 설마 한 번도 우울해하지 않는다는 뜻은 아니지-?</p>
+
+<p class="uk">UK: >([아냐 임마 감정이 없는 놈이란 소린 아니야]</p>
+
+<p class="uk">UK: >([그냥 너희 우울보들만큼 심하게 가라앉진 않는단 얘기지]</p>
+
+<p class="uk">UK: >([뭐 물론]</p>
+
+<p class="uk">UK: >([여긴 우울한 곳이고 우울한 때야]</p>
+
+<p class="uk">UK: >([우울한 놈들이랑 우울한 애들이 있고 환경은 지옥으로 굴러가면서 살아남기도 더 빡세졌지]</p>
+
+<p class="uk">UK: >([근데 여기서 나까지 가라앉아 버리면]</p>
+
+<p class="uk">UK: >([그럼 누가 버티겠냐]</p>
+
+<p class="wa">WA: 난 보통은 괜찮은 편인 것 같은데-</p>
+
+<p class="uk">UK: >([근데 넌 내가 아니잖냐]</p>
+
+<p class="uk">UK: >([기분 나쁘게 들으란 건 아닌데 우린 각자 맡은 자리랑 역할은 확실하게 지켜야 돼 안 그러면 다 뒤섞여 버리잖아]</p>
+
+<p class="uk">UK: >([그러니까 난 고무가 될 테니 넌 풀이나 해라]</p>
+
+<p class="wa">WA: 그건 맞는 말인 것 같네-</p>
+
+<p class="wa">WA: 비유를 이용한 놀림을- 그대로 되돌려줬네-</p>
+
+<p class="wa">WA: 그건 인정할게-</p>
+
+<p class="wa">WA: 아- 그러고 보니-</p>
+
+<p class="wa">WA: 지금 알비온한테 무슨 일 있는지 알아-?</p>
+
+<p class="wa">WA: 아까 다급한 메시지를 몇 개 보내왔는데-</p>
+
+<p class="wa">WA: 요즘은 거의 얘기를 안 하지만- 상태가 많이 안 좋아 보였어-</p>
+
+<p class="wa">WA: 괜찮은지 물어봤는데- 답이 없더라고-</p>
+
+<p class="wa">WA: 그래서-</p>
+
+<p class="uk">UK: >([반짝거리는 녀석한테 무슨 일 있는진 씨발 나도 몰라]</p>
+
+<p class="uk">UK: >([전체 공지 말고 따로 얘기한 건 너랑 꼬불머리랑 흉터쟁이뿐이었어]</p>
+
+<p class="uk">UK: >([아 그리고 아랫니 걔도 있긴 한데 그걸 대화라고 할 수 있으면 말이지]</p>
+
+<p class="uk">UK: >([난 그 대화가 성립 안 하게 #ㅏ려고 있는 힘껏 애썼거든]</p>
+
+<p class="uk">UK: >([내 생각엔 걔는 멀쩡할 거고 설령 아니더라도 지금은 부수적인 일보다 게임 시작부터 신경 써야지]</p>
+
+<p class="uk">UK: >([내가 보기엔 지금 우리한테 엄청 끔찍한 일이 생길 리는 없을 것 같거든]</p>
+
+<p class="uk">UK: >([우린 이 여행 시동 거는 열쇠를 돌리는 놈들이니까 잠깐은 무적이나 다름없잖아]</p>
+
+<p class="uk">UK: >([근데 진짜 짜증 나는 건 죄다 "나도 뭔지 모름" 타령만 하고 있다는 거야 꼭 싸구려 사료처럼 계속 처먹이는 것마냥]</p>
+
+<p class="uk">UK: >([밖으로 나가기 전 준비 단계에서 제일 중요한 건 나랑 너인데 우리조차 자세한 건 #ㅏ나도 못 듣는다고]</p>
+
+<p class="uk">UK: >([씨발 사진첩이 통째로 있는 것도 아닌데도 그냥 #ㅐ야 #ㅏ니까 #ㅏ고 있는 거지]</p>
+
+<p class="uk">UK: >([가끔은 #ㅡ름이라는 게 좀 있었으면 좋겠단 생각은 든다]</p>
+
+<p class="wa">WA: 그래도- 그건 우리가 결정할 일이 아니잖아-</p>
+
+<p class="wa">WA: 우리가 그 흐름이 되어 줘야 해- 다른 사람들한테는-</p>
+
+<p class="wa">WA: 솔직히- 이 모든 게 터무니없이 말도 안 되는 소리처럼 들리는 것도 이해는 가-</p>
+
+<p class="wa">WA: 아니면 그냥- 너무 벅차게 느껴질 수도 있고-</p>
+
+<p class="wa">WA: 그래도 우리가 할 수 있는 건- 별로 없어- 적어도 난 그래-</p>
+
+<p class="wa">WA: 아크젝이 들어오기 전까지는-</p>
+
+<p class="wa">WA: 그러니까 결국 궁금한 건-</p>
+
+<p class="wa">WA: 꽃 일이 1분쯤 뒤에 끝나면- 우린 뭘 하게 될 것 같아-?</p>
+
+<p class="wa">WA: 꽃이 피고 나면- 더 할 일은 없을 것 같은데-</p>
+
+<p class="wa">WA: 그냥- 손가락이나 꼼지락거리면서 기다리는 거겠지-</p>
+
+<p class="uk">UK: >([내 생각엔 레슬렛은 이 일 끝나자마자 메시지를 미친 듯이 쏟아낼 걸]</p>
+
+<p class="uk">UK: >([큰소식 미리 문자로 알려줬는데도 꿈쩍도 안 하더라고 그러니 결국 몸으로 직접 배우게 생겼지]</p>
+
+<p class="uk">UK: >([우리도 마찬가지고]</p>
+
+<p class="uk">UK: >([드디어 눈물이나 질질 짜는 대신 뭔가 제대로 배우게 되겠네]</p>
+
+<p class="uk">UK: >([걔가 난리 치는 동안]</p>
+
+<p class="uk">UK: >([탄산 장수는 빠지고 있을 테니까]</p>
+
+<p class="uk">UK: >([그동안 너랑 난 털복숭이 정치 이야기나 마저 하자고]</p>
+
+<p class="uk">UK: >([내가 빚 #ㅏ나 있잖냐]</p>
+
+<p class="wa">WA: 그건 맞아- 확실히 하나 빚졌지-</p>
+
+<p class="wa">WA: 멍-</p>
+
+<p class="uk">UK: >([난 여기서 이 불타는 노란 글자들만 좀 마저 끝내고 바로 갈게]</p>
+
+<p class="uk">UK: >([우리처럼 존나 중요한 놈들이면 진짜 게임도 제대로 #ㅐ 볼 기회는 있어야지]</p>
+
+<p class="uk">UK: >([일단은 가짜 게임으로 만족#ㅐ야겠지만]</p>
+
+<p class="uk">UK: >([왔다]</p>
+
+</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00243.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00241.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

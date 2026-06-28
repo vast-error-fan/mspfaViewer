@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00265</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.space{
+     margin:0 0 20px 0 !important;
+    color:#000000;
+}
+
+.space2{
+     margin:20px 0 0 0 !important;
+    color:#000000;
+}
+
+.uk{
+    color:#510049;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">아크젝<span class="colon">:</span> 메모를 연다.</h1>
+
+    <img src="../assets/panels/act1/00265.gif"
+class="panel"
+alt="00265">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+    <p class="narration"><span style="color:#510049;">unclaspedKahuna [UK]</span>가 단체 메모를 생성했습니다.</p>
+
+
+<p>UK가 <span style="color:#7f0000;">sanguineAllegory [SA]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#c44000;">gigantisDebilitation [GD]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#b95c00;">animatedHumorist [AH]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#b49e18;">furbishFacilitated [FF]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#407d00;">demiurgeQuantified [DQ]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#00a596;">pliableDecadence [PD]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#004696;">windlessArtificer [WA]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#00007f;">macabreExude [ME]</span>를 대화에 추가했습니다.</p>
+
+<p>UK가 <span style="color:#39017f;">perniciousOverkill [PO]</span>를 대화에 추가했습니다.</p>
+
+<p class="space">UK가 <span style="color:#a00078;">grandioseSaturation [GS]</span>를 대화에 추가했습니다.</p>
+
+
+<p class="uk">UK: >([필요 없는 한 명만 빼면 이제 다 모였네]</p>
+
+<p class="space"><span style="color:#510049;">UK: >([좋아 그럼 이제 다들 아가리 좀 닥쳐]</span></p>
+
+
+<p>UK가 <span style="color:#7f0000;">SA</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#c44000;">GD</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#b95c00;">AH</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#b49e18;">FF</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#407d00;">DQ</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#00a596;">PD</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#004696;">WA</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#00007f;">ME</span>의 메모 답장을 차단했습니다.</p>
+
+<p>UK가 <span style="color:#39017f;">PO</span>의 메모 답장을 차단했습니다.</p>
+
+<p class="space">UK가 <span style="color:#a00078;">GS</span>의 메모 답장을 차단했습니다.</p>
+
+<p class="uk">UK: >([난 제일 중요한 문제 말고는 시간 낭비 안 할 거야]</p>
+
+<p class="uk">UK: >([이 일에 관#ㅐ서는 진작에 몇몇한텐 내가 따로 메시지도 보내 놨지만 이제부터가 공식 작전 브리핑이다 오늘 이 지옥 같은 #ㅏ루에 뭐가 기다리고 있는지 알려 주지]</p>
+
+<p class="uk">UK: >([일단, 존나 많다]</p>
+
+<p class="uk">UK: >([대충 말#ㅏ면 난 몇 스윕 동안 그 양반이 준비한 이 축제를 위해 조사도 #ㅏ고 이것저것 도와주면서 일#ㅐ 왔어]</p>
+
+<p class="uk">UK: >([그래서 그 축제가 대체 뭔데 #ㅏ고 지금쯤 바지 적시면서 멍하니 궁금#ㅐ#ㅏ고 있을 텐데]</p>
+
+<p class="uk">UK: >([간단#ㅣ 말#ㅐ서 최신식 비디오 게임 프로젝트 #ㅏ나다 목표는 우리 모두 존나 큰 영웅이 되는 거고]</p>
+
+<p class="uk">UK: >([이런 거 좋아#ㅏ는 놈들도 몇 있잖아]</p>
+
+<p class="uk">UK: >([적어도 둘이나 셋 정도는]</p>
+
+<p class="uk">UK: >([그리고 이 새끼는 세상을 뒤틀어 놓는 시스템에 목표 수행까지 갖춘 풀패키지다 우리가 지금까지 영구 할인 코너에서 건져 온 몇 안 되는 괜찮은 게임들처럼 말이지]</p>
+
+<p class="uk">UK: >([근데 이 게임은]</p>
+
+<p class="uk">UK: >([니들이 지금까지 #ㅐ 본 어떤 게임이랑도 달라]</p>
+
+<p class="uk">UK: >([이름도 모를 거야 아직 정식 이름조차 없거든]</p>
+
+<p class="uk">UK: >([평소처럼 다들 출시만 기다렸다가 시작하자마자 덕후들끼리 반쯤 죽여 가며 달려드는 그런 대형 신작이랑은 아예 다르다고]</p>
+
+<p class="uk">UK: >([그리고 난 영혼까지 갈아 넣어 연구한 끝에 니들 전부를 이 게임에 집어넣는 대략적인 방법도 알아냈지]</p>
+
+<p class="uk">UK: >([내 시대가 시작될 무렵부터 서 있던 어떤 오컬트 영묘 안에서 내 인생을 죄다 바쳐 가며 해낸 성과지]</p>
+
+<p class="uk">UK: >([참고로 이건 #ㅏ고 말고를 니들이 선택할 수 있는 문제가 아니고 팩트야]</p>
+
+<p class="uk">UK: >([이 게임은 자연의 법칙한테 가서 스스로 엿이나 처먹고 사라지라고 말#ㅏ는 수준의 물건이거든]</p>
+
+<p class="uk">UK: >([니들이 준비됐을 때가 아니라 지가 준비됐을 때 시작한다]</p>
+
+<p class="uk">UK: >([솔직#ㅣ 니들이 언제 들어오게 될지도 어떻게 들어오게 될지도 나도 모르고 지금도 만든 양반이랑 계속 얘기 중이고]</p>
+
+<p class="uk">UK: >([시작#ㅏ기 전에 던전으로 다시 내려가 중요한 부분들만 한 번 더 확인하고 올 생각이다]</p>
+
+<p class="uk">UK: >([근데 오래 안 걸릴걸]</p>
+
+<p class="uk">UK: >([여기서 중요한 건 "곧"이라는 말이야 시간은 우리가 제일 조심해야 #ㅏ는 개같은 변수거든]</p>
+
+<p class="uk">UK: >([안 따라오면 대가는 죽음이지]</p>
+
+<p class="uk">UK: >([곱게 죽지도 못#ㅐ]</p>
+
+<p class="uk">UK: >([간단히 말해서 운석이 #ㅏ늘에서 떨어져서 니들이랑 #ㅏ이브랑 행성까지 한 방에 벌레처럼 짓눌러 버릴 거다]</p>
+
+<p class="uk">UK: >([뭐 사실 그건 어차피 일어날 일이긴 한데 그래도 니들은 거기서 빠져나오니까 걱정은 말고]</p>
+
+<p class="uk">UK: >([내가 다 책임질 테니까 니들 걱정은 전부 내 창자 깊숙한 데 처박아 두고 맡겨 둬]</p>
+
+<p class="uk">UK: >([니들은 다 무사#ㅣ 빠져나올 거야 물론 가진 건 죄다 박살 나고 이 세상 입장에선 존재째로 사라지는 셈이겠지만]</p>
+
+<p class="uk">UK: >([자 이제 여기 모인 진짜 이유를 말해 주지]</p>
+
+<p class="uk">UK: >([우리 모두가 겪게 될 이 개같은 일을 넘기고 살아남으려면 뭘 #ㅐ야 하는지 설명하려고 왔다]</p>
+
+<p class="uk">UK: >([그러니까 연필 #ㅏ나 꺼내라 지금부터 존나 큰 돌덩이에 깔려 납작해지는 걸 피#ㅏ는 법을 알려 줄 테니까]</p>
+
+<p class="uk">UK: >([몸도 인생도 통째로 박살 나기 전에 운석을 피할 방법은 있어]</p>
+
+<p class="uk">UK: >([그 방법은 바로 우리의 성스러운 법칙]</p>
+
+<p class="uk">UK: >([우정 시스템이다]</p>
+
+<p class="uk">UK: >([우리한텐 각자 클라이언트 #ㅏ나 서버 #ㅏ나가 있고 전부 그 두 역할을 맡게 되거든]</p>
+
+<p class="uk">UK: >([둘 다 게임을 굴리는 데 꼭 필요#ㅏ고 진행#ㅏ면서 역할도 계속 서로 바뀌지</p>
+
+<p class="uk">UK: >([클라이언트는 게임 안으로 들어가는 쪽이고 서버는 걔가 무사#ㅣ 들어가게 도와주는 쪽이야</p>
+
+<p class="uk">UK: >([맞다 게임은 이 과정 끝내기 전까진 진짜 시작도 안 한거임 게임을 시작#ㅏ려면 먼저 시간 제한 미니 이벤트부터 깨야 되거든]</p>
+
+<p class="uk">UK: >([이 쓸데없이 복잡한 구조 진짜 마음에 든다 만든 양반이 내 아가미 깊숙한 속마음까지 이#ㅐ한 것 같네]</p>
+
+<p class="uk">UK: >([젖가슴 펀치랑 두 스윕 원형 가방 그림자는 본인이 원하든 말든 제일 먼저 시작한다]</p>
+
+<p class="uk">UK: >([나도 이걸 노리고 짠 농담은 아니고 운명이 그냥 니들 가랑이 살을 천천#ㅣ 비틀면서 갖고 노는 건듯]</p>
+
+<p class="uk">UK: >([나머지는 이렇게 이어져]</p>
+
+<p class="uk">UK: >([po -> wa -> 나 -> gd -> dq -> pd -> sa -> ff -> 나 -> gs -> '수정됨' -> ah]</p>
+
+<p class="uk">UK: >([그러니까 이 줄을 따라가다 보면 바로 뒤 사람의 서버가 되고 그 다음엔 또 다음 사람한테 클라이언트가 되는 식으로 내일의 세계에 차례차례 들어가게 되는 거야]</p>
+
+<p class="uk">UK: >([아직 안 했다면 자기 담당이랑 얘기 좀 해 둬라 니 존재 이유 자체를 쥐고 있는 놈들이니까]</p>
+
+<p class="uk">UK: >([뭐 이 괴상한 조합들도 어떻게든 굴러가긴 하겠지]</p>
+
+<p class="uk">UK: >([나도 이게 정확#ㅣ 어떻게 돌아갈지 앞으로 뭘 보게 될지는 모르지만 잘만 되면 적어도 몸은 안 사라질 거야]</p>
+
+<p class="uk">UK: >([다 끝나면 결국 연필 길이만큼 원래 자리로 되돌아오긴 할 텐데 진심으로 #ㅏ는 말이니까 '수정됨'한텐 너무 기대 걸진 마라]</p>
+
+<p class="uk">UK: >([자세한 얘긴 안 #ㅏ겠지만 걔가 끼면 진짜 골치만 더 커져]</p>
+
+
+<p class="uk">UK: >([이건 나도 반쯤 내 신념을 어기는 말이긴 한데 진짜 걔 없이 가는 편이 훨씬 나아]</p>
+
+<p class="uk">UK: >([무슨 뜻인지 아는 놈도 몇은 있을 거야]</p>
+
+<p class="uk">UK: >([걘 좋은 소식이 아니야 이미 나쁜 소식도 산더미처럼 쌓여 있는데 거기까지 얹을 필요는 없으니까 방금 한 말은 적당히 흘려들어도 돼]</p>
+
+p class="uk">UK: >([마지막으로 줄 수 있는 건 내가 유적 복원하면서 베껴 적은 코드들이고]</p>
+
+<p class="uk">UK: >([이건 내가 확실#ㅏ게 알고 있는 몇 안 되는 진짜 중요한 정보니까 꼭 챙겨 둬]</p>
+
+<p class="uk">UK: >([니들 전부 코드가 다 다르겠지만 매 과정마다 반복#ㅐ서 나오는 숫자 몇 개는 있어]</p>
+
+<p class="uk">UK: >([1263, 1194, 1077, 5728, 6012]</p>
+
+<p class="uk">UK: >([이 숫자들이 #ㅏ늘에서 날아오는 뜨거운 용암 덩어리를 피#ㅏ는 것 말고도 무슨 의미가 있냐고?]</p>
+
+<p class="uk">UK: >([씨발 나도 지금 단계에서 그걸 알면 좋겠네]</p>
+
+<p class="uk">UK: >([대신 이 숫자들엔 중요한 그림 문자도 딸려 있으니까 아래에 링크 걸어 둘게]</p>
+
+<p class="uk">UK: >([<a href="https://tinyurl.com/yd3l4ev9">https://tinyurl.com/yd3l4ev9</a>]</p>
+
+<p class="uk">UK: >([내가 #ㅐ 줄 말은 여기까지야 솔직히]</p>
+
+<p class="uk">UK: >([때가 오면 내가 말한 대로만 #ㅏ면 돼 그러면 괜찮을 거야]</p>
+
+<p class="uk">UK: >([제발 들어가기 전에 같은 질문을 수십억 번씩 다시 하게 만들지만 마라]</p>
+
+<p class="uk">UK: >([니들 전부 합쳐서 멍청한 질문은 다섯 번까지만 받는다 그 뒤론 설명 캠프 문 닫음]</p>
+
+<p class="uk">UK: >([애초에 이건 게임이잖아 직접 부딪히면서 배워야 제대로 굴러갈 거야 아마도]</p>
+
+<p class="uk">UK: >([그러니까 재밌게들 #ㅐ 봐]</p>
+
+<p class="uk">UK: >([아니면 그러다 죽든가]</p>
+
+<p class="uk">UK: >([반대편에서 보자]</p>
+
+<p class="narration"><span style="color:#510049;">unclaspedKahuna [UK]</span>가 이름 없는 그룹에서 나갔습니다.</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00266.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00264.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
