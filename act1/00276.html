@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00276</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:center;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    font-family:Courier, monospace;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.po{
+    color:#39017F;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+.bold{
+    font-weight:bold;
+    font-size:1.1em;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+    text-align:center;
+}
+
+.space{
+     padding:13px 0;
+    color:#000000;
+    text-align:center;
+}
+
+.space2{
+     margin:20px 0 0 !important;
+    color:#000000;
+    text-align:center;
+}
+
+.space3{
+     margin:0 0 20px !important;
+    color:#000000;
+    text-align:center;
+}
+
+
+.large{
+    font-size:18px;
+}
+
+.section-title{
+    margin:13px 0 20px !important;
+    text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">타즈와 아크젝<span class="colon">:</span> 수상하게 생긴 <span style="white-space: nowrap;">꼬불꼬불 버튼을 누른다.</span></h1>
+
+    <img src="../assets/panels/act1/00276.png"
+class="panel"
+alt="00276">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="튜토리얼 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="narration"><span class="large">게임 소개</span></p>
+
+<p class="space3">환영합니다.</p>
+
+<p class="narration">본 문서는 게임의 기본적인 진행 방식과, 생존을 위해 플레이어가 반드시 알아야 할 사항을 안내하기 위한 소개입니다. 아직 여러분의 파티가 이번 게임 세션의 이름을 정하지 않았다면, 가능한 한 빨리 정하는 것을 권장합니다. 이후 의사소통을 원활하게 하는 데 도움이 될 것입니다.</p>
+
+<p class="narration">이 게임은 플레이어가 <span class="bold">어떤 방식으로 플레이할 것인지</span>를 자유롭게 선택할 수 있도록 설계되어 있습니다. 여러분 각자의 선택과 판단이 없다면, 이 게임의 최종 목표는 아무 의미도 없는 것이 되고 맙니다. 다만 여정을 순조롭게 시작할 수 있도록 몇 가지 기본 시스템은 미리 준비되어 있습니다.</p>
+
+<p class="narration"><span class="bold">서버</span> 플레이어라면, 여러분의 역할은 클라이언트 플레이어가 <span class="bold">미디움</span>이라 불리는 별개의 영역으로 진입할 수 있도록 돕고, <span class="bold">위험</span>으로부터 보호하는 것입니다.</p>
+
+<p class="narration"><span class="bold">클라이언트</span> 플레이어라면, 서버 역할을 수행할 차례가 되었을 때 반드시 이 화면으로 다시 돌아와 주십시오. 그 시점이 되면 현재 정지 상태인 화면이 클라이언트 화면으로 전환되며 이를 알려 줄 것입니다.</p>
+
+<p class="narration">이 안내문을 읽고 있다는 것은 이미 게임 UI에 정상적으로 접속했으며, 서버/클라이언트 연결 또한 성공적으로 완료되었음을 의미합니다. 게임 설치가 완료될 무렵에는, 여러분의 세션에 참가한 플레이어 수에 비례한 수의 운석이 여러분의 행성을 향해 접근하기 시작할 것입니다. 이 구간은 게임의 <span class="bold">튜토리얼</span>입니다. 기본 시스템과 핵심 조작법, 그리고 본격적인 게임의 시작에 필요한 모든 내용을 익힐 수 있도록 구성되어 있습니다.</p>
+
+<p class="space">======&gt;</p>
+
+<p class="space">-------------------------------------------</p>
+
+<p class="section-title"><span class="large">클라이언트 정보</span></p>
+
+<p class="narration">화면 좌측 상단에는 클라이언트의 <span class="bold">현재 정보</span>가 표시됩니다. 모든 플레이어 아이콘과 해당 색상은 각 플레이어가 사용하는 채팅 클라이언트의 설정을 기반으로 적용됩니다.</p>
+
+<p class="narration">이 영역에서는 클라이언트의 <span class="bold">플레이어 프로필</span>과 현재 <span class="bold">게임 내 레벨</span>을 확인할 수 있습니다. 해당 정보를 선택하면 플레이어에 관한 중요한 최신 정보가 표시됩니다.</p>
+
+<p class="narration">그 아래에는 세 개의 작은 게이지가 있으며, 위에서부터 순서대로 다음 정보를 나타냅니다.</p>
+
+<p class="space2">- 클라이언트의 <span class="bold">경험치(금색)</span></p>
+
+<p class="narration">- <span class="bold">이벤트 타이머(파란색)</span></p>
+
+<p class="space3">- 현재 <span class="bold">목표 진행도(흰색)</span></p>
+
+<p class="narration">각 게이지에 커서를 올리면 보다 자세한 정보를 확인할 수 있습니다. 이 영역 하단의 커다란 초록색 게이지는 클라이언트의 <span class="bold">체력</span>을 나타냅니다. 체력이 완전히 소진될 경우 해당 플레이어는 <span class="bold">사망</span>한 것으로 간주됩니다.</p>
+
+<p class="narration">현재 단계에서는 <span class="bold">이벤트 타이머</span>를 지속적으로 확인하는 것이 무엇보다 중요합니다. 클라이언트가 진입 절차를 완료하기 전에 타이머가 모두 소진될 경우, 플레이어는 운석 충돌과 함께 <span class="bold">사망</span>합니다. 반드시 이러한 상황이 발생하지 않도록 하십시오. 클라이언트가 사망할 경우 게임은 정상적으로 진행되지 않으며, 여러분의 행성과 <span class="bold">미디움</span>에 진입한 다른 플레이어들에게도 예기치 못한 부정적인 결과가 발생할 수 있습니다.</p>
+
+<p class="space">======&gt;</p>
+
+<p class="space">-------------------------------------------</p>
+
+<p class="section-title"><span class="large">서버 정보 / 플레이어 탐색</span></p>
+
+<p class="narration"><span class="bold">SERVER</span> 플레이어의 아이콘과 체력 게이지는 <span class="bold">클라이언트</span>와 동일한 방식으로 작동하며, 화면 우측 상단에 표시됩니다.</p>
+
+<p class="narration">또한 서버 플레이어는 다양한 <span class="bold">카메라 조작 기능</span>을 사용할 수 있습니다. 사용 가능한 기능은 다음과 같습니다.</p>
+
+<p class="space2">- <span class="bold">방향 이동</span></p>
+
+<p class="narration">- <span class="bold">카메라 회전</span></p>
+
+<p class="narration">- <span class="bold">확대/축소</span></p>
+
+<p class="space3">- <span class="bold">클라이언트 위치 찾기</span></p>
+
+<p class="narration"><span class="bold">클라이언트 위치 찾기</span>를 선택하면 카메라가 자동으로 클라이언트의 위치를 중앙에 맞춥니다. 이를 통해 필요할 때 언제든지 클라이언트를 쉽게 찾을 수 있습니다.</p>
+
+<p class="section-title"><span class="large">파티</p>
+
+<p class="narration">화면 가장 왼쪽에는 얇은 검은색 화살표가 있습니다.</p>
+
+<p class="narration">이를 선택하면 사이드바가 열리며, 이미 화면에 표시되어 있는 <span class="bold">클라이언트</span>와 <span class="bold">서버</span>를 제외한 나머지 파티원들의 <span class="bold">체력</span>과 <span class="bold">플레이어 프로필</span>을 확인할 수 있습니다.</p>
+
+<p class="narration">단, 다른 플레이어들이 각자 자신의 <span class="bold">서버/클라이언트 연결</span>을 완료하기 전까지는 해당 플레이어의 프로필에 접근할 수 없습니다.</p>
+
+<p class="space">======&gt;</p>
+
+<p class="space">-------------------------------------------</p>
+
+<p class="section-title"><span class="large">도구 모음</p>
+
+<p class="narration">UI 하단에는 다양한 기능을 수행하는 버튼과 정보 표시창이 배치되어 있습니다. 기능 목록은 다음과 같습니다.</p>
+
+<p class="space2">======&gt; 메뉴</p>
+
+<p class="narration">======&gt; 도움말/튜토리얼 <span class="bold">(현재 위치)</span></p>
+
+<p class="narration">======&gt; 거래 센터</p>
+
+<p class="narration">======&gt; 프로필</p>
+
+<p class="narration">======&gt; 채팅 클라이언트</p>
+
+<p class="narration">======&gt; 경험치 게이지/레벨</p>
+
+<p class="narration">======&gt; 제작</p>
+
+<p class="space3">======&gt; 인벤토리</p>
+
+<p class="narration">일부 기능은 게임을 진행하면서 순차적으로 해금됩니다. 새로운 기능이 활성화될 때마다 본 튜토리얼 창에서 추가 안내가 제공됩니다.</p>
+
+<p class="narration">또한 자신의 <span class="bold">프로필</span>에서는 클라이언트의 프로필과 동일한 형식으로, 자신의 정보를 확인할 수 있습니다.</p>
+
+<p class="narration">여러분과 다른 플레이어들은 <span class="bold">미디움</span>에 진입한 이후부터 경험치를 획득하기 시작합니다. 경험치는 <span class="bold">목표와 퀘스트를 완료하거나</span>, <span class="bold">적을 처치하거나</span>, <span class="bold">재화를 획득하거나</span>, <span class="bold">다양한 영웅적인 행동을 수행하거나</span>, <span class="bold">업적(ACHIEVEMENTS)</span>을 해금함으로써 얻을 수 있으며, 일정량의 경험치를 모으면 레벨이 상승합니다.</p>
+
+<p class="narration">모든 플레이어는 <span class="bold">레벨 1</span>에서 게임을 시작합니다. 다만 레벨을 올리는 과정은 플레이어마다 서로 다르며, 각자의 게임 여정을 반영하는 고유한 방식으로 진행됩니다. 또한 <span class="bold">최대 레벨</span>에 도달하기 위해서는 여러 단계를 거치는 <span class="bold">특정한 방법</span>이 필요합니다. 이에 대한 자세한 내용은 이후 진행 과정에서 안내됩니다.</p>
+
+<p class="narration"><span class="bold">제작</span>과 <span class="bold">인벤토리</span> 창은 게임을 진행하는 동안 꾸준히 활용하게 됩니다. 여러분과 클라이언트가 직접 획득하거나 제작한 모든 아이템은 획득한 재화와 함께 <span class="bold">인벤토리</span>에서 확인하고 사용할 수 있습니다. <span class="bold">제작</span> 창에서는 다양한 재료를 조합하여 새로운 아이템을 만들 수 있으며, 이를 통해 게임 진행과 생존 가능성을 더욱 높일 수 있습니다. 게임에서 여러분이 처음으로 수행하게 될 임무는 바로 이 두 기능을 사용하는 것입니다. 클라이언트가 눈앞에 닥친 죽음을 피할 수 있도록, <span class="bold">제작 창</span>을 이용해 필요한 아이템을 만들어야 합니다.</p>
+
+<p class="narration"><span class="bold">미디움</span>에 진입한 이후에는 도구 모음 왼쪽에 있는 아이콘들을 원하는 대로 선택하고 재배치할 수 있습니다. 또한 플레이 방식에 따라 기본 기능 외에도 새로운 기능이 게임에 추가될 수 있습니다.</p>
+
+<p class="narration">여러분의 파티에서 사용하는 공식 통신 클라이언트는 <span class="bold">스코르페</span>입니다. 한 번 설정된 이후에는 다른 통신 클라이언트로 변경할 수 없습니다. 다른 통신 수단으로 전환하려고 시도하지 마십시오. 그럴 경우 다른 플레이어들과의 연결이 끊길 수 있습니다.</p>
+
+<p class="space">======&gt;</p>
+
+<p class="space">-------------------------------------------</p>
+
+<p class="section-title"><span class="large">마무리</p>
+
+<p class="narration">이상으로 게임의 주요 UI와 클라이언트를 <span class="bold">미디움</span>으로 진입시키기 위한 기본 튜토리얼을 모두 마칩니다.</p>
+
+<p class="narration">이제 신속하면서도 신중하게 행동하십시오. 구조물의 피해는 가능한 한 최소화하고, 이번 세션이 끝날 때까지 서로 협력하며 살아남기 위해 최선을 다하십시오.</p>
+
+<p class="narration">행운을 빕니다.</p>
+
+<p class="narration">======&gt; ======&gt; ======&gt; ======&gt; ======&gt; ======&gt; ======&gt; ======&gt; ======&gt; ======&gt; ======&gt; ======&gt;</p>
+
+<p class="space2">-------------------------------------------</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00277.html" class="next-link">
+        &gt; 타즈와 아크젝: 튜토리얼을 닫는다.
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00275.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "튜토리얼 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "튜토리얼 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
