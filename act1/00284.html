@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00284</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.po{
+    color:#39017F;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">고맙군. 자, 어디까지 이야기했더라?</h1>
+
+    <img src="../assets/panels/act1/00284.gif"
+class="panel"
+alt="00284">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+<div class="chatlog">
+
+<p class="ah">AH: XDXD 그건 법적으로 대답할 의무 없어. 그건 나랑 나만의 비밀이거든. XDXD</p>
+
+<p class="ah">AH: XDXD 게다가 방금 종이들이, 그러니까. 중요하다고 말했잖아? XDXD</p>
+
+<p class="ah">AH: XDXD 처음엔 그 본래 가치를 너무 쉽게 무시해 버렸으니까, 이제라도 조금은 예의를 갖춰 주고 싶었던 것뿐이야. XDXD</p>
+
+<p class="ah">AH: XDXD 내 말이라고 어디 가서 인용하진 말고, 진심으로 미안해하는 감정을 느끼는 건 건강하고 정상적인 일이라던데. XDXD</p>
+
+<p class="ah">AH: XDXD 있잖아. 사과는 해야겠다. XDXD</p>
+
+<p class="ah">AH: XDXD 미안해, 종이들아. 진심으로. 이번 일에서 너희가 차지하는 당연한 자리를 내가 너무 얕봤어. 바닥에 처량하게 널브러져 있는 모습이 중요한 게 아니었네. 우리를 이 끔찍한 상황에 함께 묶어 주고 있다는 사실이 중요했던 거지. XDXD</p>
+
+<p class="ah">AH: XDXD 이런 힘든 때에 중재자 역할까지 맡아 줘서 정말 고마워. XDXD</p>
+
+<p class="ah">AH: XDXD 우리끼리 하는 말인데, 난 타즈가 지금 좀 너무 심한 것 같아. XDXD</p>
+
+<p class="ah">AH: XDXD 그렇게 매정한 취급을 받을 이유는 없잖아. 아무도 그런 대접을 받아선 안 돼. ...아, 나만 빼고. XDXD</p>
+
+<p class="ah">AH: XDXD 쉿, 괜찮아. 너희가 등에 짊어진 그 기호들의 무게 정도는 내가 대신 져도 상관없어. 이렇게 너희랑 가짜 대화까지 시작했으니, 이제부턴 안심해도 돼. XDXD</p>
+
+<p class="po">PO: ~와, +ㅡ래.~</p>
+
+<p class="po">PO: ~또 존나 쓸데없는 빈정+ㅓ림을 한 바+ㅏ지 쏟아내 줘서 정말 +ㅗ맙다.~</p>
+
+<p class="po">PO: ~+ㅡ+ㅓ 하나하나+ㅏ 아주 유익했고, 지금 이 상황을 해결하는 데 딱 필요한 말들이었겠네.~</p>
+
+<p class="po">PO: ~종이들도 네 친절과 배려에 아주 감동했을 +ㅓ다.~</p>
+
+<p class="po">PO: ~근데 그냥 생각인데, 다음부턴 처음부터 공손하게 뭘 해야 하는지 물어봤으면 훨씬 편하지 않았겠냐.~</p>
+
+<p class="ah">AH: XDXD 지금 와선 마음을 열어 줄 것 같진 않은데. XDXD</p>
+
+<p class="ah">AH: XDXD 차라리 네가 정중하게 물어봐. 어차피 종이들은 지금 이 대화를 실시간으로 보고 듣고 있잖아. XDXD</p>
+
+<p class="ah">AH: XDXD 그렇지? XDXD</p>
+
+<p class="ah">AH: XDXD 아, 미안. 종이들한테 한 말이야. XDXD</p>
+
+<p class="po">PO: ~내가 이 말도 안 되는 장단에 맞춰 대답까지 하+ㅔ 될 줄은 몰랐는데.~</p>
+
+<p class="po">PO: ~영상이랑 음성은 양방향이 아니다.~</p>
+
+<p class="po">PO: ~난 +ㅡ냥 화면에다 대고 말하는 꼴밖에 안 되+ㅓ든. 대화 상대로는 별 도움이 안 돼.~</p>
+
+<p class="ah">AH: XDXD 네가 답은 타자로 치면 되잖아. 으르렁거리는 건 내가 알아서 통역해 줄게. XDXD</p>
+
+<p class="po">PO: ~아니면.~</p>
+
+<p class="po">PO: ~이런 미친 생각은 어때.~</p>
+
+<p class="po">PO: ~씨발 그냥 하던 일이나 계속하지 그래.~</p>
+
+<p class="ah">AH: XDXD 그럼 나도 더 미친 생각 하나 해 볼게. XDXD</p>
+
+<p class="ah">AH: XDXD 그냥 이것 좀 하게 냅두면 안 되겠냐? XDXD</p>
+
+<p class="ah">AH: XDXD 아니, 차라리 사과하지. 지금까지 내 의지랑은 아무 상관도 없는 일에 말 그대로 끌려 들어와서는, 내 한심한 인생에서 두 번째로 최악인 하루를 보내고 있는데, 하필 다시는 키보드 너머로 죽어 가는 소리나 듣고 싶지 않았던 단 한 사람을 제일 먼저 마주한 와중에도 분위기라도 좀 풀어 보려 했던 건 미안하다. XDXD</p>
+
+<p class="ah">AH: XDXD 아, 맞다! 네가 빽빽거리는 지시나 상식보다 RGB 전선이 더 많이 튀어나온 이해도 안 되는 미친놈의 헛소리를 따르지 않으면 나 곧 죽는다는 것도 있었지. XDXD</p>
+
+<p class="ah">AH: XDXD 그것도 빼먹으면 안 되겠네! XDXD</p>
+
+<p class="ah">AH: XDXD 그러니까 네가 같은 말만 몇 번이고 몇 번이고 몇 번이고 소리 지르면서, 내가 가장 기초적인 개념조차 이해 못 하는 바보인 것처럼 구는 동안에도, 내가 기분이라도 좀 붙잡아 보려 했던 건 제발 좀 봐줘! XDXD</p>
+
+<p class="ah">AH: XDXD 내가 네 발앞에 엎드려, 재앙이나 다름없는 그 분노에 절이라도 하면서 감사하길 바라냐? 몇 스윕 동안이나 그게 내 머리 위에 유령처럼 따라다녔는데도? XDXD</p>
+
+<p class="ah">AH: XDXD 넌 내가 결과를 내길 바라는 거야, 아니면 내가 시간을 낭비한다고 떠들면서 정작 네 시간이나 계속 낭비할 생각이야??? XDXD</p>
+
+<p class="ah">AH: XDXD 지금 우리 둘 다 간신히 서 있는 연단이잖아. XDXD</p>
+
+<p class="ah">AH: XDXD 그러니까 네 방식대로 하고 싶으면, 얼마든지 해. 네 쪽에서 마음대로 하면 되잖아. XDXD</p>
+
+<p class="ah">AH: XDXD 하지만 적어도 내가 맡은 쪽에선, 난 내 방식대로 할 거야. XDXD</p>
+
+<p class="ah">AH: XDXD 그래도 꼭 그래야 한다면, 우리 둘 다 살아남기 위해서 중간쯤에서 타협할 생각은 있어. XDXD</p>
+
+<p class="ah">AH: XDXD 하지만 이게 다 끝나면, 내가 계속 이렇게 네 샌드백 노릇이나 해 줄 거라고는 꿈도 꾸지 마. XDXD</p>
+
+<p class="ah">AH: XDXD 여기서 나가는 순간, 우린 끝이야. XDXD</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00285.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00284.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

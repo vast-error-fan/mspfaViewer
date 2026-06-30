@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00273</title>
+<title>00303</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -232,55 +232,16 @@ white-space:nowrap;
 
 }
 
-.spoiler-button{
-    cursor:pointer;
+.video-panel{
+    width:650px;
+    margin:0 auto;
 }
 
-.preamble-content{
-    display:none;
-    margin-top:15px;
-}
-
-.gray-box{
-
-    width:94%;
-
-    margin:10px auto;
-
-    padding:4px 0;
-
-    border:1px dashed #999;
-
-    text-align:center;
-
-    box-sizing:border-box;
-
-}
-
-.chatlog{
-    text-align:left;
-    padding:0 35px;
-    font-weight: 600;
-    line-height:1.35;
-    font-size:14px;
-    
-}
-
-.chatlog p{
-     margin:0 0 4px 0;
-}
-
-.narration{
-     margin:12px 0 !important;
-    color:#000000;
-}
-
-.po{
-    color:#39017F;
-}
-
-.ah{
-    color:#b95c00;
+.video-panel iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    display:block;
 }
 
 </style>
@@ -360,72 +321,30 @@ class="nav-icon">
 
 <div class="page">
 
-    <h1 class="page-title">======></h1>
+    <h1 class="page-title">아크젝<span class="colon">:</span> 낫을 챙긴다.</h1>
 
-    <img src="../assets/panels/act1/00273.gif"
+<img src="../assets/panels/act1/00303.gif"
 class="panel"
-alt="00273">
+alt="00303">
 
 <div class="story">
 
-<div class="gray-box">
+<p>더 말은 얹지 않은 채 대화를 끝내고, 하이브에서 꼭 챙겨 가야겠다고 생각한 물건 하나를 집어 든다. 앞으로 무슨 일이 기다리고 있을지는 전혀 알 수 없다. 나중에 상황이 좀 험하게 돌아가더라도 몸을 지킬 무기 하나쯤은 들고 있는 게 나쁠 건 없으니까.</p>
 
-<input
-type="button"
-id="preambleButton"
-value="스코펠로그 열기"
-class="spoiler-button"
-onclick="togglePreamble()">
+<p>물론 이게 실질적으로 얼마나 도움이 되는 무기인지는 별개의 문제다. 휘두르다가 엉덩방아를 찧고 척추까지 부러뜨리지 않을 정도로만 겨우 다룰 줄 안다.</p>
 
-<div id="preamble" class="preamble-content">
+<p>낫은 이 행성의 모든 애벌레에게 기본 지급되는 방어 장비다. 행성 구석구석에 서식하는 위험한 생물들에 대비하기 위한 최소한의 안전장치인 셈이다. 물론 이제 막 애벌레 생활을 끝낸 어린 트롤들한테 이런 걸 쥐여 준다고 크게 도움이 되진 않는다. ...그래도 성의는 보인 거니까. 어느 정도는.</p>
 
-<p>
-<div class="chatlog">
+<p>대부분의 트롤은 성장하면서 자기 성격과 전투 방식에 어울리는 무기를 새로 갖게 된다. 하지만 넌 애초에 이걸 쓸 일이 없었다. 그 점만큼은 꽤 운 좋게 살아온 덕분이라고 해도 되겠지.</p>
 
-<p class="ah">AH: XDXD 내가. XDXD</p>
+<p>하지만 지금 처한 상황은 "운이 좋다"와는 정반대다. 그래서 오랜만에 낫을 다시 전투 스페시버스에 할당한다.</p>
 
-<p class="ah">AH: XDXD 내가 이걸 보고 무슨 말을 해야 할지 모르겠네. XDXD</p>
-
-<p class="ah">AH: XDXD 아니, 애초에 무슨 말을 할 수는 있는 건가? XDXD</p>
-
-<p class="po">PO: ~문제라는 말은 할 수 있지.~</p>
-
-<p class="po">PO: ~그리고 이제는 내 말을 들을 차례고.~</p>
-
-<p class="ah">AH: XDXD 아니, 내가 하고 싶은 말은 이 우주적 농담이 드디어 선을 한참 넘었다는 거야. XDXD</p>
-
-<p class="ah">AH: XDXD 제자리로 한 바퀴 돌아오는 것까지는 그렇다 쳐도, 이제는 그 원이 멈춰 선 선 하나를 사이에 두고 자기 자신을 또 감싸기 시작했잖아. XDXD</p>
-
-<p class="ah">AH: XDXD 그런데 그 선이 뭘 만드는지 알아? XDXD</p>
-
-<p class="ah">AH: XDXD 또 다른 원이야! XDXD</p>
-
-<p class="ah">AH: XDXD 그렇게 원은 하나 위에 또 하나씩 끝없이 쌓여 올라가다가 결국 세상 끝까지 닿는 거지. XDXD</p>
-
-<p class="ah">AH: XDXD 그리고 신기하게도, 우린 마침내 그 꼭대기까지 와 버린 모양이고. XDXD</p>
-
-<p class="po">PO: ~좋아. 이제는 진짜 입 좀 다물어.~</p>
-
-<p class="po">PO: ~오늘 밤 들은 개소리도, 너 상대하는 것도, 내 문제도 전부 합치니까 이젠 정말 질렸거든.~</p>
-
-<p class="po">PO: ~지금은 이 상황 뒤에 깔린 실존적 개념 따위를 붙잡고 징징거릴 시간이 아니야.~</p>
-
-<p class="ah">AH: XDXD 그건 네 생각이지. XDXD</p>
-
-<p class="po">PO: ~그래. 내 생각이다.~</p>
+<p>좋아. 인벤토리 정리 끝.</p>
 
 </div>
 
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-    <a href="00274.html" class="next-link">
-        &gt; ======>
+    <a href="00304.html" class="next-link">
+        &gt; 아크젝: 단열 외피 위에 놓인 책을 마지막으로 한 번 바라본다.
     </a>
 
     <div class="footer-links">
@@ -433,36 +352,12 @@ onclick="togglePreamble()">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00272.html">뒤로 가기</a>
+            <a href="00302.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
-
-<script>
-function togglePreamble() {
-
-    var preamble =
-        document.getElementById("preamble");
-
-    var button =
-        document.getElementById("preambleButton");
-
-    if (preamble.style.display === "block") {
-
-        preamble.style.display = "none";
-        button.value = "스코펠로그 열기";
-
-    } else {
-
-        preamble.style.display = "block";
-        button.value = "스코펠로그 닫기";
-
-    }
-
-}
-</script>
 
 </body>
 </html>

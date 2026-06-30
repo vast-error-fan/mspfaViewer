@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00273</title>
+<title>00311</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -10,20 +10,51 @@ body{
 
 margin:0;
 
-background:#535353;
+background:#fff;
 
 font-family:
 "Courier New",
 Courier,
 monospace;
 
+min-height:100vh;
+
+overflow-x:hidden;
+
+position:relative;
+
 }
 
 .wrapper{
-    width:950px;
-    margin:0px auto;
-    background:#c6c6c6;
-    min-height:600px;
+
+    position:relative;
+
+    z-index:1;
+
+    width:940px;
+
+    max-width:950px;
+
+    margin:0 auto;
+
+    padding:7px 0;
+
+    box-sizing:content-box;
+
+
+    background:rgba(0,0,0,.50);
+
+}
+@media only screen and (max-width:1000px){
+
+    .wrapper{
+
+        width:auto;
+
+        padding:0;
+
+    }
+
 }
 
 .page{
@@ -98,7 +129,7 @@ Verdana,
 Arial,
 sans-serif;
 
-color:#0000ff;
+color:#000000;
 
 text-decoration:underline;
 
@@ -125,15 +156,15 @@ font-weight:normal;
 
 .footer-links a{
 
-color:#0000aa;
+color:#000000;
 
 text-decoration:underline;
 
 text-underline-offset:2px;
 
-}.top-nav{
+}
 
-color:#000000;
+.top-nav{
 
 position:relative;
 
@@ -141,15 +172,13 @@ z-index:2;
 
 width:100%;
 
-margin:0 auto;
+margin:0 auto 15px auto;
 
-min-height:32px;
+height:24px;
 
 line-height:24px;
 
-padding-top:0px;
-
-background:#535353;
+background:#000;
 
 text-align:center;
 
@@ -162,27 +191,19 @@ font-size:11px;
 
 font-weight:bold;
 
-border-bottom:1px solid #535353;
-
 }
 
 .top-nav-inner{
 
-max-width:950px;
-
-width:100%;
+width:950px;
 
 margin:0 auto;
-
-position:relative;
-
-top:-2px;
 
 }
 
 .top-nav a{
 
-color:#ffffff;
+color:#fff !important;
 
 text-decoration:none;
 
@@ -216,7 +237,7 @@ width:15px;
 
 height:15px;
 
-margin:0 4px;
+margin:0 8px;
 
 vertical-align:middle;
 
@@ -232,55 +253,28 @@ white-space:nowrap;
 
 }
 
-.spoiler-button{
-    cursor:pointer;
+.video-panel{
+    width:650px;
+    margin:0 auto;
 }
 
-.preamble-content{
-    display:none;
-    margin-top:15px;
-}
+#noise{
 
-.gray-box{
+position:fixed;
 
-    width:94%;
+inset:0;
 
-    margin:10px auto;
+z-index:0;
 
-    padding:4px 0;
-
-    border:1px dashed #999;
-
-    text-align:center;
-
-    box-sizing:border-box;
+pointer-events:none;
 
 }
 
-.chatlog{
-    text-align:left;
-    padding:0 35px;
-    font-weight: 600;
-    line-height:1.35;
-    font-size:14px;
-    
-}
-
-.chatlog p{
-     margin:0 0 4px 0;
-}
-
-.narration{
-     margin:12px 0 !important;
-    color:#000000;
-}
-
-.po{
-    color:#39017F;
-}
-
-.ah{
-    color:#b95c00;
+.video-panel iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    display:block;
 }
 
 </style>
@@ -288,7 +282,9 @@ white-space:nowrap;
 </head>
 <body>
 
-     <div class="top-nav">
+<canvas id="noise"></canvas>
+
+<div class="top-nav">
 
 <div class="top-nav-inner">
 
@@ -360,72 +356,17 @@ class="nav-icon">
 
 <div class="page">
 
-    <h1 class="page-title">======></h1>
+    <h1 class="page-title">ACT 1 종료.</h1>
 
-    <img src="../assets/panels/act1/00273.gif"
+<img src="../assets/panels/act1/00311.gif"
 class="panel"
-alt="00273">
+alt="00311">
 
 <div class="story">
-
-<div class="gray-box">
-
-<input
-type="button"
-id="preambleButton"
-value="스코펠로그 열기"
-class="spoiler-button"
-onclick="togglePreamble()">
-
-<div id="preamble" class="preamble-content">
-
-<p>
-<div class="chatlog">
-
-<p class="ah">AH: XDXD 내가. XDXD</p>
-
-<p class="ah">AH: XDXD 내가 이걸 보고 무슨 말을 해야 할지 모르겠네. XDXD</p>
-
-<p class="ah">AH: XDXD 아니, 애초에 무슨 말을 할 수는 있는 건가? XDXD</p>
-
-<p class="po">PO: ~문제라는 말은 할 수 있지.~</p>
-
-<p class="po">PO: ~그리고 이제는 내 말을 들을 차례고.~</p>
-
-<p class="ah">AH: XDXD 아니, 내가 하고 싶은 말은 이 우주적 농담이 드디어 선을 한참 넘었다는 거야. XDXD</p>
-
-<p class="ah">AH: XDXD 제자리로 한 바퀴 돌아오는 것까지는 그렇다 쳐도, 이제는 그 원이 멈춰 선 선 하나를 사이에 두고 자기 자신을 또 감싸기 시작했잖아. XDXD</p>
-
-<p class="ah">AH: XDXD 그런데 그 선이 뭘 만드는지 알아? XDXD</p>
-
-<p class="ah">AH: XDXD 또 다른 원이야! XDXD</p>
-
-<p class="ah">AH: XDXD 그렇게 원은 하나 위에 또 하나씩 끝없이 쌓여 올라가다가 결국 세상 끝까지 닿는 거지. XDXD</p>
-
-<p class="ah">AH: XDXD 그리고 신기하게도, 우린 마침내 그 꼭대기까지 와 버린 모양이고. XDXD</p>
-
-<p class="po">PO: ~좋아. 이제는 진짜 입 좀 다물어.~</p>
-
-<p class="po">PO: ~오늘 밤 들은 개소리도, 너 상대하는 것도, 내 문제도 전부 합치니까 이젠 정말 질렸거든.~</p>
-
-<p class="po">PO: ~지금은 이 상황 뒤에 깔린 실존적 개념 따위를 붙잡고 징징거릴 시간이 아니야.~</p>
-
-<p class="ah">AH: XDXD 그건 네 생각이지. XDXD</p>
-
-<p class="po">PO: ~그래. 내 생각이다.~</p>
-
 </div>
 
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-    <a href="00274.html" class="next-link">
-        &gt; ======>
+    <a href="00312.html" class="next-link">
+        &gt; 인터미션 1
     </a>
 
     <div class="footer-links">
@@ -433,35 +374,52 @@ onclick="togglePreamble()">
         <div>
             <a href="0002.html">처음부터 다시 시작</a>
             |
-            <a href="00272.html">뒤로 가기</a>
+            <a href="00310.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
 
+
 <script>
-function togglePreamble() {
 
-    var preamble =
-        document.getElementById("preamble");
+const canvas=document.getElementById("noise");
+const ctx=canvas.getContext("2d");
 
-    var button =
-        document.getElementById("preambleButton");
+function drawNoise(){
 
-    if (preamble.style.display === "block") {
+const img=ctx.createImageData(canvas.width,canvas.height);
+const data=img.data;
 
-        preamble.style.display = "none";
-        button.value = "스코펠로그 열기";
+for(let i=0;i<data.length;i+=4){
 
-    } else {
+const v=Math.random()>0.5?255:0;
 
-        preamble.style.display = "block";
-        button.value = "스코펠로그 닫기";
-
-    }
+data[i]=v;
+data[i+1]=v;
+data[i+2]=v;
+data[i+3]=255;
 
 }
+
+ctx.putImageData(img,0,0);
+
+}
+
+function resize(){
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+drawNoise();
+
+}
+
+window.addEventListener("resize",resize);
+
+resize();
+
 </script>
 
 </body>
