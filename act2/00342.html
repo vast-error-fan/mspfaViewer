@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00342</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.eo{
+    color:#6D8400;
+}
+
+.me{
+    color:#00007f;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">엘시<span class="colon">:</span> 믿을 수 있는 사람에게 답장한다.</h1>
+
+    <img src="../assets/panels/act1/00342.gif"
+class="panel"
+alt="00342">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]</span>가 <span class="me">macabreExude [ME]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="eo">EO: ㅎΣ이, 거기 있어¿¿</p>
+
+<p class="eo">EO: 바쁜 건 알지만, 시간 날 때 잠깐 이야기할 수 있으면 좋겠어.</p>
+
+<p class="eo">EO: =:)</p>
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]</span>가 <span class="me">macabreExude [ME]</span>의 트롤링을 중단한다 --
+</p>
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]</span>가 <span class="me">macabreExude [ME]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="eo">EO: .......................
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]</span>가 <span class="me">macabreExude [ME]</span>의 트롤링을 중단한다 --
+</p>
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]</span>가 <span class="me">macabreExude [ME]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="eo">EO: 안녕¿¿
+<p class="eo">EO: =:(
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]</span>가 <span class="me">macabreExude [ME]</span>의 트롤링을 중단한다 --
+</p>
+
+<p class="narration">
+-- <span class="me">macabreExude [ME]</span>가 <span class="eo">existereOracle [EO]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="me">ME: 안녕.하십니까.</p>
+
+<p class="me">ME: 더 일찍 답장을 드리지 못한 점, 사.과.드립.니다.</p>
+
+<p class="me">ME: 며칠이나 지났다는 사실은 저도 알고. 있.습니다.</p>
+
+<p class="me">ME: 유감스럽게도 제게는 할.애할 시간이 많.지 않.습니다만, 적어도 짧은 답장 정도는 당신께서 받으실 만하다고 생각.했습니다.</p>
+
+<p class="eo">EO: 아아아아아아¡¡ 안녕, 자기야¡¡¡¡</p>
+
+<p class="eo">EO: 음, 조금 늦은 감이 있ㄴΣ... 그래도 뭐라도 말해 줘서 고마워.</p>
+
+<p class="eo">EO: 이번엔 뭐 때문ㅇΣ 그렇게 정신없었어¿¿</p>
+
+<p class="me">ME: 마침내 돌파구를 찾기 직전.에 이른 것 같.습니다.</p>
+
+<p class="me">ME: 이렇게 강한 확신을 느낀 것은 오.랫.동안 처음.입니다.</p>
+
+<p class="me">ME: 정말로 이 세계를 구할 기회가 생.길 수도 있.습니다.</p>
+
+<p class="me">ME: 추가 연구를 위해 다시 밖.으로 나가, 더 많은 표본을 채.집할 계획.입니다.</p>
+
+<p class="me">ME: 바라건대 이번이 마지막.이기를 바랍.니다.</p>
+
+<p class="eo">EO: 오, 그거 다행이야. 그렇ㄱΣ 들으니 정말 기뻐¡¡</p>
+
+<p class="eo">EO: 분명 곧 해낼 수 있을 거야.</p>
+
+<p class="eo">EO: 그리고 해내면 반드시 나한테 알려줘야 해¡¡</p>
+
+<p class="eo">EO: 무엇보다 내가, ㄴΣ 멋지고 기적 같은 치료법 이야기를 꼭 듣고 싶어 할 거야. =&gt;:0</p>
+
+<p class="me">ME: 제 실험과 관련된 최신 정.보는, 가능한 한 계속 전.해 드리도록 하겠.습니다.</p>
+
+<p class="me">ME: 왜냐하면 이것 없.이는</p>
+
+<p class="me">ME: 안. 됩.니다.</p>
+
+<p class="me">ME: 당신. 없.이는요.</p>
+
+<p class="me">ME: 우.리 행성은 아마 완전히 멸망하고 말 겁니다.</p>
+
+<p class="me">ME: 그동안의 대화상 무례를 용서해 주실 수 있기를 바.랍.니다, 나의 소중한 이여.</p>
+
+<p class="me">ME: 이 삶에서 하고 싶은 일은 많.이 있.습니다만, 당신을 무시하는 일만큼은 결코 그중 하나.가 아니라.는 걸 알아 주셨으면 합.니다.</p>
+
+<p class="me">ME: 하.지.만</p>
+
+<p class="me">ME: 당신도 이 일.의 중요.성은 여전히 이해하고 계시.겠지요.</p>
+
+<p class="me">ME: 그렇습니까?</p>
+
+<p class="eo">EO: 응, 물론이지... 큰일이라는 건 알고 있어.</p>
+
+<p class="eo">EO: 특히 너한테는, 누구보다도 더 중요하다는 것도.</p>
+
+<p class="eo">EO: 그리고 내가 이 일을 하면 안 된다고 생각하ㄱΣ 만들려는 건 아니야.</p>
+
+<p class="eo">EO: 정말 대단한 일이고, 난 널 믿어¡¡ 너는 엄청 똑똑한 사람이니까.</p>
+
+<p class="eo">EO: 그냥... 조금만 더 자주 볼 수 있으면 좋겠다는 것뿐이야.</p>
+
+<p class="eo">EO: =:'(</p>
+
+<p class="me">ME: 이 일이 잘. 풀.린다면, 제가 생각한 만큼 어쩌면 그럴 수 있을지도 모릅니다.</p>
+
+<p class="me">ME: cB}</p>
+
+<p class="eo">EO: 그러면 정말 좋겠다¡¡</p>
+
+<p class="me">ME: 음, 우리 둘 다 그걸 원하고 있으니.</p>
+
+<p class="me">ME: 이제 저는 나.가 봐.야 합.니다.</p>
+
+<p class="me">ME: 오늘 밤은 중.요.한 밤이 될 겁니다.</p>
+
+<p class="me">ME: 괜찮으시다면, 밖.에서 행운을 빌어 주.시겠습니까?</p>
+
+<p class="eo">EO: 알겠어¡¡¡¡</p>
+
+<p class="eo">EO: 당연히 ㄴΣㄱΣ 최고의 행운을 빌어줄게¡¡¡¡</p>
+
+<p class="eo">EO: 나중ㅇΣ 어떻ㄱΣ 됐는지 꼭 말해 줘, 알겠지¿¿</p>
+
+<p class="eo">EO: 사랑해. &lt;3</p>
+
+<p class="me">ME: 감사.합니다.</p>
+
+<p class="me">ME: 최선을 다.하겠.습니다.</p>
+
+<p class="me">ME: 모.두를 위해.서.</p>
+
+<p class="narration">
+-- <span class="me">macabreExude [ME]</span>가 <span class="eo">existereOracle [EO]</span>의 트롤링을 중단한다 --
+</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00343.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00341.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
