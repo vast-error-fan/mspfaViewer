@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00377</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+.unknown{
+    color:#0952DD;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+
+<img src="../assets/panels/act2/00377.gif"
+class="panel"
+alt="00377">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="ah">아크젝: XDXD 무섭다고? XDXD</p>
+
+<p class="ah">아크젝: XDXD 네가 무섭다고?? XDXD</p>
+
+<p class="ah">아크젝: XDXD "무섭다"가 무슨 뜻인지는 알고 말하는 거야??? XDXD</p>
+
+<p class="ah">아크젝: XDXD 말해 봐. 이유도 없이 갑자기 미친 듯이 웃어 대는, 방금 처음 만난 멍청이 하나와, 거대한 공기 덩어리가 나타나더니 변신시키는 신비한 에너지 구체가 되어 네 눈앞에서 파란 용 같은 무언가로 실체화하는 것 중에 대체 어느 쪽이 더 경악스러운데???? XDXD</p>
+
+<p class="ah">아크젝: XDXD 아, 그리고 그게 어째선지 내 이름까지 알고 있지. 이제부터 모든 일이 아주 평범하게 흘러갈 거라는 확실한 신호지. XDXD</p>
+
+<p class="unknown">???: 아. 맞아, 미안.</p>
+
+<p class="unknown">???: 내가 예의가 없었네.</p>
+
+<p class="unknown">???: 처음부터 아무 말도 하지 말았어야 했을까? 그랬다면 네가 진정할 시간이 좀 더 있었을 텐데.</p>
+
+<p class="unknown">???: 지금이라도 그렇게 해 볼 수 있어.</p>
+
+<p class="ah">ARCJEC: XDXD 네가 뭘 해야 할지는 내가 알 바 아니야, 파란 용 같은 거. XDXD</p>>
+
+<p class="ah">아크젝: XDXD 나는 일단 바지 안을 뒤덮기 직전인, 공포의 폭발을 억누르는 게 주된 행동이 될 것 같거든. XDXD</p>
+
+<p class="unknown">???: 오, 그건 꽤 웃겼어!</p>
+
+<p class="unknown">???: 여기서 웃었어야 했는데.</p>
+
+<p class="unknown">???: 하지만 그럴 필요는 없어.</p>
+
+<p class="ah">아크젝: XDXD 난 전적으로 반대해! XDXD</p>
+
+<p class="ah">아크젝: XDXD 봐, 그냥... 이건 서로 의견이 다르다고 치자. 나 지금 진짜 간신히 참고 있거든. XDXD</p>
+
+<p class="ah">아크젝: XDXD 방금 네가 본 그 발작 같은 거? 절박한 구조 요청이었어. 남아 있는 이성이라도 붙잡으려면, 가슴속에 처박힌 감정들을 어떻게든 밖으로 쏟아 내야 했던 사람의 몸부림이었지. XDXD</p>
+
+<p class="unknown">???: 그 횡설수설도 구조 요청의 일종이야?</p>
+
+<p class="ah">아크젝: XDXD 그럴지도. XDXD</p>
+
+<p class="ah">아크젝: XDXD 아니, 여기서 내가 뭘 더 할 수 있는데?? XDXD</p>
+
+<p class="ah">아크젝: XDXD 나는 지금 글자 그대로 아무것도 없는 곳 한가운데의 커다란 회색 판 위에 서서, 빌어먹을 마법 용이랑 대화하고 있다고. XDXD</p>
+
+<p class="ah">아크젝: XDXD 이 게임이 날 밀어 넣고 싶었던 게 이런 동화 같은 상황이라면, 난 여기서 씨발 퇴장 처리해 줬으면 좋겠어. XDXD</p>
+
+<p class="unknown">???: 그건 조금, 그러니까...</p>
+
+<p class="unknown">???: 불가능해.</p>
+
+<p class="unknown">???: 하지만 나는 그저 네게 유용한 정보를 알려 주는 것뿐이야!</p>
+
+<p class="unknown">???: 안심해. 내게 잠깐만 시간을 준다면, 넌 훨씬 나아질 거야.</p>
+
+<p class="ah">아크젝: XDXD 그럴까? XDXD</p>
+
+<p class="ah">아크젝: XDXD 정말 그럴까?? XDXD</p>
+
+<p class="unknown">???: 날 믿어. 그럴 거야.</p>
+
+<p class="unknown">???: 네가 바라는 만큼은 아닐지도 몰라. 하지만 지금 이 순간에는, 분명히.</p>
+
+<p class="unknown">???: 이런 설명은 너나 내가 셀 수 없을 만큼 많이 해 왔고, 나는 그럴 때 어떤 결과가 가장 흔한지도 알고 있어.</p>
+
+<p class="ah">아크젝: XDXD 참 대단해서 좋겠네. XDXD</p>
+
+<p class="ah">아크젝: XDXD 그래, 알았어. 해 봐. 어차피 나도 남은 제정신 조각을 회복할 시간이 좀 필요하니까. XDXD</p>
+
+<p class="ah">아크젝: XDXD 그 조각들이 이 발판 끝 바로 너머에 숨어 있을지도 모르고? XDXD</p>
+
+<p class="unknown">???: 아직은 그쪽으로 가지 않았으면 해.</p>
+
+<p class="unknown">???: 그렇지 않으면... 크흠!</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00378.html" class="next-link">
+        &gt; ======>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="../act1/0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00376.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

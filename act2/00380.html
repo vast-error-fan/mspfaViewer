@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00380</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+.zehanpuryu{
+    color:#0952DD;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+
+<img src="../assets/panels/act2/00380.gif"
+class="panel"
+alt="00380">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="zehanpuryu">제한푸류: 네가 게이트를 활성화하는 데 실패했다면, 그래. 그 말이 맞아.</p>
+
+<p class="zehanpuryu">제한푸류: 하지만 네가 맡은 일을 성공적으로 끝냈으니, 네 집 위에는 두 번째 게이트가 형성됐어. 그 덕분에 운석은 네 행성의 그 구역을 파괴하지 못했지.</p>
+
+<p class="zehanpuryu">제한푸류: 대신 운석은 내가 방금 말한 방벽으로 곧장 들이받았어.</p>
+
+<p class="zehanpuryu">제한푸류: 사실 그 방벽은 꽤나 새로운 물건이야!</p>
+
+<p class="zehanpuryu">제한푸류: 그래도 이 새로운 방식은 분명 네게 도움이 되도록 마련된 거겠지.</p>
+
+<p class="ah">아크젝: XDXD 그러니까... 운석은 그냥 겁을 존나 주고 복종하게 만들려고 시간 맞춰 작동하는 장치라는 거네. XDXD</p>
+
+<p class="ah">아크젝: XDXD 완전히 상관없는 거라면, 굳이 그렇게 다른 데로 보내는 이유가 뭐야? XDXD</p>
+
+<p class="zehanpuryu">제한푸류: 그건 네가 잘못 알고 있어! 이 운석들은 언제나 목적이 있었어.</p>
+
+<p class="zehanpuryu">제한푸류: 지난 모든 세션에서는 플레이어들의 행성에 남아 있던 것들을 파괴하는 데 쓰였어. 새로운 무언가가 생길 수 있도록 동기를 주고, 길을 비우기 위해서 말이야.</p>
+
+<p class="zehanpuryu">제한푸류: 하지만 이번에는 네 행성이 게임의 퍼즐을 이루는 핵심 요소로 쓰일 거야.</p>
+
+<p class="ah">아크젝: XDXD 그럼 이 특정 퍼즐에서 "스카이아"라는 곳은 무슨 역할을 하는데? XDXD</p>
+
+<p class="zehanpuryu">제한푸류: 간단해. 그걸 깨서, 안에 든 것을 사용하는 거야.</p>
+
+<p class="ah">아크젝: XDXD 어. XDXD</p>
+
+<p class="ah">아크젝: XDXD 왜? XDXD</p>
+
+<p class="zehanpuryu">제한푸류: 그건 아직 네가 걱정할 일이 아니야.</p>
+
+<p class="ah">아크젝: XDXD 하지만 나중에는 걱정할 일이 되겠지. XDXD</p>
+
+<p class="zehanpuryu">제한푸류: 응!</p>
+
+<p class="ah">아크젝: XDXD 와, 오늘 밤 나는 정말 중요하기도 하지! XDXD</p>
+
+<p class="ah">아크젝: XDXD 이런 얘기는 좀 더 일찍 들었으면 좋았을 텐데. XDXD</p>
+
+<p class="ah">아크젝: XDXD 이제 나는 중요하기도 하고 쓸모도 있어야 하네! 가슴 펴고 자랑스럽게 내세울 만한 성질 두가지는 아니지만. XDXD</p>
+
+<p class="ah">아크젝: XDXD 그래서, 벌레들 사이의 신이 되어 이 마법 게임을 하게 되는 편도 티켓은 어디서 받는데? XDXD</p>
+
+<p class="zehanpuryu">제한푸류: 이 일을 해 나갈 방법은 여러 가지야. 그중에는 다른 것보다 더 효과적인 방법도 있고. 스스로 선택하는 일은 아주 중요해.</p>
+
+<p class="zehanpuryu">제한푸류: 어떤 길을 택할지는 결국 네게 달려 있어.</p>
+
+<p class="zehanpuryu">제한푸류: 네 고유한 클래스는 조금...</p>
+
+<p class="zehanpuryu">제한푸류: 골치 아픈 성향이 있거든.</p>
+
+<p class="zehanpuryu">제한푸류: 하지만 너라면 스스로 답을 찾아내고, 이 난관을 넘어설 거라고 믿어!</p>
+
+<p class="zehanpuryu">제한푸류: 새로운 경험과 진전이 쌓이면, 때가 되면 모든 것이 더 선명해질 거야.</p>
+
+<p class="zehanpuryu">제한푸류: 하지만 걸을 땅이 없으면 첫걸음도 내디딜 수 없지.</p>
+
+<p class="ah">아크젝: XDXD 그래, 그럼 제발 좀 주면 좋겠는데. XDXD</p>
+
+<p class="ah">아크젝: XDXD 내 진짜 자아가 활짝 피어날 수 있게 해 줄 그 황홀한 판타지 세계는 대체 어디 있는데? XDXD</p>
+
+<p class="ah">아크젝: XDXD 나 지금 좀 사기당한 기분이 들기 시작했거든! XDXD</p>
+
+<p class="ah">아크젝: XDXD 말해 두는데, 지금 이 상태면 네 게임 후기 별 다섯 개는 물 건너갔어. XDXD</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00381.html" class="next-link">
+        &gt; ======>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="../act1/0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00379.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>

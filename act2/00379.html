@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00379</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+.zehanpuryu{
+    color:#0952DD;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+
+<img src="../assets/panels/act2/00379.gif"
+class="panel"
+alt="00379">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="ah">아크젝: XDXD 그래, 알았어. 다 좋아. XDXD</p>
+
+<p class="ah">아크젝: XDXD 지금까지 들은 다른 것들만큼은 믿을 만하니까, 일단은 의심을 접어 두고 그냥 이 흐름에 맞춰 보겠어. XDXD</p>
+
+<p class="ah">아크젝: XDXD 오늘 밤이 씨발 엄청 길고 고된 밤이었다는 점은 차치하고 말이지. XDXD</p>
+
+<p class="ah">아크젝: XDXD 내가 지금 좀 "씨발 존나 화난" 쪽에 치우쳐 있는 건 이해해 줘야 할 거야. XDXD</p>
+
+<p class="ah">아크젝: XDXD 아무튼. 넌 아직 쓸모 있는 말은 하나도 안 했고, 나는 여전히 존나 헷갈리는데?! XDXD</p>
+
+<p class="ah">아크젝: XDXD 애매하게 궁금증만 부풀리는 거랑, 억지로 경이로움을 자아내려는 연출은 내 단백질 통로를 그렇게 매끄럽게 넘어가지 못하고 있거든. XDXD</p>
+
+<p class="ah">아크젝: XDXD 수고를 좀 덜어 줄 생각이 있다면, 나를 생산적인 방향으로 이끌어 줄 간단한 답부터 바로 들을 수 있으면 좋겠어. XDXD</p>
+
+<p class="ah">아크젝: XDXD 이 즐거움으로 가득한, 참으로 멋진 매체 안에서 우리는 정확히 어디에 있는 건데. 그게 좋은 시작이겠네. XDXD</p>
+
+<p class="zehanpuryu">제한푸류: 말했듯이, 그 구체적인 내용은 네게 달려 있어!</p>
+
+<p class="zehanpuryu">제한푸류: 지금 우리는 거의 아무 데에도 와 있지 않아. 너는 텅 빈 바탕 위에 서 있을 뿐이야.</p>
+
+<p class="zehanpuryu">제한푸류: 네가 무엇을 원하는지, 그리고 무엇보다 무엇을 필요로 하는지 내게 보여 줘야만 채워질 수 있는 캔버스지.</p>
+
+<p class="zehanpuryu">제한푸류: 이 세계는 너 자신과 네 욕망, 그리고 네가 마주할 과제를 드러내는 형태로 만들어질 거야.</p>
+
+<p class="zehanpuryu">제한푸류: 네가 지나가기에 즐거운 곳은 아닐 수도 있어. 하지만 네 성장을 이끌고 도울 수 있도록 맞춰질 거야.</p>
+
+<p class="ah">아크젝: XDXD 아, 이제 알겠네. XDXD</p>
+
+<p class="ah">아크젝: XDXD 너랑 네가 데리고 다니는 다른 수수께끼의 동료들이랑, 그냥 나한테 음모론이 가득한 밀알 조각을 줄줄이 흘려서 어떤 형태도 없는 자기실현 환상으로 유인하려는 거구나. 네가 무슨 이유에선지 가능하다고 생각하는 그 환상 말이야. XDXD</p>
+
+<p class="ah">아크젝: XDXD 아무것도 설명하지 않으면서도 전부 명확하게 해 줘서 참 고맙다! 이제 나는 현재 상황에 대해 씨발 아는 게 하나도 없는 채로, 완전한 확신을 가지고 앞으로 나아갈 수 있겠네. XDXD</p>
+
+<p class="zehanpuryu">제한푸류: 솔직히 말해서, 우리가 그냥 답을 전부 건네줄 수는 없어.</p>
+
+<p class="zehanpuryu">제한푸류: 그렇게 하면 네가 배울 건 아무것도 남지 않으니까.</p>
+
+<p class="zehanpuryu">제한푸류: 게다가 네가 찾는 세세한 내용은, 이 땅이 스스로 모습을 갖추기 전까지는 설명해 줄 수 없어.</p>
+
+<p class="zehanpuryu">제한푸류: 지금 단계에서 네게 너무 넓은 범위를 보여 주는 건 도움이 되지 않을 거라고 생각해.</p>
+
+<p class="zehanpuryu">제한푸류: 하지만 대략적인 설명 정도는 해 줄 수 있어.</p>
+
+<p class="zehanpuryu">제한푸류: 곧 너만을 위해 만들어진, 완전히 고유한 행성이 모습을 드러낼 거야. 그건 "매체"라고 불리는 더 큰 행성계의 일부지.</p>
+
+<p class="zehanpuryu">제한푸류: 네가 입장해서 나를 함께 데려오기 전까지, 이곳에는 아무것도 없었어.</p>
+
+<p class="zehanpuryu">제한푸류: 이 텅 빈 세계의 껍데기는 수없이 많은 순환을 거쳐 왔고, 그 모든 순환에서 네 우주와 이웃해 있었어. 네 관점에서 보면, 그 시간은 헤아릴 수 없을 만큼 길었지.</p>
+
+<p class="zehanpuryu">제한푸류: 나와 나머지 대응자들 역시 그만큼 오랫동안 이곳에 묶여 있었어.</p>
+
+<p class="zehanpuryu">제한푸류: 우리 각자는 이 매체가 중심으로 삼는 핵심 힘의 한 조각을 나타내. 그 심장부에 있는 핵, 지금은 스카이아라고 불리는 존재 말이야.</p>
+
+<p class="zehanpuryu">제한푸류: 스카이아는 살아 있는 힘이야. 강력한 방벽에 둘러싸여 있었지만, 너는 입장을 완료하고 방금 탈출한 운석의 방향을 틀면서 그 방벽을 깨기 시작했어.</p>
+
+<p class="ah">아크젝: XDXD 잠깐, 그건 좀 이상한데. XDXD</p>
+
+<p class="ah">아크젝: XDXD 입장하기 전까진 상황을 전혀 몰랐지만, 그전에 내 "친구" 중 한 명한테 무슨 일이 벌어질 건지 설명은 들었어. XDXD</p>
+
+<p class="ah">아크젝: XDXD 걔는 너나 이 게임보다도 설명을 못 해. 좀 대단할 정도로. XDXD</p>
+
+<p class="ah">아크젝: XDXD 아무튼, 걔 말로는 내 하이브가, (그리고 무슨 이유로든 내가 제때 못 빠져나왔다면 나까지도) 녹아내린 하늘바위가 존나게 쏟아져서 깔려 뭉개질 거랬어. XDXD</p>
+
+<p class="ah">아크젝: XDXD 여기로 내던져진 뒤에 무슨 일이 일어났는지는 확인할 수 없지만, 걔가 나한테 거짓말을 했다고는 생각하지 않아. XDXD</p>
+
+<p class="ah">아크젝: XDXD 적어도 순전히 기술적인 부분에 관해서는 말이야. XDXD</p>
+
+<p class="ah">아크젝: XDXD 그러니까 모든 정황상, 지금쯤 그쪽 행성 구역은 잔해로 가득한 거대한 구덩이가 되어 있어야 해. XDXD</p>
+
+<p class="ah">아크젝: XDXD ...그리고 그 잔해 한가운데에는 내 루서스가 있고. XDXD</p>
+
+<p class="ah">아크젝: XDXD (불쌍한 녀석.) XDXD</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00380.html" class="next-link">
+        &gt; ======>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="../act1/0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00378.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
