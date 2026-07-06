@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00438</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.eo{
+    color:#6D8400;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">아크젝<span class="colon">:</span> 엘시에게 답장한다.</h1>
+
+    <img src="../assets/panels/act2/00438.gif"
+class="panel"
+alt="00438">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]</span>가 <span class="ah">animatedHumorist [AH]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="eo">EO: 아크젝¿¿ 혹시 거기 있어¿¿</p>
+
+<p>-- <span style="color:#b95c00;">animatedHumorist [AH]</span>은 이런 문구를 생각해 내는 것도 정말 바닥이 나고 있다. 하지 마. 이제 왜 하면 안 되는지는 알겠지? --</p>
+
+<p class="eo">EO: 으으.</p>
+
+<p class="eo">EO: 진짜, 이런 짜증 나는 알림은 대ㅊΣ 언제 꺼 줄 거야¿¿</p>
+
+<p class="eo">EO: 중요한 얘기 하려고 너한ㅌΣ ㅁΣ시지 보내는 ㄱΣ 훨씬 어려워지잖아.</p>
+
+<p class="eo">EO: 내가 오늘 밤 내내 그러려고 했던 것처럼¡¡</p>
+
+<p class="eo">EO: 자세한 건 신경 쓰지 마, 그런데...</p>
+
+<p class="eo">EO: 아악, 됐어¡¡ 언젠가는 내가 왜 이렇ㄱΣ 존나 걱정하고 있는지, 또 왜 내가 '상황을 알고 있는' 건지 알ㄱΣ 될 거야.</p>
+
+<p class="eo">EO: 정말 그 얘기를 직접 들었으면 좋았을 텐데¡¡</p>
+
+<p class="eo">EO: 보통 방식으로 그 정보를 받았으면 진짜아아아 좋았을 거야. =:/</p>
+
+<p class="eo">EO: 그래도 이 일 가지고 계속 씩씩대는 것도 솔직히 좀 지쳤어. 그러니까 이ㅈΣ 그만 신경 쓰려고.</p>
+
+<p class="eo">EO: 좋아.</p>
+
+<p class="eo">EO: 시간 날 때, 우리 얘기해야 할 게 꽤 많아¿¿</p>
+
+<p class="eo">EO: 이거 읽고 나면 말이야. 그냥 잠깐이라도 마음의 준비를 해 두는 ㄱΣ 좋을지도 몰라.</p>
+
+<p class="eo">EO: 하하하하.</p>
+
+<p class="eo">EO: 나도 분명... 필요할 테니까.</p>
+
+<p class="narration">
+-- <span class="ah">animatedHumorist [AH]></span>가 <span class="eo">existereOracle [EO]></span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="narration">
+-- <span class="eo">existereOracle [EO]></span>가 <span class="ah">animatedHumorist [AH]></span>의 트롤링을 중단한다 --
+</p>
+
+<p class="ah">AH: XDXD 이런 순간에 마음의 준비가 가능하지 않다는 건 우리 둘 다 알잖아. XDXD</p>
+
+<p class="ah">AH: XDXD 내가 다시 생각해 보지도 않고, 이 대화를 최대한 빨리 끝내겠다는 목적 하나로 그냥 들이받을 거라고 생각하지 않는다는 뉘앙스는 거의 모욕적으로 느껴질 지경이야. XDXD</p>
+
+<p class="ah">AH: XDXD 이 현상에 이름을 붙이자! '모순 교차로의 역설' 정도가 좋겠네. XDXD</p>
+
+<p class="ah">AH: XDXD 이제부터 우리가 하게 될지도, 안 하게 될지도 모르는 모든 대화에 적용되는 거야. XDXD</p>
+
+<p class="ah">AH: XDXD 어때? XDXD</p>
+
+<p class="eo">EO: ㅅΣ상ㅇΣ¡¡ 안녕¡¡¡¡</p>
+
+<p class="eo">EO: ㄴΣ 소식 들으니까 너무 기뻐¡¡</p>
+
+<p class="ah">AH: XDXD 그만해. XDXD</p>
+
+<p class="eo">EO: 꺼져, 싫어¡¡¡¡ =>:o</p>
+
+<p class="eo">EO: 오늘 밤 내내 물고기 같은 자식들이랑 멍청한 운명한ㅌΣ 무시당하고, 내팽개쳐지고, 이리저리 떠밀렸어.</p>
+
+<p class="eo">EO: 그러니까 사소한 것 좀 즐길 수 있ㄱΣ, 딱 한순간만 나 자신한ㅌΣ 허락해 줄 거야.</p>
+
+<p class="eo">EO: 이 정도는 하게 해 줘, 아크젝.</p>
+
+<p class="ah">AH: XDXD 뭐, 그건 네 권리고 네가 직접 치울 시체들이지. XDXD</p>
+
+<p class="ah">AH: XDXD 그래도 머릿이 너한테 방을 두 번이나 뺏어 간 일에 대해서는 말할 기회가 없었네. XDXD</p>
+
+<p class="ah">AH: XDXD 정확히 말하면, 방을 뺏어 간 건 아니지만. XDXD</p>
+
+<p class="ah">AH: XDXD 대체 그걸로 뭘 이루겠다고 생각한 건지 조금도 모르겠어. 자신을 교활한 모순 덩어리라고 자부하는 놈치고는, 전능할 정도로 멍청한 짓이야. XDXD</p>
+
+<p class="ah">AH: XDXD 그런데 내가 그를 '뚫을 수 없는 빵덩이'라고 불렀다는 건 알리지 마. 내 컴퓨터에 그 자식의 데이터 약탈 바이러스가 더 들어오는 건 절대 사양이야. XDXD</p>
+
+<p class="eo">EO: 응, 그건 좀 처리해야 해.</p>
+
+<p class="eo">EO: 그 난장판 속을 겨우 헤쳐 나갔어¡¡</p>
+
+<p class="ah">AH: XDXD 잠깐. XDXD</p>
+
+<p class="ah">AH: XDXD 네가 뭘 했다고? XDXD</p>
+
+<p class="eo">EO: 어.</p>
+
+<p class="eo">EO: 그으으으으으래...¿¿</p>
+
+<p class="ah">AH: XDXD 설명이 좀 더 필요하겠는데. XDXD</p>
+
+<p class="eo">EO: 그러니까... 우리 얘기해야 할 ㄱΣ 좀 있다고 했던 거 기억나¿¿</p>
+
+<p class="eo">EO: 내가, 어.</p>
+
+<p class="eo">EO: 그ㄱΣ 그중 하나인 것 같아.</p>
+
+<p class="eo">EO: 있잖아, 중요한 볼일이 있어서 밖에 나가 있었는ㄷΣ, 마침 엄청 큰 운석이 ㄴΣ 하이브 쪽으로 날아가는 걸 봤어¡¡</p>
+
+<p class="eo">EO: 그때는 ㄱΣ임ㅇΣ 대해서 아무것도 몰랐고, 내가 도착했을 땐 그곳이 완전히 박살 나 있었어. 그래서 들어가서 조사했어¡¡</p>
+
+<p class="ah">AH: XDXD 와, 네가 원래 어떻게 그렇게 춤을 잘 추게 됐는지 알 것 같네. 지금 하는 것처럼 화제를 빙빙 돌려 대니까. XDXD</p>
+
+<p class="ah">AH: XDXD 이 얘기 그냥 넘길 생각은 없어. 잠깐 보류할 뿐이지. 특히 네 탓에 등이 완전히 구겨졌고, 차마 있었다고 말하기 부끄러운 일도 꽤 많이 벌어졌으니까. XDXD</p>
+
+<p class="ah">AH: XDXD 하지만 뭐, 시간이 없다는 둥 어쩐다는 둥 하니까 네 작은 춤사위에 맞춰 주지. XDXD</p>
+
+<p class="ah">AH: XDXD 나도 씨발 몰라. XDXD</p>
+
+<p class="ah">AH: XDXD 내가 먼저 너한테 연락하지 못한 건, 게임이랑 타즈가 동시에 나를 덮쳤기 때문이야. XDXD</p>
+
+<p class="eo">EO: 아, ㅈΣ발. 다른 모든 일 위ㅇΣ 걔 생각까지 하ㄱΣ 만들지 마, 부탁이야.</p>
+
+<p class="ah">AH: XDXD 내가 그걸 겪어야 했다면 너도 겪어야지! XDXD</p>
+
+<p class="ah">AH: XDXD 아무튼, 머릿이 알려 준 규칙 설명이랑 게임 UI의 튜토리얼에서 알아낸 걸 따라 절차를 밟았어. 애초에 내가 그 UI에 어떻게 들어간 건지도 아직 모르겠지만? XDXD</p>
+
+<p class="ah">AH: XDXD 그런데 그 과정 전체가 내 소박한 집을 박살 내고, 나를 게임 본편 안으로 끌고 들어왔어. XDXD</p>
+
+<p class="ah">AH: XDXD 그 뒤로는 제한푸류한테, 여기가 내 깊은 의지인지 뭔지로 만들어진 행성이라는 설명을 들었어. 마법 같은 헛소리 말이지. 제한푸류는 내 “숨결의 데니즌”이고. XDXD</p>
+
+<p class="eo">EO: ㅈΣ한 뭐라고¿¿ 데니즌이 뭐의 데니즌이 뭔ㄷΣ¿¿¿¿</p>
+
+<p class="eo">EO: 너 행성이 있어¿¿¿¿¿¿</p>
+
+<p class="ah">AH: XDXD 응, 상자에서 풀려난 바람으로 된 커다란 용 비슷한 자식이야. 말 그대로 허공에서 세계 하나를 뚝 만들어 낼 수도 있고. XDXD</p>
+
+<p class="ah">AH: XDXD 분명 그 자식도 그 농담 하겠지. XDXD</p>
+
+<p class="eo">EO: 난... 뭐¿¿</p>
+
+<p class="eo">EO: 이걸 도저히 이해할 수가 없어.</p>
+
+<p class="ah">AH: XDXD 아, 걱정 마. 이해할 필요도 없어. 이건 게임이잖아, 엘시. XDXD</p>
+
+<p class="ah">AH: XDXD 그리고 어느 게임이든, 네가 뭘 만지작거리며 시간이나 때우다가 게임 쪽에서 네가 앞으로 나아갈 만큼 똑똑해졌다고 판단할 때까지, 쓸데없는 잡동사니가 한가득 들어 있지. XDXD</p>
+
+<p class="eo">EO: 좋은 ㄱΣ임은 아니지¡¡</p>
+
+<p class="ah">AH: XDXD 그럼 이건 지금까지는 별로 좋은 게임이 아니네. XDXD</p>
+
+<p class="ah">AH: XDXD 유감이지만 알려 줄게. XDXD</p>
+
+<p class="eo">EO: 아무리 즐거운 ㄱΣ임 경험이라도, 죽이겠다는 협박으로 강ㅈΣ로 참여하ㄱΣ 되면 좀 망가질 것 같아.</p>
+
+<p class="eo">EO: 그러고 보니...</p>
+
+<p class="eo">EO: 그 ㅁΣ모ㅇΣ 이상한 기호들이 여기저기 흩어져 있는 걸 봤어.</p>
+
+<p class="eo">EO: 그ㄱΣ 진짜 ㄴΣ... ㄱΣ임 입장 절차 같은 거ㅇΣ 포함된 거였어¿¿</p>
+
+<p class="eo">EO: 왠지 좀 익숙해 보여.</p>
+
+<p class="ah">AH: XDXD 우리 머리 위에 대롱대롱 매달아 둔 이 멍청한 수수께끼들을 네가 풀 수 있다는 말이야? XDXD</p>
+
+<p class="eo">EO: 내 말은, 이 ㄱΣ임이 우리 모두가 생각하는 것보다 훨씬 더 큰일일지도 모른다는 거야.</p>
+
+<p class="eo">EO: 내가 알아낸 걸 새 ㅁΣ모로 모두ㅇΣㄱΣ 알려 주려고 했어.</p>
+
+<p class="eo">EO: 그리고 이번ㅇΣ는 내가 더 어른스럽ㄱΣ 굴 거야¡¡ 완고하ㄱΣ 굴면서 성질부리지 않을 거고.</p>
+
+<p class="eo">EO: 그 사람도 끼워 줄 거야. 전부 다.</p>
+
+<p class="eo">EO: 너도 와도 돼. 하지만 이건 아직 ㄱΣ임ㅇΣ 들어가지 못한 사람들을 위해서 하는 쪽에 더 가까운 것 같아.</p>
+
+<p class="eo">EO: ㅈΣ발 캐묻지는 마¡¡ ㅁΣ모ㅇΣ서 곧 설명하겠다고 약속할ㄱΣ.</p>
+
+<p class="ah">AH: XDXD 너는 정말 답하는 것보다 질문을 더 많이 만들어 내네. XDXD</p>
+
+<p class="eo">EO: 그리고 넌 그냥 나를 믿어야 할 것 같아. =:p</p>
+
+<p class="ah">AH: XDXD 네가 얼마나 오랫동안 날 스토킹했는지도 모르는데? XDXD</p>
+
+<p class="eo">EO: 그런 ㄱΣ 아니야¡¡</p>
+
+<p class="eo">EO: 그냥 너를 만나 보고 싶었는ㄷΣ, 여러 이유로 어떻ㄱΣ 해야 할지 전혀 몰랐어.</p>
+
+<p class="eo">EO: 이상하거나 소름 끼치ㄱΣ 굴 생각은 없었어¡¡</p>
+
+<p class="ah">AH: XDXD 어떻게 봐도 완전히 이상하고 소름 끼치는 일이라는 점만 빼면 말이지? XDXD</p>
+
+<p class="eo">EO: 아, ㅅΣ상ㅇΣ. 좀 닥쳐.</p>
+
+<p class="ah">AH: XDXD 사실 화난 건 아니야. XDXD</p>
+
+<p class="ah">AH: XDXD 그러니까, 내가 아직 억지로라도 답장해 주는 몇 안 되는 사람들 중에서 고르라면, 적절한 상황에서는 너를 만나 보는 것도 딱히 싫지 않아. XDXD</p>
+
+<p class="ah">AH: XDXD 오늘 밤에 벌어진 일과는 정확히 정반대인 상황 말이지. XDXD</p>
+
+<p class="ah">AH: XDXD 나중에 스트레스 없는 환경에서 다시 얘기할 기회가 생기면, 뭔가 방법을 찾아볼 수도 있겠지. XDXD</p>
+
+<p class="ah">AH: XDXD 하지만 나는 이제 내가 대체 뭘 하고 있는 건지도 모를 이 멋진 게임 세계로 돌아가야 할 것 같아. XDXD</p>
+
+<p class="ah">AH: XDXD 이번 대화 내내 내 등을 쳐다보고 있던 알록달록한 뱀이 하나 있는데, 나랑 친구가 되고 싶어서 아주 안달이 났거든. XDXD</p>
+
+<p class="ah">AH: XDXD 그러니까 그 녀석한테 기회를 한번 줘 보려고. 아마도. XDXD</p>
+
+<p class="ah">AH: XDXD 계속 연락해 볼게. XDXD</p>
+
+<p class="ah">AH: XDXD 그리고 나 걱정하지 말라는 건 진심이야. XDXD</p>
+
+<p class="ah">AH: XDXD 그러다 네가 다칠 거야. XDXD</p>
+
+<p class="narration">
+-- <span class="ah">animatedHumorist [AH]</span>가 <span class="eo">existereOracle [EO]</span>의 트롤링을 중단한다 --
+</p>
+
+<p class="eo">EO: =:(</p>
+
+<p class="eo">EO: 젠장, ㄴΣ 루서스 얘기하는 걸 까먹었어 젠장 젠장 젠장</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00439.html" class="next-link">
+        &gt; 아크젝: 타즈의 메시지를 읽는다.
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="../act1/0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00437.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
