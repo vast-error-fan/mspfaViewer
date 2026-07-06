@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00335</title>
+<title>00445</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -232,30 +232,55 @@ white-space:nowrap;
 
 }
 
-.video-panel{
-    width:650px;
-    margin:0 auto;
+.spoiler-button{
+    cursor:pointer;
 }
 
-.video-panel iframe{
-    width:100%;
-    aspect-ratio:16/9;
-    border:none;
-    display:block;
+.preamble-content{
+    display:none;
+    margin-top:15px;
 }
 
-.quirk-info{
-    margin:0px 0 20px;
+.gray-box{
 
-    padding-left:30px;
+    width:94%;
 
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
     text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
 
-    font-size:12px;
+.chatlog p{
+     margin:0 0 4px 0;
+}
 
-    font-family:"Noto Sans KR", Arial, Helvetica, sans-serif;
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
 
-    color:#363636;
+.po{
+    color:#39017f;
+    }
+
+.wa{
+    color:#004696;
 }
 
 </style>
@@ -337,32 +362,86 @@ class="nav-icon">
 
     <h1 class="page-title">======></h1>
 
-<img src="../assets/panels/act2/00335.gif"
+    <img src="../assets/panels/act2/00445.gif"
 class="panel"
-alt="00335">
+alt="00445">
 
 <div class="story">
 
-<p>다행히도, 네 곁엔 그 일을 도와줄 몇몇이 있다.</p>
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="wa">WA: 저기—</p>
+
+<p class="wa">WA: 괜찮니—</p>
+
+<p class="wa">WA: 너 원래 그렇게 멍하니 있지는 않잖아—</p>
+
+<p class="po">PO: ~괜찮아.~</p>
+
+<p class="po">PO: ~+ㅖ속 +ㅏ야 해.~</p>
 
 </div>
 
+</p>
 
-    <a href="00336.html" class="next-link">
+</div>
+
+</div>
+
+</div>
+
+    <a href="00446.html" class="next-link">
         &gt; ======>
     </a>
 
     <div class="footer-links">
 
         <div>
-            <a href="0002.html">처음부터 다시 시작</a>
+            <a href="../act1/0002.html">처음부터 다시 시작</a>
             |
-            <a href="00334.html">뒤로 가기</a>
+            <a href="00444.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
 
 </body>
 </html>

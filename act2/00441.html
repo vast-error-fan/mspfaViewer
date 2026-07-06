@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00441</title>
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.ah{
+    color:#b95c00;
+}
+
+.colorful-snake{
+    color:#CB06B3;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">아크젝<span class="colon">:</span> 화려한 뱀과의 대화를 재개한다.</h1>
+
+    <img src="../assets/panels/act2/00441.gif"
+class="panel"
+alt="00441">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="ah">아크젝: XDXD 좋아, 친구. 터미널에서는 봐야 할 건 다 본 것 같아. XDXD</p>
+
+<p class="ah">아크젝: XDXD 그게 네가 나한테 말해 줘야 했던 첫 번째였으니까, 이제 나머지 두 개도 얼른 뱉어 봐. XDXD</p>
+
+<p class="ah">아크젝: XDXD 네가 빨리 말할수록, 나도 빨리 입 다물 수 있으니까. 알겠지. XDXD</p>
+
+<p class="ah">아크젝: XDXD 서둘러. XDXD</p>
+
+<p class="ah">아크젝: XDXD 아니면 “쉬익쉬익”이라고 해야 하나? XDXD</p>
+
+<p class="ah">아크젝: XDXD 둘 중 하나겠지. XDXD</p>
+
+<p class="ah">아크젝: XDXD 그러니까, 둘 중 하나가 아니라 둘 다. 그냥— 네가 해야 할 말 두 개 다 해, 알겠지. XDXD</p>
+
+<p class="colorful-snake">화려한 뱀: “친구”가 내 이름이야?</p>
+
+<p class="ah">아크젝: XDXD 나도 몰라, 인마! 좀 봐줘. XDXD</p>
+
+<p class="ah">아크젝: XDXD “슬리더베인”이나 “화려한 뱀”은 네 이름이라고 생각하지 않았으면서, 하필 “친구”는 왜 마음에 들어 하는 건데?? XDXD</p>
+
+<p class="ah">아크젝: XDXD 아마 다시는 못 볼 사람한테 붙일 수 있는 이름 중에 제일 평범한 축이잖아. XDXD</p>
+
+<p class="ah">아크젝: XDXD 지금 우리가 딱 그런 처지고. XDXD</p>
+
+<p class="colorful-snake">화려한 뱀: 나는 그 말이 전혀 맞지 않는다고 생각해!</p>
+
+<p class="colorful-snake">화려한 뱀: 우리는 다시 만나게 될 거야. 나는 확신해.</p>
+
+<p class="ah">아크젝: XDXD 그래? 뭘 보고 그렇게 확신하는데? XDXD</p>
+
+<p class="colorful-snake">화려한 뱀: 바람 속에 있어.</p>
+
+<p class="colorful-snake">화려한 뱀: 바람이 부는 한, 나는 네가 여기 있고 찾아낼 수 있다는 걸 알아!</p>
+
+<p class="colorful-snake">화려한 뱀: 바람은 나한테 많은 걸 말해 줘. 그리고 어디로든 갈 수 있어.</p>
+
+<p class="colorful-snake">화려한 뱀: 하지만 그건 나한테 그렇게 중요하지 않아!</p>
+
+<p class="colorful-snake">화려한 뱀: 정말 정말 중요한 건 내 멋진 새 이름이야.</p>
+
+<p class="colorful-snake">화려한 뱀: 이름다운 이름이고, 그리고...</p>
+
+<p class="colorful-snake">친구: 친구다운 매력이 아주 넘쳐.</p>
+
+<p class="colorful-snake">친구: 너는 상상력이 정말 풍부한가 봐!</p>
+
+<p class="colorful-snake">친구: 괜찮아! 바람도 네 얘기를 듣고 싶어 할 거야.</p>
+
+<p class="colorful-snake">친구: 하지만 사실 내 이름을 정한 게 두 번째 일이었어!</p>
+
+<p class="ah">아크젝: XDXD 농담이지. XDXD</p>
+
+<p class="colorful-snake">친구: 아니야! 난 그냥 어스펙트 보유자한테 이름을 받고 싶었어.</p>
+
+<p class="ah">아크젝: XDXD '어스펙트 보유자'? XDXD</p>
+
+<p class="colorful-snake">친구: 그게 너야!</p>
+
+<p class="colorful-snake">친구: 아, 꿈이 이루어졌어.</p>
+
+<p class="colorful-snake">친구: 태어난 지 겨우 몇 분 됐는데 이름도 생기고, 평생의 소원까지 이뤘어!</p>
+
+<p class="colorful-snake">친구: 이제 행복하게 죽을 수 있어!</p>
+
+<p class="colorful-snake">친구: 하지만 너는 그러면 안 돼. 지금 우리가 서 있는 이 아주 멋진 길을 따라가야 하니까.</p>
+
+<p class="colorful-snake">친구: 그게 세 번째이자 가장 큰 일이야.</p>
+
+<p class="colorful-snake">친구: 그건 확실히 바람이 알려 줬어.</p>
+
+<p class="ah">아크젝: XDXD 그것도 내 첫 번째 추측이었을 텐데. 일부러 해도 이 결론을 이보다 더 질질 끌 수는 없었겠다. XDXD</p>
+
+<p class="ah">아크젝: XDXD 전혀 아닌데. XDXD</p>
+
+<p class="ah">아크젝: XDXD 굳이 말하자면, 이 대화를 계속 본론에서 벗어나게 둘 거면 네가 영적 인도자처럼 쓰는 그 빌어먹을 바람에 대고 아주 적극적으로 비명을 질러 댈 참이야. XDXD</p>
+
+<p class="colorful-snake">친구: 꽤 편리하지?</p>
+
+<p class="colorful-snake">친구: 저 아래로 따라가야 해. 그래야 특별한 장소를 찾을 수 있어!</p>
+
+<p class="ah">아크젝: XDXD 솔직히 말해 봐. 그 특별한 장소에 진짜 특별한 게 있기는 해? XDXD</p>
+
+<p class="colorful-snake">친구: 음, 거기에는 너의 말을 빌리자면...</p>
+
+<p class="colorful-snake">친구: 너를 존나 죽이려고 기다리는 생물들이 몇 마리 있을 거야!</p>
+
+<p class="ah">아크젝: XDXD 와. 그거 참 특별하네. XDXD</p>
+
+<p class="colorful-snake">친구: 그렇지???</p>
+
+<p class="colorful-snake">친구: 혹시 싸움이 벌어질 때 쓸 무기는 가지고 있어?</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00442.html" class="next-link">
+        &gt; 아크젝: 장비를 갖춘다.
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="../act1/0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00440.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
