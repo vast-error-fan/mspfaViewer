@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>00478</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../assets/ve_favicon.ico">
+<style>
+
+body{
+
+margin:0;
+
+background:#535353;
+
+font-family:
+"Courier New",
+Courier,
+monospace;
+
+}
+
+.wrapper{
+    width:950px;
+    margin:0px auto;
+    background:#c6c6c6;
+    min-height:600px;
+}
+
+.page{
+    width:650px;
+    margin:0 auto;
+    background:#EEEEEE;
+    padding-bottom:25px;
+}
+
+.page-title{
+
+font-size:clamp(22px, 4vw, 29px);
+
+font-family:
+"Courier New",
+    "Noto Sans KR",
+    sans-serif;
+
+font-weight:600;
+
+text-align:center;
+
+margin:0;
+
+padding:10px 0 10px 0;
+
+line-height:1.5;
+
+}
+
+.colon {
+    margin-right: -8px;
+}
+
+.panel{
+
+width:650px;
+
+margin:0 auto;
+
+height:auto;
+
+display:block;
+
+}
+
+.story{
+    min-height:3px;
+    padding:5px 35px 10px;
+    text-align:center;
+    font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+    font-size:clamp(12px, 2vw, 14px);
+    line-height:1.45;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.next-link{
+
+display:block;
+
+margin:0px 0 20px;
+
+padding-left:30px;
+
+font-size:24px;
+
+font-weight:normal;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+color:#0000ff;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}
+
+.footer-links{
+
+padding-left:30px;
+
+font-size:12px;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+text-underline-offset:2px;
+
+font-weight:normal;
+
+}
+
+.footer-links a{
+
+color:#0000aa;
+
+text-decoration:underline;
+
+text-underline-offset:2px;
+
+}.top-nav{
+
+color:#000000;
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
+margin:0 auto;
+
+min-height:32px;
+
+line-height:24px;
+
+padding-top:0px;
+
+background:#535353;
+
+text-align:center;
+
+font-family:
+Verdana,
+Arial,
+sans-serif;
+
+font-size:11px;
+
+font-weight:bold;
+
+border-bottom:1px solid #535353;
+
+}
+
+.top-nav-inner{
+
+max-width:950px;
+
+width:100%;
+
+margin:0 auto;
+
+position:relative;
+
+top:-2px;
+
+}
+
+.top-nav a{
+
+color:#ffffff;
+
+text-decoration:none;
+
+margin:0 1px;
+
+display:inline;
+
+}
+
+.top-nav a:hover{
+
+text-decoration:underline;
+
+}
+
+.nav-green{
+
+color:#afdc80 !important;
+
+}
+
+.nav-purple{
+
+color:#d08fd9 !important;
+
+}
+
+.nav-icon{
+
+width:15px;
+
+height:15px;
+
+margin:0 4px;
+
+vertical-align:middle;
+
+image-rendering:pixelated;
+
+}
+
+.nav-group{
+
+display:inline-block;
+
+white-space:nowrap;
+
+}
+
+.spoiler-button{
+    cursor:pointer;
+}
+
+.preamble-content{
+    display:none;
+    margin-top:15px;
+}
+
+.gray-box{
+
+    width:94%;
+
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
+    text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
+
+.chatlog p{
+     margin:0 0 4px 0;
+}
+
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
+
+.space{
+     margin:0 0 20px 0 !important;
+    color:#000000;
+}
+
+.space2{
+     margin:20px 0 0 0 !important;
+    color:#000000;
+}
+
+.eo{
+    color:#6D8400;
+}
+
+.ff{
+    color:#b49e18;
+}
+
+.gs{
+    color:#a00078;
+}
+
+@font-face {
+    font-family: "Comic Sans Web";
+    src: url("./assets/fonts/comic-sans.woff") format("woff");
+    font-display: swap;
+}
+
+.wa{
+    color:#004696;
+}
+
+.pd{
+    color:#00A596;
+    font-family:
+        "Comic Sans Web",
+        "Gowun Dodum",
+        sans-serif;
+}
+
+.po{
+    color:#39017f;
+}
+
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.sa{
+    color:#A10000;
+    font-family:'OngleipParkDahyeon';
+    font-size:18px;
+    font-weight: 500;
+}
+
+.azbogah{
+    color:#9D4DAE;
+}
+
+.uk{
+    color:#510049;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="top-nav">
+
+<div class="top-nav-inner">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="../index.html">홈</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="../map.html">지도</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="../log.html">로그</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://wiki.deconreconstruction.com/wiki/DCRC_Wiki">위키</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-purple" href="https://discord.gg/NQpnZRp">디스코드</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://twitter.com/Deconrecon_">트위터</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-purple" href="https://vasterror.tumblr.com/">텀블러</a>
+
+</span>
+
+<img
+src="../assets/nav-etchelizer.png"
+class="nav-icon">
+
+<span class="nav-group">
+
+<a class="nav-green" href="https://vasterror.bandcamp.com/">음악</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/bonus">보너스</a>
+
+<span class="nav-sep">|</span>
+
+<a class="nav-green" href="https://www.deconreconstruction.com/vasterror/credits">크레딧</a>
+
+</span>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+<div class="page">
+
+    <h1 class="page-title">======></h1>
+
+    <img src="../assets/panels/act2/00478.gif"
+class="panel"
+alt="00478">
+
+<div class="story">
+
+<div class="gray-box">
+
+<input
+type="button"
+id="preambleButton"
+value="다이얼로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
+
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="wa">WA: 무사히 돌아온 거야—?</p>
+
+<p class="wa">WA: 그게 지금 네 계획인 거라고 생각할게—</p>
+
+<p class="wa">WA: 네가 계획하고 있는 것도, 하고 있는 것도 우리 게임은 아닌 게 분명하니까—</p>
+
+<p class="wa">WA: 나도 구했어— 그런데—</p>
+
+<p class="wa">WA: 진짜 게임 말이야— 첫 번째 노트북에—</p>
+
+<p class="wa">WA: 이번에 네가 나를 완전히 내버려 둔 이유도— 조금은 공평해진 것 같네—</p>
+
+<p class="wa">WA: 그래도 괜찮아— 나는 좀—</p>
+
+<p class="wa">WA: 개같은 일을 겪고 있었으니까—</p>
+
+<p class="wa">WA: 세상에— 타즈한테 방금 무슨 일이 있었던 건지— 아직도 어떻게 설명해야 할지 모르겠어—</p>
+
+<p class="wa">WA: 걔 머릿속에는 대체 뭐가 들어 있는 건지 모르겠고—</p>
+
+<p class="wa">WA: 그때도— 지금도—</p>
+
+<p class="wa">WA: 아마 앞으로도 영영 모르겠지—</p>
+
+<p class="uk">UK: &gt;([그 광경이 너무 뜨거워서 감당을 못 한 거 아니었겠냐])</p>>
+
+<p class="wa">WA: 어, 와— 안녕—</p>
+
+<p class="wa">WA: 이렇게 빨리 답장 올 줄은 몰랐는데—</p>
+
+<p class="wa">WA: 그리고—</p>
+
+<p class="wa">WA: 하하— 설마—</p>
+
+<p class="wa">WA: 레이저 태그 하다가 완전히 나가떨어지는 걸 셀 수도 없이 봤어—</p>
+
+<p class="wa">WA: 그 정도면 좀 회복 불가능하지—</p>
+
+<p class="wa">WA: 모르겠어— 그냥 걔가 그렇게—</p>
+
+<p class="wa">WA: 늘 너무 막무가내지만 않았으면 좋겠어— 알지—</p>
+
+<p class="wa">WA: 모두를 밀어내고—</p>
+
+<p class="uk">UK: &gt;([ㅇㅇㅇ 그래그래 알겠어, 무슨 말인지 안다니까])</p>
+
+<p class="uk">UK: &gt;([아무튼 나도 이미 여기저기 싹 훑고 정리까지 다 #ㅐ 놨거든])</p>
+
+<p class="uk">UK: &gt;([접착제 머리통한테만 알려 주는 깊고 어두운 업계 비밀 #ㅏ나 풀어 줄게])</p>
+
+<p class="uk">UK: &gt;([난 같은 큐브를 두 번 연달아 #ㅏ는 법이 없어서, 앞으로 가는 것보다 돌아가는 게 늘 더 쉽더라고])</p>
+
+<p class="uk">UK: &gt;([플레이 감각으로 움직인다기보단 기억에 남은 감각을 다시 꺼내 입는 쪽에 가깝달까, 알겠냐])</p>
+
+<p class="wa">WA: 아직도 모르겠어— 어떻게 그렇게 빨리 돌아온 거야—</p>
+
+<p class="uk">UK: &gt;([백플립을 많이 했지])</p>
+
+<p class="uk">UK: &gt;([순도 백 퍼센트 함정 탱고 루틴이었거든])</p>
+
+<p class="wa">WA: 멋지네—</p>
+
+<p class="wa">WA: 그런데 질문 하나—</p>
+
+<p class="uk">UK: &gt;([글쎄, 그런 건 이제 안 받는다고 했잖아])</p>
+
+<p class="wa">WA: 에이— 제발—</p>
+
+<p class="wa">WA: 바보 같은 질문 아니야— 물어볼 수는 있잖아—</p>
+
+<p class="uk">UK: &gt;([좋아, 크게 받아들였다])</p>
+
+<p class="wa">WA: 고마워—</p>
+
+<p class="wa">WA: 왜 엘시의 메모에서 나간 거야—?</p>
+
+<p class="wa">WA: 꽤 중요한 얘기였는데—</p>
+
+<p class="uk">UK: &gt;([내 생각엔 거기 있을 필요가 없었거든])</p>
+
+<p class="wa">WA: 알겠어— 그런데—</p>
+
+<p class="wa">WA: 그냥 말하고 싶었어— 엘시는 나한테도 친구야—</p>
+
+<p class="wa">WA: 꽤 오래 알고 지냈고—</p>
+
+<p class="wa">WA: 네가 나갔을 때 걔 화났어—</p>
+
+<p class="wa">WA: 다른 애들이 나갔을 때보다 더— 그건 당연하다고 생각하고—</p>
+
+<p class="wa">WA: 솔직히 말하면— 다들 엘시를 대하는 방식이 별로였어—</p>
+
+<p class="wa">WA: 그런 대접을 받을 사람은 아니야—</p>
+
+<p class="wa">WA: 전체적으로 너무 어색했고—</p>
+
+<p class="uk">UK: &gt;([야, 있잖냐])</p>
+
+<p class="uk">UK: &gt;([이건 그냥 나를 믿어야 한다고밖에는 할 말이 없다니까])</p>
+
+<p class="uk">UK: &gt;([이상한 거 전#ㅕ 없고])</p>
+
+<p class="wa">WA: 어떻게 봐도 완전히 이상하고 별로라는 점만 빼면—?</p>
+
+<p class="uk">UK: &gt;([그 말은 좀 치워 둬라])</p>
+
+<p class="uk">UK: &gt;([알게 될 때가 되면 알게 되겠지])</p>
+
+<p class="uk">UK: &gt;([그리고 너라면 누구보다 그걸 잘 알아야 하고])</p>
+
+<p class="uk">UK: &gt;([상황이 상황이니까 말이야])</p>
+
+<p class="wa">WA: 그런가—</p>
+
+<p class="uk">UK: &gt;([자, 됐고])</p>
+
+<p class="uk">UK: &gt;([말#ㅐ 봐])</p>
+
+<p class="uk">UK: &gt;([플레이할 준비 됐냐])</p>
+
+<p class="wa">WA: 응—</p>
+
+<p class="wa">WA: 방금 떴어—</p>
+
+<p class="wa">WA: 그래서 너한테 메시지한 거야—</p>
+
+<p class="wa">WA: 돌아왔는지— 준비됐는지 보려고—</p>
+
+<p class="wa">WA: 왜냐하면—</p>
+
+<p class="wa">WA: 난 준비됐거든—</p>
+
+<p class="uk">UK: &gt;([그런 느낌 아니고])</p>
+
+<p class="uk">UK: &gt;([준비됐냐고 물었잖아])</p>
+
+<p class="wa">WA: 준비됐어—</p>
+
+<p class="uk">UK: &gt;([씨발 진짜로 준 비 됐 냐?])</p>
+
+<p class="wa">WA: 준비됐어—</p>
+
+</div>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+    <a href="00479.html" class="next-link">
+        &gt; ======>
+    </a>
+
+    <div class="footer-links">
+
+        <div>
+            <a href="../act1/0002.html">처음부터 다시 시작</a>
+            |
+            <a href="00477.html">뒤로 가기</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "다이얼로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "다이얼로그 닫기";
+
+    }
+
+}
+</script>
+
+</body>
+</html>
