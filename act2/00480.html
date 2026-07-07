@@ -3,9 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>00480</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -235,114 +232,23 @@ white-space:nowrap;
 
 }
 
-.spoiler-button{
-    cursor:pointer;
+.name{
+    font-weight:bold;
+    font-size:1.1em;
 }
 
-.preamble-content{
-    display:none;
-    margin-top:15px;
-}
+.quirk-info{
+    margin:0px 0 20px;
 
-.gray-box{
+    padding-left:30px;
 
-    width:94%;
-
-    margin:10px auto;
-
-    padding:4px 0;
-
-    border:1px dashed #999;
-
-    text-align:center;
-
-    box-sizing:border-box;
-
-}
-
-.chatlog{
     text-align:left;
-    padding:0 35px;
-    font-weight: 600;
-    line-height:1.35;
-    font-size:14px;
-    
-}
 
-.chatlog p{
-     margin:0 0 4px 0;
-}
+    font-size:12px;
 
-.narration{
-     margin:12px 0 !important;
-    color:#000000;
-}
+    font-family:"Noto Sans KR", Arial, Helvetica, sans-serif;
 
-.space{
-     margin:0 0 20px 0 !important;
-    color:#000000;
-}
-
-.space2{
-     margin:20px 0 0 0 !important;
-    color:#000000;
-}
-
-.eo{
-    color:#6D8400;
-}
-
-.ff{
-    color:#b49e18;
-}
-
-.gs{
-    color:#a00078;
-}
-
-@font-face {
-    font-family: "Comic Sans Web";
-    src: url("./assets/fonts/comic-sans.woff") format("woff");
-    font-display: swap;
-}
-
-.wa{
-    color:#004696;
-}
-
-.pd{
-    color:#00A596;
-    font-family:
-        "Comic Sans Web",
-        "Gowun Dodum",
-        sans-serif;
-}
-
-.po{
-    color:#39017f;
-}
-
-@font-face {
-    font-family: 'OngleipParkDahyeon';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-.sa{
-    color:#A10000;
-    font-family:'OngleipParkDahyeon';
-    font-size:18px;
-    font-weight: 500;
-}
-
-.azbogah{
-    color:#9D4DAE;
-}
-
-.uk{
-    color:#510049;
+    color:#363636;
 }
 
 </style>
@@ -422,43 +328,20 @@ class="nav-icon">
 
 <div class="page">
 
-    <h1 class="page-title">======></h1>
+    <h1 class="page-title">그보다 앞서, 다른 곳에서는...</h1>
 
-    <img src="../assets/panels/act2/004780.gif"
+<img src="../assets/panels/act2/00480.gif"
 class="panel"
 alt="00480">
 
 <div class="story">
 
-<div class="gray-box">
-
-<input
-type="button"
-id="preambleButton"
-value="다이얼로그 열기"
-class="spoiler-button"
-onclick="togglePreamble()">
-
-<div id="preamble" class="preamble-content">
-
-<p>
-
-<div class="chatlog">
-
-<p class="uk">UK: &gt;([그럼 달려 보자고])</p>
-
+<p>레피톤에서 가장 높은 바다거주 혈통을 이은 자는, 생각에 잠긴 채 와인을 천천히 흔든다.</p>
+    
 </div>
 
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-    <a href="00480.html" class="next-link">
-        &gt; 그보다 앞서, 다른 곳에서는...
+    <a href="00481.html" class="next-link">
+        &gt; ======>
     </a>
 
     <div class="footer-links">
@@ -466,36 +349,12 @@ onclick="togglePreamble()">
         <div>
             <a href="../act1/0002.html">처음부터 다시 시작</a>
             |
-            <a href="00478.html">뒤로 가기</a>
+            <a href="00479.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
-
-<script>
-function togglePreamble() {
-
-    var preamble =
-        document.getElementById("preamble");
-
-    var button =
-        document.getElementById("preambleButton");
-
-    if (preamble.style.display === "block") {
-
-        preamble.style.display = "none";
-        button.value = "다이얼로그 열기";
-
-    } else {
-
-        preamble.style.display = "block";
-        button.value = "다이얼로그 닫기";
-
-    }
-
-}
-</script>
 
 </body>
 </html>
