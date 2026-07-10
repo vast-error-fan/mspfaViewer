@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>00356</title>
+<title>00502</title>
 <link rel="shortcut icon" href="../assets/ve_favicon.ico">
 <style>
 
@@ -232,30 +232,55 @@ white-space:nowrap;
 
 }
 
-.video-panel{
-    width:650px;
-    margin:0 auto;
+.spoiler-button{
+    cursor:pointer;
 }
 
-.video-panel iframe{
-    width:100%;
-    aspect-ratio:16/9;
-    border:none;
-    display:block;
+.preamble-content{
+    display:none;
+    margin-top:15px;
 }
 
-.quirk-info{
-    margin:0px 0 20px;
+.gray-box{
 
-    padding-left:30px;
+    width:94%;
 
+    margin:10px auto;
+
+    padding:4px 0;
+
+    border:1px dashed #999;
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+}
+
+.chatlog{
     text-align:left;
+    padding:0 35px;
+    font-weight: 600;
+    line-height:1.35;
+    font-size:14px;
+    
+}
 
-    font-size:12px;
+.chatlog p{
+     margin:0 0 4px 0;
+}
 
-    font-family:"Noto Sans KR", Arial, Helvetica, sans-serif;
+.narration{
+     margin:12px 0 !important;
+    color:#000000;
+}
 
-    color:#363636;
+.gs{
+    color:#a00078;
+}
+
+.me{
+    color:#00007f;
 }
 
 </style>
@@ -335,28 +360,62 @@ class="nav-icon">
 
 <div class="page">
 
-    <h1 class="page-title">======></h1>
+    <h1 class="page-title">칼더<span class="colon">:</span> 오세우스에게 대답한다.</h1>
 
-<img src="../assets/panels/act2/00356.gif"
+    <img src="../assets/panels/act2/00502.gif"
 class="panel"
-alt="00356">
+alt="00502">
 
 <div class="story">
 
-<p>그룹 메모라고?! 이런 걸 마지막으로 쓴 게 언제였는지조차 기억나지 않는다! 
-아크젝이 제 발로 이런 데 끼어들 리는 절대 없다... 아주 그럴듯한 이유가 있지 않은 이상은.</p>
+<div class="gray-box">
 
-<p>이게 중요한 전체 공지 같은 거라면, 당연히 너도 초대받았어야 하는 거 아닌가? 그렇지? 
-너는 <a href="../act1/00265.html">이미 읽었던 대화</a>를 다시 살펴보기 시작한다.</p>
+<input
+type="button"
+id="preambleButton"
+value="스코펠로그 열기"
+class="spoiler-button"
+onclick="togglePreamble()">
 
-<p>그리고 이 메모를 누가 꾸몄는지 알아내는 순간, 모든 상황이 너무나 선명하게 이해된다. 
-와, 너는 정말 너무 화가 난다.</p>
+<div id="preamble" class="preamble-content">
+
+<p>
+
+<div class="chatlog">
+
+<p class="narration">
+-- <span class="me">macabreExude [ME]</span>가 <span class="gs">grandioseSaturation [GS]</span>를 트롤링하기 시작했다 --
+</p>
+
+<p class="me">ME: .이. 빌.어.먹.을. 게.임에. 대해 당신.이. 아는 게 뭡니까?</p>
+
+<p class="me">ME: .당.신.은. .이. .일.과 무슨 관계가 .있.습니까?</p>
+
+<p class="gs">GS: 그건 지나치게 몰아붙이는 태도군. 말투도 꽤나 무례하고.</p>
+
+<p class="gs">GS: 콜리아드, 예의는 잊지 않는 편이 좋겠어. 특히 네가 아무것도 모르는 일로 나를 근거 없이 몰아세울 생각이라면 더더욱.</p>
+
+<p>그리고 너는 우리가 이미 목격한 그 <a href="../act2/00415.html">신랄한 말다툼</a>을 이어 간다.</p>
+
+<p>그렇게 우리는 다시 한 바퀴를 돌아 제자리로 돌아왔다. 이런 빙 돌아가는 길은 좀 봐주길 바란다. 
+그래도 내가 여기저기 뛰어다니게 될 거라고 말하긴 했던 것 같군, 그렇지?</p>
+
+<p>어쨌든, 여기서부터는 조금 빨리 넘길 수 있을 것 같다.</p>
+
+</p>
 
 </div>
 
+</p>
 
-    <a href="00357.html" class="next-link">
-        &gt; 엘시: 답을 얻기 위해 머릿을 트롤링한다.
+</div>
+
+</div>
+
+</div>
+
+    <a href="00503.html" class="next-link">
+        &gt; 칼더: 티업한다.
     </a>
 
     <div class="footer-links">
@@ -364,12 +423,36 @@ alt="00356">
         <div>
             <a href="../act1/0002.html">처음부터 다시 시작</a>
             |
-            <a href="00355.html">뒤로 가기</a>
+            <a href="00501.html">뒤로 가기</a>
         </div>
 
     </div>
 
 </div>
+
+<script>
+function togglePreamble() {
+
+    var preamble =
+        document.getElementById("preamble");
+
+    var button =
+        document.getElementById("preambleButton");
+
+    if (preamble.style.display === "block") {
+
+        preamble.style.display = "none";
+        button.value = "스코펠로그 열기";
+
+    } else {
+
+        preamble.style.display = "block";
+        button.value = "스코펠로그 닫기";
+
+    }
+
+}
+</script>
 
 </body>
 </html>
